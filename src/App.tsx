@@ -3,7 +3,6 @@ import { motion, AnimatePresence, type MotionProps } from 'framer-motion';
 
 //============================================// Import imagery, movies & files //============================================//
 import bgImage from './assets/desktopBkg.jpg';
-const design_reel = '/assets/Francisco_Acosta_2021_Reel.mp4';
 import case_study_1_impact from './assets/case_studies/DynamicCanvasDeploymentEngine_TheImpact.jpg';
 import case_study_1_innovation from './assets/case_studies/DynamicCanvasDeploymentEngine_TheInnovation.jpg';
 import case_study_1_problem from './assets/case_studies/DynamicCanvasDeploymentEngine_TheProblem.jpg';
@@ -76,17 +75,16 @@ function VideoReelContent({ animConfig }: SharedViewProps) {
 
       {/* Video Framing Window */}
       <div className="w-full flex-1 min-h-[300px] md:min-h-[400px] bg-zinc-950 border border-zinc-900 rounded-sm overflow-hidden relative flex items-center justify-center group shadow-inner">
-        <video 
-          src={design_reel} 
-          controls
-          preload="auto"
-          className="w-full h-full object-contain opacity-95 group-hover:opacity-100 transition-opacity duration-300"
-        >
-          <track kind="captions" />
-          <p className="text-xs font-mono text-red-500 p-4">
-            SYSTEM_ERROR: Your client browser environment fails to parse native HTML5 MP4 video codecs natively.
-          </p>
-        </video>
+<div className="w-full flex-1 min-h-[300px] md:min-h-[400px] bg-zinc-950 border border-zinc-900 rounded-sm overflow-hidden relative flex items-center justify-center group shadow-inner">
+  <video 
+    src="https://docs.google.com/uc?export=download&id=1dUt4OFpOr7bwlXh3r82P6rVtqUZURTDt" 
+    controls
+    preload="auto"
+    className="w-full h-full object-contain opacity-95 group-hover:opacity-100 transition-opacity duration-300"
+  >
+    Your browser does not support the video tag.
+  </video>
+</div>
       </div>
     </motion.div>
   );
@@ -771,6 +769,10 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
               📄 AL6_payroll_system_2.pdf
             </button>
 
+            <button onClick={() => window.open('https://docs.google.com/uc?export=download&id=1H88Gsy_uCMvteV0H2e1FAgSJcxVTy6SO', '_blank')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 3' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal' }`} >
+              📄 AL6_payroll_system_3.zip
+            </button>
+
             {/* Lab 7 */}
             <button onClick={() => onSelectFile('LAB_PREVIEW: CLOUD COMPUTING')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: CLOUD COMPUTING' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal' }`} >
               📄 AL7_fundamentals_of_cloud_computing.pdf
@@ -804,7 +806,19 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           </div>
         </div>
 
-
+        <div className="pl-2 space-y-1 text-[11px]">
+          <p className="text-gray-500 font-semibold text-[16px] tracking-wider">📁 Case Studies</p>
+          <div className="pl-4 space-y-1">
+            {/* Case Study 1 */}
+            <button onClick={() => {
+              onSelectFile('CASE_STUDY_PREVIEW: REAL-TIME DATE PIPELINE DEPLOYMENT ENGINE');
+              window.open('https://docs.google.com/uc?export=download&id=1q4ZY4hgomN0kojF4GRloIJsrOlSrdDlD', '_blank');
+              }} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors
+              ${selectedFile === 'CASE_STUDY_PREVIEW: REAL-TIME DATE PIPELINE DEPLOYMENT ENGINE' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}
+              `} > 📄 CS1_Real-TimeDataPipelineDeployment_Engine.zip
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* Right Code Inspector Console - Dynamically parses and previews content formats */}

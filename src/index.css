@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-terminal: #7ee7b8;       /* Sleek cyber mint from image_b8fe86.png */
+  --color-terminal-dark: #1a4d38;  /* Deep mint-teal accent borders */
+  --color-terminal-bg: #0a0a0a;    /* Anti-glare matte black paneling */
+}
+
+/* Base DOM Tree Reset Framework */
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  overflow-x: hidden;
+}
+
+/* Smooth systemic scrollbar matching developer aesthetic metrics */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a4d38;
+  border-radius: 2px;
+  border: 1px solid #0d261c;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7ee7b8;
+  box-shadow: 0 0 8px #7ee7b8;
+}
+
+/* System focus state highlight overrides */
+button:focus-visible {
+  outline: 2px solid #7ee7b8;
+  outline-offset: 2px;
+}

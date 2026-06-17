@@ -1,0 +1,29 @@
+Francisco Acosta
+Fort Worth, TX   |   682-313-6403   |   franciscoacosta1989@gmail.com   |   https://www.linkedin.com/in/francisco-acosta-tx/
+
+Professional Summary:
+    I build scalable, modular systems designed for high-stakes, real-time environments. Over a 16-year tenure at NBCUniversal, I transitioned from a creative lead into a systems architect, pioneering one of the first centralized news graphics departments focused on high-availability automation for our national broadcast footprint. My career has been defined by identifying systemic bottlenecks and engineering solutions before they impact production. I thrive at the intersection of high-stakes media and mission-critical engineering, bringing a "zero-downtime" discipline to every codebase I touch. I formalized this technical journey with a B.S. in Software Engineering, bridging nearly two decades of media domain expertise with backend orchestration and full-stack development.
+
+Education:
+DeVry University | B.S. in Computer Information Systems (Software Engineering) | Anticipated Oct 2026
+    • Focus Areas: Linux Operating System, Object-Oriented Programming, Data Structures, Algorithms, Application Security and Systems Integration.
+    • Additional Credentials: A.A. in Information Technology (2025), A.A. in Web Graphic Design (2010)
+
+Skills Summary:
+    • Technical Skills: Solutions Architect, Application Engineering, Real-Time High-Performance Graphics, Object-Oriented Design and Programming, Distributed Systems,  
+    Data Pipeline Optimization, CI/CD and Software Development Lifecycle (SDLC).
+    • Languages: C++, C#, Python, Java, SQL, Bash, PowerShell, HTML, CSS, JavaScript, and TypeScript.
+    • Transferable Skills: Technical Leadership leading cross-functional teams, Requirement Gathering, Standard Operating Procedures (SOPs), Crisis Management, Mentorship.
+
+Work Experience:
+NBCUniversal
+Senior Real-Time Systems & Software Developer   |   April 2018 - Present
+    • Engineered a centralized software suite using .NET and C# that streamlined configuration management and validated mission-critical broadcast infrastructure.
+    • Automates 400+ system combinations across 40+ national locations by engineering a unified, data-driven template pipeline.
+    • Maintain a high-percentage system uptime for 24/7 live operations through proactive management of distributed hardware and software integration through Python based automation.
+Real-Time Systems & Software Developer   |   July 2011 - April 2018
+    • Increased data accuracy by integrating real-time scripting to automate the link between external data sources and live visual engines.
+    • Delivered high-priority digital packages under strict deadlines through effective collaboration with technical and creative stakeholders.
+Independent Contractor   |   February 2010 - July 2011
+    • Ensured compliance with digital delivery protocols by developing rigorous technical specifications for web-based advertising assets.
+    • Successfully managed high-volume production schedules, delivering optimized assets for live broadcast in a high-pressure environment.

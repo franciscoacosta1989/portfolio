@@ -3,7 +3,7 @@ import { motion, AnimatePresence, type MotionProps } from 'framer-motion';
 
 //============================================// Import imagery, movies & files //============================================//
 import bgImage from './assets/desktopBkg.jpg';
-import design_reel from './assets/Francisco_Acosta_2021_Reel.mp4';
+const design_reel = '/assets/Francisco_Acosta_2021_Reel.mp4';
 import case_study_1 from './assets/case_studies/CS1_Real-TimeDataPipelineDeployment Engine.zip';
 import case_study_1_impact from './assets/case_studies/DynamicCanvasDeploymentEngine_TheImpact.jpg';
 import case_study_1_innovation from './assets/case_studies/DynamicCanvasDeploymentEngine_TheInnovation.jpg';

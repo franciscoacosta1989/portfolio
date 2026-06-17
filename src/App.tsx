@@ -4,7 +4,6 @@ import { motion, AnimatePresence, type MotionProps } from 'framer-motion';
 //============================================// Import imagery, movies & files //============================================//
 import bgImage from './assets/desktopBkg.jpg';
 const design_reel = '/assets/Francisco_Acosta_2021_Reel.mp4';
-import case_study_1 from './assets/case_studies/CS1_Real-TimeDataPipelineDeployment Engine.zip';
 import case_study_1_impact from './assets/case_studies/DynamicCanvasDeploymentEngine_TheImpact.jpg';
 import case_study_1_innovation from './assets/case_studies/DynamicCanvasDeploymentEngine_TheInnovation.jpg';
 import case_study_1_problem from './assets/case_studies/DynamicCanvasDeploymentEngine_TheProblem.jpg';
@@ -772,10 +771,6 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
               📄 AL6_payroll_system_2.pdf
             </button>
 
-            <button onClick={() => onSelectFile('LAB_PREVIEW: PAYROLL SYSTEM 3')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal' }`} >
-              📄 AL6_payroll_system_3.zip
-            </button>
-
             {/* Lab 7 */}
             <button onClick={() => onSelectFile('LAB_PREVIEW: CLOUD COMPUTING')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: CLOUD COMPUTING' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal' }`} >
               📄 AL7_fundamentals_of_cloud_computing.pdf
@@ -809,18 +804,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           </div>
         </div>
 
-        <div className="pl-2 space-y-1 text-[11px]">
-          <p className="text-gray-500 font-semibold text-[16px] tracking-wider">📁 Case Studies</p>
-          <div className="pl-4 space-y-1">
-            {/* Case Study 1 */}
-            <button
-              onClick={() => onSelectFile('CASE_STUDY_PREVIEW: REAL-TIME DATE PIPELINE DEPLOYMENT ENGINE')}
-              className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'CASE_STUDY_PREVIEW: REAL-TIME DATE PIPELINE DEPLOYMENT ENGINE' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'
-                }`}>
-              📄 CS1_Real-TimeDataPipelineDeployment Engine.zip
-            </button>
-          </div>
-        </div>
+
       </div>
 
       {/* Right Code Inspector Console - Dynamically parses and previews content formats */}
@@ -843,11 +827,6 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
                 )}
 
                 {/* HARDCODED Files for canvas viewer)*/}
-                {selectedFile === 'CASE_STUDY_PREVIEW: REAL-TIME DATE PIPELINE DEPLOYMENT ENGINE' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object data={`${case_study_1}#toolbar=1&navpanes=0&scrollbar=1`} type="application/pdf" className="w-full h-full border-none bg-zinc-950" />
-                  </div>
-                )}
 
                 {selectedFile === 'LAB_PREVIEW: EQUIPMENT CHECKOUT SYSTEM' && (
                   <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
@@ -914,16 +893,6 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
                     <object
                       data={`${academic_lab_6_2}#toolbar=1&navpanes=0&scrollbar=1`}
                       type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
-                  </div>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 3' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data="/CS1_Real-TimeDataPipelineDeployment_Engine.zip"
-                      type="application/zip"
                       className="w-full h-full border-none bg-zinc-950"
                     />
                   </div>

@@ -1096,33 +1096,34 @@ export default function App() {
         </AnimatePresence>
 
         {/* FOOTER */}
-<div className="w-full max-w-6xl mx-auto px-4 md:px-8">
-  <div className="w-full h-[1px] bg-terminal-dark/60 mb-4" />
+{/* FOOTER CONTAINER */}
+        <div className="w-full max-w-6xl mx-auto px-4 md:px-8 mt-auto">
+          <div className="w-full h-[1px] bg-terminal-dark/60 mb-4" />
 
-<footer className="mt-auto pt-8 pb-6 flex flex-col md:flex-row justify-between items-center text-[13px] text-gray-500 gap-4 w-full z-10 font-mono px-4 md:px-0">
-  {/* Copyright (Left-aligned on desktop) */}
-  <p className="text-center md:text-left order-1">
-    © {new Date().getFullYear()} Francisco Acosta
-  </p>
+          <footer className="pt-2 pb-6 flex flex-col md:flex-row justify-between items-center text-[13px] text-gray-500 gap-4 font-mono">
+            {/* Copyright (Left-aligned on desktop) */}
+            <p className="text-center md:text-left order-1">
+              © {new Date().getFullYear()} Francisco Acosta
+            </p>
 
-  {/* Architecture Specs (Centered on desktop, subtle styling) */}
-  <p className="text-center text-gray-400 dark:text-slate-500 text-[11px] md:text-[12px] tracking-tight order-2 md:order-2 max-md:max-w-xs leading-relaxed">
-    Built with <span className="text-terminal/80 font-semibold">React</span> • Styled via <span className="text-terminal/80 font-semibold">Tailwind</span> • Bundled with <span className="text-terminal/80 font-semibold">Vite</span> • Deployed on <span className="text-terminal/80 font-semibold">Azure</span>
-  </p>
+            {/* Architecture Specs (Centered on desktop, subtle styling) */}
+            <p className="text-center text-gray-400 dark:text-slate-500 text-[11px] md:text-[12px] tracking-tight order-2 max-md:max-w-[280px] leading-relaxed">
+              Built with <span className="text-terminal/80 font-semibold">React</span> • Styled via <span className="text-terminal/80 font-semibold">Tailwind</span> • Bundled with <span className="text-terminal/80 font-semibold">Vite</span> • Deployed on <span className="text-terminal/80 font-semibold">Azure</span>
+            </p>
 
-  {/* LinkedIn Link (Right-aligned on desktop) */}
-  <div className="flex justify-center md:justify-end order-3 md:order-3">
-    <a 
-      href="https://www.linkedin.com/in/francisco-acosta-tx/" 
-      target="_blank" 
-      rel="noreferrer" 
-      className="text-terminal/70 hover:text-terminal text-[13px] transition-colors uppercase tracking-wider"
-    >
-      LinkedIn
-    </a>
-  </div>
-</footer>
-</div>
+            {/* LinkedIn Link (Right-aligned on desktop) */}
+            <div className="flex justify-center md:justify-end order-3">
+              <a 
+                href="https://www.linkedin.com/in/francisco-acosta-tx/" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="text-terminal/70 hover:text-terminal text-[13px] transition-colors uppercase tracking-wider"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </footer>
+        </div>
 
       </div>
     </div>

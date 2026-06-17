@@ -24,7 +24,6 @@ import academic_lab_4 from './assets/academic_labs/AL4_fundamentals_of_infrastru
 import academic_lab_5 from './assets/academic_labs/AL5_relational_database.pdf';
 import academic_lab_6_1 from './assets/academic_labs/AL6_payroll_system_1.pdf';
 import academic_lab_6_2 from './assets/academic_labs/AL6_payroll_system_2.pdf';
-import academic_lab_6_3 from './assets/academic_labs/AL6_payroll_system_3.zip';
 import academic_lab_7 from './assets/academic_labs/AL7_fundamentals_of_cloud_computing.pdf';
 import academic_lab_8 from './assets/academic_labs/AL8_fundamentals_of_information_security.pdf';
 import academic_lab_9 from './assets/academic_labs/AL9_Linux Networking Fundamentals.pdf';
@@ -922,11 +921,11 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
 
                 {selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 3' && (
                   <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data={`${academic_lab_6_3}#toolbar=1&navpanes=0&scrollbar=1`}
-                      type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
+<object
+  data="/CS1_Real-TimeDataPipelineDeployment_Engine.pdf#toolbar=1&navpanes=0&scrollbar=1"
+  type="application/pdf"
+  className="w-full h-full border-none bg-zinc-950"
+/>
                   </div>
                 )}
 

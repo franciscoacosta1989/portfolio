@@ -76,7 +76,7 @@ function VideoReelContent({ animConfig }: SharedViewProps) {
       {/* Video Framing Window */}
       <div className="w-full flex-1 min-h-[300px] md:min-h-[400px] bg-zinc-950 border border-zinc-900 rounded-sm overflow-hidden relative flex items-center justify-center group shadow-inner">
         <video 
-          src="https://docs.google.com/uc?id=1dUt4OFpOr7bwlXh3r82P6rVtqUZURTDt&export=download" 
+          src="https://drive.google.com/file/d/1dUt4OFpOr7bwlXh3r82P6rVtqUZURTDt/view?usp=drive_link" 
           controls
           preload="metadata"
           className="w-full h-full object-contain opacity-95 group-hover:opacity-100 transition-opacity duration-300"

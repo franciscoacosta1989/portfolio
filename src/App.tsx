@@ -66,7 +66,10 @@ function AboutContent({ animConfig }: SharedViewProps) {
 //============================================// Motion GraphicsPage //============================================//
 function VideoReelContent({ animConfig }: SharedViewProps) {
   return (
-    <motion.div {...animConfig} className="bg-black/50 border border-terminal-dark p-6 md:p-8 space-y-6 shadow-2xl h-full flex flex-col justify-between">
+    <motion.div 
+      {...animConfig} 
+      className="bg-black/50 border border-terminal-dark p-6 md:p-8 space-y-6 shadow-2xl w-full mx-auto max-w-4xl rounded-sm"
+    >
       
       {/* Header section tracking standard design layout parameters */}
       <div className="border-b border-terminal-dark pb-3 flex items-center justify-between">
@@ -74,7 +77,7 @@ function VideoReelContent({ animConfig }: SharedViewProps) {
       </div>
 
       {/* Video Framing Window */}
-      <div className="w-full flex-1 bg-zinc-950 border border-zinc-900 rounded-sm overflow-hidden relative group shadow-inner aspect-video">
+      <div className="w-full bg-zinc-950 border border-zinc-900 rounded-sm overflow-hidden relative group shadow-inner aspect-video">
         <iframe
           src="https://drive.google.com/file/d/1dUt4OFpOr7bwlXh3r82P6rVtqUZURTDt/preview"
           className="absolute top-0 left-0 w-full h-full border-none opacity-95 group-hover:opacity-100 transition-opacity duration-300"

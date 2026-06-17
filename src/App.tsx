@@ -74,7 +74,7 @@ function VideoReelContent({ animConfig }: SharedViewProps) {
       </div>
 
       {/* Video Framing Window */}
-      <div className="w-full flex-1 min-h-[300px] md:min-h-[400px] bg-zinc-950 border border-zinc-900 rounded-sm overflow-hidden relative flex items-center justify-center group shadow-inner">
+
         <div className="w-full flex-1 min-h-[300px] md:min-h-[400px] bg-zinc-950 border border-zinc-900 rounded-sm overflow-hidden relative flex items-center justify-center group shadow-inner">
           <iframe
             src="https://drive.google.com/file/d/1dUt4OFpOr7bwlXh3r82P6rVtqUZURTDt/preview"
@@ -84,7 +84,7 @@ function VideoReelContent({ animConfig }: SharedViewProps) {
             title="Design Reel"
           />
         </div>
-      </div>
+
     </motion.div>
   );
 }

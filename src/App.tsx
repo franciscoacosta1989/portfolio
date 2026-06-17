@@ -75,14 +75,15 @@ function VideoReelContent({ animConfig }: SharedViewProps) {
 
       {/* Video Framing Window */}
       <div className="w-full flex-1 min-h-[300px] md:min-h-[400px] bg-zinc-950 border border-zinc-900 rounded-sm overflow-hidden relative flex items-center justify-center group shadow-inner">
-        <video 
-          src="https://drive.google.com/file/d/1dUt4OFpOr7bwlXh3r82P6rVtqUZURTDt/view?usp=drive_link" 
-          controls
-          preload="metadata"
-          className="w-full h-full object-contain opacity-95 group-hover:opacity-100 transition-opacity duration-300"
-        >
-          Your browser does not support the video tag.
-        </video>
+        <div className="w-full flex-1 min-h-[300px] md:min-h-[400px] bg-zinc-950 border border-zinc-900 rounded-sm overflow-hidden relative flex items-center justify-center group shadow-inner">
+          <iframe
+            src="https://drive.google.com/file/d/1dUt4OFpOr7bwlXh3r82P6rVtqUZURTDt/preview"
+            className="w-full h-full border-none object-contain opacity-95 group-hover:opacity-100 transition-opacity duration-300"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            title="Design Reel"
+          />
+        </div>
       </div>
     </motion.div>
   );

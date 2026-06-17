@@ -921,11 +921,11 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
 
                 {selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 3' && (
                   <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-<object
-  data="/CS1_Real-TimeDataPipelineDeployment_Engine.pdf#toolbar=1&navpanes=0&scrollbar=1"
-  type="application/pdf"
-  className="w-full h-full border-none bg-zinc-950"
-/>
+                    <object
+                      data="/CS1_Real-TimeDataPipelineDeployment_Engine.zip"
+                      type="application/zip"
+                      className="w-full h-full border-none bg-zinc-950"
+                    />
                   </div>
                 )}
 

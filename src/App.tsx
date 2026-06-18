@@ -407,7 +407,7 @@ const ACADEMIC_LABS: AcademicLabItem[] = [
         title1: "Problem",
         description1: 'Small Office/Home Office (SOHO) networks face critical vulnerabilities and operational risks when deploying default device configurations, lacking proper IP subnetting architecture, and omitting strict access control mechanisms like MAC filtering to prevent unauthorized connections.',
         title2: "Solution",
-        description2: 'A secure network infrastructure designed and validated within a virtualized Hyper-V environment using Microsoft Visio architectural blueprints. It implements custom IPv4 addressing schemes, optimized subnetting for efficient data routing, connectivity testing, and robust wireless security strategies—including administrative credential overrides and strict MAC address filtering—to establish a resilient, authenticated network perimeter.',
+        description2: 'A secure network infrastructure designed and validated within a virtualized Hyper-V environment using Microsoft Visio architectural blueprints. It implements custom IPv4 addressing schemes, optimized subnetting for efficient data routing, connectivity testing, and robust wireless security strategies to establish a resilient, authenticated network perimeter.',
         documentSrc: academic_lab_11
       }
     ]

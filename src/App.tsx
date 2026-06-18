@@ -56,7 +56,7 @@ function AboutContent({ animConfig }: SharedViewProps) {
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
         Most recently, I architected a C#/.NET system to automate real-time data ingestion for 40+ national stations, replacing manual workflows with a robust, scalable middleware layer. I specialize in designing modular frameworks that ensure precision and high-fidelity output under live-air pressure, utilizing real-time visualization tools.
-        Whether I am architecting global-scale live ingest pipelines or designing high-reliability software for enterprise systems, my focus is always on creating efficient, sustainable architecture that scales. I am eager to apply my background in distributed systems and live-data automation to new, complex engineering challenges.
+        Whether I am architecting highly scalable live data pipelines or designing high-reliability software for enterprise systems, my focus is always on creating efficient, sustainable architecture that scales. I am eager to apply my background in distributed systems and live-data automation to new, complex engineering challenges.
       </p>
 
     </motion.div>

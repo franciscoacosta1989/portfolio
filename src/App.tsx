@@ -575,7 +575,7 @@ const CASE_STUDIES: CaseStudyItem[] = [
       },
       {
         title: "Impact",
-        description: '\n The new workflow empowers a lean production team to deliver high-value content without the overhead or budget of a traditional newscast. New York Live successfully brings premium lifestyle programming to the New York metropolitan area with maximum efficiency.',
+        description: 'The new workflow empowers a lean production team to deliver high-value content without the overhead or budget of a traditional newscast. New York Live successfully brings premium lifestyle programming to the New York metropolitan area with maximum efficiency.',
         imageSrc: case_study_4_impact
       }
     ]

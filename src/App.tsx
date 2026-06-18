@@ -15,7 +15,7 @@ import case_study_3_impact from './assets/case_studies/Special_Show_Slide_3.jpg'
 import case_study_4_problem from './assets/case_studies/NYL_Slide_1.jpg';
 import case_study_4_solution from './assets/case_studies/NYL_Slide_2.jpg';
 import case_study_4_impact from './assets/case_studies/NYL_Slide_3.jpg';
-import academic_lab_1 from './assets/academic_labs/AL1_Equiptment_checkout_system.pdf';
+import academic_lab_1 from './assets/academic_labs/AL1_Equipment_checkout_system.pdf';
 import academic_lab_2 from './assets/academic_labs/AL2_electronic_health_record_protection_resilience_recovery.pdf';
 import academic_lab_3 from './assets/academic_labs/AL3_java_based_application_landscape.pdf';
 import academic_lab_4 from './assets/academic_labs/AL4_fundamentals_of_infrastructure_security.pdf';
@@ -63,7 +63,7 @@ function AboutContent({ animConfig }: SharedViewProps) {
   );
 }
 
-//============================================// Motion GraphicsPage //============================================//
+//============================================// Motion Graphics Page //============================================//
 function VideoReelContent({ animConfig }: SharedViewProps) {
   return (
     <motion.div {...animConfig} className="bg-black/50 border border-terminal-dark p-6 md:p-8 space-y-6 shadow-2xl h-full flex flex-col justify-between">
@@ -95,7 +95,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
 
         <div className="text-center">
           <h4 className="text-base font-bold text-terminal text-[28px] tracking-wider">FRANCISCO ACOSTA</h4>
-          <p className="text-white text text-[16px] mt-1">franciscoacosta1989@gmail.com {"\u00A0"}| {"\u00A0"}682-313-6403 {"\u00A0"}|{"\u00A0"} Fort Worth, TX</p>
+          <p className="text-white text-[16px] mt-1">franciscoacosta1989@gmail.com {"\u00A0"}| {"\u00A0"}682-313-6403 {"\u00A0"}|{"\u00A0"} Fort Worth, TX</p>
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-3 py-2">
@@ -111,7 +111,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
           {/* Skills Section */}
           <p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider">Skills</p>
           <div className="space-y-3">
-            <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white-text text-[16px]">
+            <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
               <span>Technical Skills</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
@@ -120,7 +120,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
           </div>
 
           <div className="space-y-3">
-            <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white-text text-[16px]">
+            <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
               <span>Languages</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
@@ -129,20 +129,20 @@ function ResumeContent({ animConfig }: SharedViewProps) {
           </div>
 
           <div className="space-y-3">
-            <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white-text text-[16px]">
+            <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
               <span>Transferable Skills</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li>Technical Leadership leading cross-functional teams, Requirement Gathering, Standard Operating Procedures (SOPs), Crisis Management and Mentorship.</li>
+              <li>Technical Leadership of cross-functional teams, Requirement Gathering, Standard Operating Procedures (SOPs), Crisis Management and Mentorship.</li>
             </ul>
           </div>
 
           {/* Work Experience */}
           <p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider">Experience: NBCUniversal</p>
           <div className="space-y-3">
-            <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white-text text-[16px]">
+            <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
               <span>Senior Real-Time Systems Developer / Designer</span>
-              <span className="text-white-text text sm:text-[16px]">April 2018 - Present</span>
+              <span className="text-white sm:text-[16px]">April 2018 - Present</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
               <li>Architected a centralized software suite using .NET and C# that streamlined configuration management for mission-critical broadcast infrastructure.</li>
@@ -152,9 +152,9 @@ function ResumeContent({ animConfig }: SharedViewProps) {
           </div>
 
           <div className="space-y-3">
-            <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white-text text-[16px]">
+            <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
               <span>Real-Time Systems Developer / Designer</span>
-              <span className="text-white-text text sm:text-[16px]">July 2011 - April 2018</span>
+              <span className="text-white sm:text-[16px]">July 2011 - April 2018</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
               <li>Increased data accuracy by integrating real-time scripting to automate the link between external data sources and live visual engines.</li>
@@ -163,9 +163,9 @@ function ResumeContent({ animConfig }: SharedViewProps) {
           </div>
 
           <div className="space-y-3">
-            <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white-text text-[16px]">
+            <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
               <span>Independent Contractor</span>
-              <span className="text-white-text text sm:text-[16px]">February 2010 - July 2011</span>
+              <span className="text-white sm:text-[16px]">February 2010 - July 2011</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
               <li>Ensured compliance with digital delivery protocols by developing rigorous technical specifications for web-based advertising assets.</li>
@@ -177,9 +177,9 @@ function ResumeContent({ animConfig }: SharedViewProps) {
         {/* Education */}
         <p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider">Education: DeVry University</p>
         <div className="space-y-3">
-          <div className="flex flex-col sm:flex-row sm:justify-between font-bold ttext-white-text text-[16px]">
+          <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
             <span>B.S. in Computer Information Systems</span>
-            <span className="text-white-text text sm:text-[16px]">July 2023 - October 2026</span>
+            <span className="text-white sm:text-[16px]">July 2023 - October 2026</span>
           </div>
           <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
             <li>Object-Oriented Programming</li>
@@ -194,9 +194,9 @@ function ResumeContent({ animConfig }: SharedViewProps) {
         </div>
 
         <div className="space-y-3">
-          <div className="flex flex-col sm:flex-row sm:justify-between font-bold ttext-white-text text-[16px]">
+          <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
             <span>Additional Credentials</span>
-            <span className="text-white-text text sm:text-[16px]">July 2023 - October 2026</span>
+            <span className="text-white sm:text-[16px]">July 2023 - October 2026</span>
           </div>
           <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
             <li>A.A. in Information Technology (2025)</li>
@@ -310,7 +310,7 @@ const ACADEMIC_LABS: AcademicLabItem[] = [
 
   //============================================// Academic Lab 5 //============================================//
   {
-    name: "Relational Database Management ",
+    name: "Relational Database Management",
     category: "Database",
     slides: [
       {
@@ -575,7 +575,7 @@ const CASE_STUDIES: CaseStudyItem[] = [
       },
       {
         title: "Impact",
-        description: '\n The new workflow empowers a lean production team to deliver high value content without the overhead or budget of a traditional newscast. New York Live successfully brings premium lifestyle programming to the New York metropolitan area with maximum efficiency.',
+        description: '\n The new workflow empowers a lean production team to deliver high-value content without the overhead or budget of a traditional newscast. New York Live successfully brings premium lifestyle programming to the New York metropolitan area with maximum efficiency.',
         imageSrc: case_study_4_impact
       }
     ]
@@ -641,8 +641,8 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
             key={i}
             onClick={() => handleStudySelect(i)}
             className={`p-3 border transition-colors text-[15px] cursor-pointer block ${selectedStudyIndex === i
-                ? 'border-terminal bg-terminal/10'
-                : 'border-zinc-900 bg-zinc-950/40 hover:border-terminal/40'
+              ? 'border-terminal bg-terminal/10'
+              : 'border-zinc-900 bg-zinc-950/40 hover:border-terminal/40'
               }`}
           >
             <p className="text-white font-semibold truncate">{study.name}</p>
@@ -745,7 +745,22 @@ interface RepositoryExplorerProps extends SharedViewProps {
   onSelectFile: (fileName: string | null) => void;
 }
 
+// Map Case Study Zip Archives & Binary Downloads
+const repoArchives = [
+  {
+    fileName: "CS1_Real-TimeDataPipelineDeployment_Engine.zip",
+    labelToken: "CASE_STUDY_PREVIEW: REAL-TIME DATA PIPELINE DEPLOYMENT ENGINE",
+    src: "https://docs.google.com/uc?export=download&id=1q4ZY4hgomN0kojF4GRloIJsrOlSrdDlD"
+  },
+  {
+    fileName: "AL6_payroll_3.zip",
+    labelToken: "LAB_PREVIEW: PAYROLL SYSTEM 3",
+    src: "https://docs.google.com/uc?export=download&id=1H88Gsy_uCMvteV0H2e1FAgSJcxVTy6SO"
+  }
+];
+
 function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: RepositoryExplorerProps) {
+  const archiveFile = repoArchives.find(a => a.labelToken === selectedFile);
   return (
     <motion.div key="tech-repo" {...animConfig} className="border border-terminal-dark bg-black/90 rounded-sm flex flex-col md:flex-row h-[640px] overflow-hidden">
 
@@ -784,15 +799,15 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
             </button>
 
             {/* Lab 6 */}
-            <button onClick={() => onSelectFile('LAB_PREVIEW: PAYROLL SYSTEM 1')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
+            <button onClick={() => onSelectFile('LAB_PREVIEW: PAYROLL SYSTEM 1')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 1' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
               📄 AL6_payroll_system_1.pdf
             </button>
 
-            <button onClick={() => onSelectFile('LAB_PREVIEW: PAYROLL SYSTEM 2')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
+            <button onClick={() => onSelectFile('LAB_PREVIEW: PAYROLL SYSTEM 2')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 2' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
               📄 AL6_payroll_system_2.pdf
             </button>
 
-            <button onClick={() => onSelectFile('LAB_PREVIEW: PAYROLL SYSTEM 3')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
+            <button onClick={() => onSelectFile('LAB_PREVIEW: PAYROLL SYSTEM 3')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 3' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
               📄 AL6_payroll_system_3.zip
             </button>
 
@@ -834,181 +849,182 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           <div className="pl-4 space-y-1">
             {/* Case Study 1 */}
             <button
-              onClick={() => onSelectFile('CASE_STUDY_PREVIEW: REAL-TIME DATE PIPELINE DEPLOYMENT ENGINE')}
-              className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'CASE_STUDY_PREVIEW: REAL-TIME DATE PIPELINE DEPLOYMENT ENGINE' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'
-                }`}>
+              onClick={() => onSelectFile('CASE_STUDY_PREVIEW: REAL-TIME DATA PIPELINE DEPLOYMENT ENGINE')}
+              className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'CASE_STUDY_PREVIEW: REAL-TIME DATA PIPELINE DEPLOYMENT ENGINE'
+                ? 'text-terminal font-bold'
+                : 'text-terminal/70 hover:text-terminal'
+                }`}
+            >
               📄 CS1_Real-TimeDataPipelineDeployment Engine.zip
             </button>
           </div>
         </div>
       </div>
 
-      {/* Right Code Inspector Console - Dynamically parses and previews content formats */}
-      <div className="flex-1 p-6 overflow-y-auto bg-zinc-950/90 text-gray-300 border-t md:border-t-0 border-terminal-dark flex flex-col justify-between text-xs">
-        <div className="flex-1 flex flex-col justify-between">
-          <div>
+      {/* Right Code Inspector Console - Clean Single Viewport */}
+      <div className="flex-1 p-4 overflow-y-auto bg-zinc-950/90 text-gray-300 border-t md:border-t-0 border-terminal-dark flex flex-col justify-between text-xs h-full relative">
+        <div className="flex-1 h-full relative space-y-4">
 
-            {/* Dynamic Engineering Lab Previewer (Problem/Solution + Download format) */}
-            {/* Right Code Inspector Console */}
-            <div className="flex-1 p-0 overflow-hidden bg-zinc-950/90 text-gray-300 border-t md:border-t-0 border-terminal-dark flex flex-col justify-between text-xs h-full relative">
+          {/* EMPTY STATE */}
+          {!selectedFile && (
+            <p className="text-gray-500 text-[20px] pt-2">
+              Select an active file to review.
+            </p>
+          )}
 
-              {/* Main Viewport Content Area */}
-              <div className="flex-1 overflow-y-auto p-4 h-full relative">
-
-                {/* EMPTY STATE */}
-                {!selectedFile && (
-                  <p className="text-gray-500 text-[20px] pt-2">
-                    Select an active file to review.
-                  </p>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: EQUIPMENT CHECKOUT SYSTEM' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data={`${academic_lab_1}#toolbar=1&navpanes=0&scrollbar=1`}
-                      type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
-                  </div>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: ELECTRONIC HEALTH RECORD' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data={`${academic_lab_2}#toolbar=1&navpanes=0&scrollbar=1`}
-                      type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
-                  </div>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: JAVA APPLICATION LANDSCAPE' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data={`${academic_lab_3}#toolbar=1&navpanes=0&scrollbar=1`}
-                      type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
-                  </div>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: INFRASTRUCTURE SECURITY' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data={`${academic_lab_4}#toolbar=1&navpanes=0&scrollbar=1`}
-                      type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
-                  </div>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: RELATIONAL DATABASE' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data={`${academic_lab_5}#toolbar=1&navpanes=0&scrollbar=1`}
-                      type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
-                  </div>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 1' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data={`${academic_lab_6_1}#toolbar=1&navpanes=0&scrollbar=1`}
-                      type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
-                  </div>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 2' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data={`${academic_lab_6_2}#toolbar=1&navpanes=0&scrollbar=1`}
-                      type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
-                  </div>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 3' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <iframe
-                      src="https://drive.google.com/file/d/1H88Gsy_uCMvteV0H2e1FAgSJcxVTy6SO/preview"
-                      className="w-full h-full border-none bg-zinc-950"
-                      allow="autoplay"
-                    />
-                  </div>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: CLOUD COMPUTING' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data={`${academic_lab_7}#toolbar=1&navpanes=0&scrollbar=1`}
-                      type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
-                  </div>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: INFORMATION SECURITY' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data={`${academic_lab_8}#toolbar=1&navpanes=0&scrollbar=1`}
-                      type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
-                  </div>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: LINUX NETWORKING' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data={`${academic_lab_9}#toolbar=1&navpanes=0&scrollbar=1`}
-                      type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
-                  </div>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: TRAFFIC LIGHT CONTROLLER' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data={`${academic_lab_10}#toolbar=1&navpanes=0&scrollbar=1`}
-                      type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
-                  </div>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: NETWORKING FUNDAMENTALS' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data={`${academic_lab_11}#toolbar=1&navpanes=0&scrollbar=1`}
-                      type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
-                  </div>
-                )}
-
-                {selectedFile === 'LAB_PREVIEW: IOT HOME SECURITY' && (
-                  <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
-                    <object
-                      data={`${academic_lab_12}#toolbar=1&navpanes=0&scrollbar=1`}
-                      type="application/pdf"
-                      className="w-full h-full border-none bg-zinc-950"
-                    />
-                  </div>
-                )}
-
+          {/* DYNAMIC DOWNLOAD */}
+          {archiveFile && (
+            <div className="w-full min-h-[250px] flex flex-col justify-between bg-zinc-900/40 rounded-sm border border-terminal-dark/30 p-6 font-mono animate-fadeIn">
+              <div className="space-y-3">
+                <div className="flex items-center gap-2 text-terminal font-bold">
+                    <h3 className="text-sm uppercase tracking-wider">{archiveFile.fileName}</h3>
+                </div>
+                <p className="text-gray-400 font-sans text-[14px] leading-relaxed">
+                  This system file contains compiled production assets, complex business logic processing calculations, or data pipeline orchestration manifests that must be read locally.
+                </p>
+              </div>
+              <div className="pt-6 border-t border-zinc-800/60 mt-4">
+                <a href={archiveFile.src}
+                  className="inline-block px-6 py-2.5 border border-terminal text-terminal text-xs font-bold hover:bg-terminal hover:text-black transition-all tracking-widest rounded-sm uppercase"
+                >
+                  Download Project Files
+                </a>
               </div>
             </div>
+          )}
+
+          {selectedFile === 'LAB_PREVIEW: EQUIPMENT CHECKOUT SYSTEM' && (
+            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+              <object
+                data={`${academic_lab_1}#toolbar=1&navpanes=0&scrollbar=1`}
+                type="application/pdf"
+                className="w-full h-full border-none bg-zinc-950"
+              />
+            </div>
+          )}
+
+          {selectedFile === 'LAB_PREVIEW: ELECTRONIC HEALTH RECORD' && (
+            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+              <object
+                data={`${academic_lab_2}#toolbar=1&navpanes=0&scrollbar=1`}
+                type="application/pdf"
+                className="w-full h-full border-none bg-zinc-950"
+              />
+            </div>
+          )}
+
+          {selectedFile === 'LAB_PREVIEW: JAVA APPLICATION LANDSCAPE' && (
+            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+              <object
+                data={`${academic_lab_3}#toolbar=1&navpanes=0&scrollbar=1`}
+                type="application/pdf"
+                className="w-full h-full border-none bg-zinc-950"
+              />
+            </div>
+          )}
+
+          {selectedFile === 'LAB_PREVIEW: INFRASTRUCTURE SECURITY' && (
+            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+              <object
+                data={`${academic_lab_4}#toolbar=1&navpanes=0&scrollbar=1`}
+                type="application/pdf"
+                className="w-full h-full border-none bg-zinc-950"
+              />
+            </div>
+          )}
+
+          {selectedFile === 'LAB_PREVIEW: RELATIONAL DATABASE' && (
+            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+              <object
+                data={`${academic_lab_5}#toolbar=1&navpanes=0&scrollbar=1`}
+                type="application/pdf"
+                className="w-full h-full border-none bg-zinc-950"
+              />
+            </div>
+          )}
+
+          {selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 1' && (
+            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+              <object
+                data={`${academic_lab_6_1}#toolbar=1&navpanes=0&scrollbar=1`}
+                type="application/pdf"
+                className="w-full h-full border-none bg-zinc-950"
+              />
+            </div>
+          )}
+
+          {selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 2' && (
+            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+              <object
+                data={`${academic_lab_6_2}#toolbar=1&navpanes=0&scrollbar=1`}
+                type="application/pdf"
+                className="w-full h-full border-none bg-zinc-950"
+              />
+            </div>
+          )}
 
 
 
+          {selectedFile === 'LAB_PREVIEW: CLOUD COMPUTING' && (
+            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+              <object
+                data={`${academic_lab_7}#toolbar=1&navpanes=0&scrollbar=1`}
+                type="application/pdf"
+                className="w-full h-full border-none bg-zinc-950"
+              />
+            </div>
+          )}
 
-          </div>
+          {selectedFile === 'LAB_PREVIEW: INFORMATION SECURITY' && (
+            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+              <object
+                data={`${academic_lab_8}#toolbar=1&navpanes=0&scrollbar=1`}
+                type="application/pdf"
+                className="w-full h-full border-none bg-zinc-950"
+              />
+            </div>
+          )}
+
+          {selectedFile === 'LAB_PREVIEW: LINUX NETWORKING' && (
+            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+              <object
+                data={`${academic_lab_9}#toolbar=1&navpanes=0&scrollbar=1`}
+                type="application/pdf"
+                className="w-full h-full border-none bg-zinc-950"
+              />
+            </div>
+          )}
+
+          {selectedFile === 'LAB_PREVIEW: TRAFFIC LIGHT CONTROLLER' && (
+            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+              <object
+                data={`${academic_lab_10}#toolbar=1&navpanes=0&scrollbar=1`}
+                type="application/pdf"
+                className="w-full h-full border-none bg-zinc-950"
+              />
+            </div>
+          )}
+
+          {selectedFile === 'LAB_PREVIEW: NETWORKING FUNDAMENTALS' && (
+            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+              <object
+                data={`${academic_lab_11}#toolbar=1&navpanes=0&scrollbar=1`}
+                type="application/pdf"
+                className="w-full h-full border-none bg-zinc-950"
+              />
+            </div>
+          )}
+
+          {selectedFile === 'LAB_PREVIEW: IOT HOME SECURITY' && (
+            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+              <object
+                data={`${academic_lab_12}#toolbar=1&navpanes=0&scrollbar=1`}
+                type="application/pdf"
+                className="w-full h-full border-none bg-zinc-950"
+              />
+            </div>
+          )}
+
         </div>
       </div>
     </motion.div>
@@ -1021,7 +1037,6 @@ export default function App() {
   const [hrTab, setHrTab] = useState<HRSubView>('about');
   const [techTab, setTechTab] = useState<TechSubView>('about');
   const [selectedrepositoryFile, setSelectedrepositoryFile] = useState<string | null>(null);
-
 
   const slideInAnimation = {
     initial: { opacity: 0, x: 25 },

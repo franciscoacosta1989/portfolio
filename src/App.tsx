@@ -630,9 +630,9 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
 
   // Case Study Layout + Style
   return (
-    <motion.div key="tech-studies" {...animConfig} className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      {/* Left List Pane */}
-      <div className="lg:col-span-1 bg-black/90 border border-terminal-dark p-4 h-[640px] overflow-y-auto space-y-2">
+    <motion.div key="tech-studies" {...animConfig} className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+      {/* Left List Pane - Dynamic fitting on mobile, locks to fixed view height on large viewports */}
+      <div className="lg:col-span-1 bg-black/90 border border-terminal-dark p-4 h-auto lg:h-[640px] overflow-y-auto space-y-2">
         {CASE_STUDIES.map((study, i) => (
           <div key={i} onClick={() => handleStudySelect(i)} className={`p-2 border transition-colors text-[15px] cursor-pointer ${selectedStudyIndex === i ? 'border-terminal bg-terminal/10' : 'border-zinc-900 bg-zinc-950/40 hover:border-terminal/40'}`}>
             <p className="text-white font-semibold truncate">{study.name}</p>
@@ -642,7 +642,7 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
       </div>
 
       {/* Right Content Slide Viewer */}
-      <div className="lg:col-span-2 bg-black/80 border border-terminal-dark p-6 flex flex-col justify-between h-[640px]">
+      <div className="lg:col-span-2 bg-black/80 border border-terminal-dark p-6 flex flex-col justify-between h-auto lg:h-[640px]">
         {/* Scrollable Content Wrapper - Locks size constraints inside framing */}
         <div ref={contentWrapperRef} className="flex-1 overflow-y-auto pr-2 space-y-4 scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent">
           <div>
@@ -650,14 +650,16 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
               {activeStudy.name}
             </span>
 
-            {/* Expanded Slide Container */}
-            <div className="mt-4 h-[300px] bg-zinc-950 border border-zinc-900 rounded-sm flex flex-col items-center justify-center text-[11px] text-gray-500 p-4 text-center overflow-hidden relative">
-              {activeSlide.imageSrc ? (<img
-                src={activeSlide.imageSrc} // <-- Clean, raw imported module reference
-                alt={activeSlide.title}
-                className="max-w-full max-h-full object-contain border border-terminal-dark/40 shadow-xl"
-              />) : (
-                <div className="flex flex-col items-center justify-center">
+            {/* Expanded Slide Container - Responsive auto height on mobile, rigid height clamp on desktop */}
+            <div className="mt-4 h-auto md:h-[300px] bg-zinc-950 border border-zinc-900 rounded-sm flex flex-col items-center justify-center text-[11px] text-gray-500 p-2 md:p-4 text-center overflow-hidden relative">
+              {activeSlide.imageSrc ? (
+                <img
+                  src={activeSlide.imageSrc} 
+                  alt={activeSlide.title}
+                  className="w-full h-auto md:w-auto md:h-full object-contain border border-terminal-dark/40 shadow-xl"
+                />
+              ) : (
+                <div className="flex flex-col items-center justify-center py-8">
                   <p className="text-terminal font-bold mb-1">[{activeSlide.title}]</p>
                   <p className="max-w-md font-sans text-gray-400 text-xs">Static preview asset payload unmapped.</p>
                 </div>

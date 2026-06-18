@@ -35,7 +35,7 @@ function AboutContent({ animConfig }: SharedViewProps) {
   );
 }
 
-//============================================// Motion GraphicsPage //============================================//
+//============================================// Motion Graphics Page //============================================//
 function VideoReelContent({ animConfig }: SharedViewProps) {
   return (
     <motion.div
@@ -86,7 +86,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
               PDF
             </a>
 
-            {/* WORD (Google Doc) Download Button - Automatically converts & exports as a clean .docx file */}
+            {/* WORD Download Button */}
             <a
               href="https://docs.google.com/document/d/1J3h-zB1RD3pP0SfQHuoGWOBMw7aIfxmT/export?format=doc"
               target="_blank"
@@ -739,7 +739,7 @@ interface RepositoryExplorerProps extends SharedViewProps {
 
 function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: RepositoryExplorerProps) {
 
-  // 1. Dynamically transform the raw ACADEMIC_LABS array data into repository files
+  // Dynamically transform the raw ACADEMIC_LABS array data into repository files
   const repoLabs = ACADEMIC_LABS.map((lab, index) => {
     // Generate a clean mock file system string (e.g. AL1_equipment_checkout_system.pdf)
     const mockFileName = `AL${index + 1}_${lab.name.toLowerCase().replace(/ /g, '_').replace(/,/g, '')}.pdf`;
@@ -754,7 +754,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
     };
   });
 
-  // 2. Map your Case Study Zip Archives
+  // Map Case Study Zip Archives
   const repoArchives = [
     {
       fileName: "CS1_Real-TimeDataPipelineDeployment_Engine.zip",
@@ -764,7 +764,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
     }
   ];
 
-  // 3. Evaluate which file data frame is active based on selection tokens
+  // Evaluate which file data frame is active based on selection tokens
   const activeLab = repoLabs.find(l => l.labelToken === selectedFile);
   const activeArchive = repoArchives.find(c => c.labelToken === selectedFile);
 
@@ -820,7 +820,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
             </div>
           )}
 
-          {/* INTERNAL PDF VIEWER FRAME (Loads Google Drive Document directly inside your site) */}
+          {/* INTERNAL PDF VIEWER FRAME */}
           {selectedFile && activeLab && (
             <iframe
               src={activeLab.src}
@@ -830,7 +830,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
             />
           )}
 
-          {/* CASE STUDY ZIP DOWNLOAD MESSAGE (Since zips can't display a text sheet preview) */}
+          {/* CASE STUDY ZIP DOWNLOAD MESSAGE */}
           {selectedFile && activeArchive && (
             <div className="h-full flex flex-col items-center justify-center p-6 space-y-4 text-center font-mono">
               <div className="border border-terminal-dark p-6 bg-black/40 rounded-sm max-w-sm space-y-3">
@@ -865,7 +865,6 @@ export default function App() {
   // Find this inside your App() function:
   const [selectedrepositoryFile, setSelectedrepositoryFile] = useState<string | null>(null)
 
-
   const slideInAnimation = {
     initial: { opacity: 0, x: 25 },
     animate: { opacity: 1, x: 0 },
@@ -885,7 +884,6 @@ export default function App() {
       <div
         className="fixed inset-0 bg-cover bg-center transition-all duration-1000 ease-out z-0"
         style={{
-          // This specific structure forces Google's raw CDN edge cache to bypass download-origin blocks
           backgroundImage: `url("https://lh3.googleusercontent.com/d/1ATkTGqZmzeGfnUoiD0Fszdixl940KtMb")`,
           filter: view === 'splash' ? 'brightness(0.18) blur(12px)' : 'brightness(0.05) blur(0px)',
           mixBlendMode: 'luminosity'
@@ -975,22 +973,18 @@ export default function App() {
         </AnimatePresence>
 
         {/* FOOTER */}
-        {/* FOOTER CONTAINER */}
         <div className="w-full max-w-6xl mx-auto px-4 md:px-8 mt-auto">
           <div className="w-full h-[1px] bg-terminal-dark/60 mb-4" />
 
           <footer className="pt-2 pb-6 flex flex-col md:flex-row justify-between items-center text-[13px] text-gray-500 gap-4 font-mono">
-            {/* Copyright (Left-aligned on desktop) */}
             <p className="text-center md:text-left order-1">
               © {new Date().getFullYear()} Francisco Acosta
             </p>
 
-            {/* Architecture Specs (Centered on desktop, subtle styling) */}
             <p className="text-center text-gray-400 dark:text-slate-500 text-[11px] md:text-[12px] tracking-tight order-2 max-md:max-w-[280px] leading-relaxed">
               Built with <span className="text-terminal/80 font-semibold">React</span> • Styled via <span className="text-terminal/80 font-semibold">Tailwind</span> • Bundled with <span className="text-terminal/80 font-semibold">Vite</span> • Deployed on <span className="text-terminal/80 font-semibold">Azure</span>
             </p>
 
-            {/* LinkedIn Link (Right-aligned on desktop) */}
             <div className="flex justify-center md:justify-end order-3">
               <a
                 href="https://www.linkedin.com/in/francisco-acosta-tx/"

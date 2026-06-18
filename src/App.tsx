@@ -473,7 +473,6 @@ function AcademicLabsContent({ animConfig }: SharedViewProps) {
             <div className="mt-4 space-y-1">
               <p className="text-[18px] text-terminal leading-relaxed font-sans">{activeSlide.title1}</p>
               <p className="text-[18px] text-gray-300 leading-relaxed font-sans whitespace-pre-line">{activeSlide.description1}</p>
-              <p>{"\u00a0"}</p>
               <p className="text-[18px] text-terminal leading-relaxed font-sans">{activeSlide.title2}</p>
               <p className="text-[18px] text-gray-300 leading-relaxed font-sans whitespace-pre-line">{activeSlide.description2}</p>
             </div>

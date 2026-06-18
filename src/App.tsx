@@ -55,7 +55,7 @@ function AboutContent({ animConfig }: SharedViewProps) {
       </p>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        Most recently, I architected a C#/.NET Windows Service to automate real-time data ingestion for 40+ national stations, replacing manual workflows with a robust, scalable middleware layer. I specialize in designing modular frameworks that ensure precision and high-fidelity output under live-air pressure, utilizing a core technical stack that includes C#/.NET, Python, Java, SQL, and real-time visualization tools.
+        Most recently, I architected a C#/.NET system to automate real-time data ingestion for 40+ national stations, replacing manual workflows with a robust, scalable middleware layer. I specialize in designing modular frameworks that ensure precision and high-fidelity output under live-air pressure, utilizing a core technical stack that includes C#/.NET, Python, Java, SQL, and real-time visualization tools.
         Whether I am architecting global-scale live ingest pipelines or designing high-reliability software for enterprise systems, my focus is always on creating efficient, sustainable architecture that scales. I am eager to apply my background in distributed systems and live-data automation to new, complex engineering challenges.
       </p>
 
@@ -628,24 +628,22 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
     }
   };
 
-  // Case Study Layout + Style
   return (
-    <motion.div 
-      key="tech-studies" 
-      {...animConfig} 
+    <motion.div
+      key="tech-studies"
+      {...animConfig}
       className="flex flex-col lg:flex-row gap-6 items-stretch w-full min-h-0"
     >
-      {/* Left List Pane - Absolutely NO forced heights on mobile. Pure automatic height wrapper. */}
+      {/* Left List Pane */}
       <div className="w-full lg:w-1/3 bg-black/90 border border-terminal-dark p-4 h-auto lg:h-[640px] overflow-y-auto space-y-2 shrink-0">
         {CASE_STUDIES.map((study, i) => (
-          <div 
-            key={i} 
-            onClick={() => handleStudySelect(i)} 
-            className={`p-3 border transition-colors text-[15px] cursor-pointer block ${
-              selectedStudyIndex === i 
-                ? 'border-terminal bg-terminal/10' 
+          <div
+            key={i}
+            onClick={() => handleStudySelect(i)}
+            className={`p-3 border transition-colors text-[15px] cursor-pointer block ${selectedStudyIndex === i
+                ? 'border-terminal bg-terminal/10'
                 : 'border-zinc-900 bg-zinc-950/40 hover:border-terminal/40'
-            }`}
+              }`}
           >
             <p className="text-white font-semibold truncate">{study.name}</p>
             <span className="text-terminal/60 text-[14px] uppercase tracking-wide">{study.category}</span>
@@ -655,10 +653,10 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
 
       {/* Right Content Slide Viewer */}
       <div className="w-full lg:w-2/3 bg-black/80 border border-terminal-dark p-6 flex flex-col justify-between h-auto lg:h-[640px] min-h-0">
-        
+
         {/* Scrollable Content Wrapper */}
-        <div 
-          ref={contentWrapperRef} 
+        <div
+          ref={contentWrapperRef}
           className="flex-1 overflow-y-auto pr-2 space-y-4 min-h-0 scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent"
         >
           <div>
@@ -666,11 +664,11 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
               {activeStudy.name}
             </span>
 
-            {/* Preview Asset Container - Zero vertical gaps on mobile devices */}
+            {/* Preview Asset Container */}
             <div className="mt-4 w-full h-auto lg:h-[300px] bg-zinc-950 border border-zinc-900 rounded-sm flex flex-col items-center justify-center p-2 relative overflow-hidden">
               {activeSlide.imageSrc ? (
                 <img
-                  src={activeSlide.imageSrc} 
+                  src={activeSlide.imageSrc}
                   alt={activeSlide.title}
                   className="w-full h-auto lg:w-auto lg:h-full max-h-[300px] lg:max-h-none object-contain border border-terminal-dark/40 shadow-xl"
                 />
@@ -690,19 +688,19 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
           </div>
         </div>
 
-        {/* Nav Interactive Bar - Stays pinned tightly at the bottom */}
+        {/* Nav Interactive Bar */}
         <div className="flex items-center justify-between border-t border-zinc-900 pt-4 mt-4 bg-transparent shrink-0">
-          <button 
-            onClick={handlePrevSlide} 
-            disabled={currentSlideIndex === 0} 
+          <button
+            onClick={handlePrevSlide}
+            disabled={currentSlideIndex === 0}
             className="px-3 py-1.5 bg-zinc-950 border border-zinc-800 text-[12px] text-terminal hover:text-terminal hover:border-terminal/50 disabled:opacity-30 disabled:hover:text-gray-400 disabled:hover:border-zinc-800 disabled:cursor-not-allowed transition-all font-mono"
           >
             &lt; PREV SECTION
           </button>
 
-          <button 
-            onClick={handleNextSlide} 
-            disabled={currentSlideIndex === activeStudy.slides.length - 1} 
+          <button
+            onClick={handleNextSlide}
+            disabled={currentSlideIndex === activeStudy.slides.length - 1}
             className="px-3 py-1.5 bg-zinc-950 border border-zinc-800 text-[12px] text-terminal hover:text-terminal hover:border-terminal/50 disabled:opacity-30 disabled:hover:text-gray-400 disabled:hover:border-zinc-800 disabled:cursor-not-allowed transition-all font-mono"
           >
             NEXT SECTION &gt;
@@ -712,7 +710,6 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
     </motion.div>
   );
 }
-
 
 //============================================// Case Study Slide Blueprint //============================================//
 interface CaseStudySlideSection {

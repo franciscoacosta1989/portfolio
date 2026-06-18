@@ -653,7 +653,11 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
 
             {/* Expanded Slide Container */}
             <div className="mt-4 h-[300px] bg-zinc-950 border border-zinc-900 rounded-sm flex flex-col items-center justify-center text-[11px] text-gray-500 p-4 text-center overflow-hidden relative">
-              {activeSlide.imageSrc ? (<img src={activeSlide.imageSrc} alt={activeSlide.title} className="max-w-full max-h-full object-contain opacity-90 block" />) : (
+              {activeSlide.imageSrc ? (<img
+                src={activeSlide.imageSrc} // <-- Clean, raw imported module reference
+                alt={activeSlide.title}
+                className="max-w-full max-h-full object-contain border border-terminal-dark/40 shadow-xl"
+              />) : (
                 <div className="flex flex-col items-center justify-center">
                   <p className="text-terminal font-bold mb-1">[{activeSlide.title}]</p>
                   <p className="max-w-md font-sans text-gray-400 text-xs">Static preview asset payload unmapped.</p>

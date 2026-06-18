@@ -529,7 +529,7 @@ const CASE_STUDIES: CaseStudyItem[] = [
       },
       {
         title: "Impact",
-        description: 'Operational Simplicity: \n Users utilize the intuitive interface to instantly map custom streams, define background update intervals, and dynamically pick specific data keys from external URLs without writing a single line of script. \n \n The Result: \n Completely isolated the real-time rendering systems from hazardous data sources, live on-air system crashes and data-induced downtimes down to zero. \n \n The Value: \n Scaled operational efficiency exponentially, transforming a highly sensitive multi-station maintenance hazard into a stream-lined, hardened pipeline that allows a single developer to manage and orchestrate all 40+ station data feeds seamlessly.',
+        description: 'Operational Simplicity: \n Users utilize the intuitive interface to instantly map custom streams, define background update intervals, and dynamically pick specific data keys from external URLs without writing a single line of script. \n \n The Result: \n Completely isolated the real-time rendering systems from hazardous data sources, live on-air system crashes and data-induced downtimes down to zero. \n \n The Value: \n Scaled operational efficiency exponentially, transforming a highly sensitive multi-station maintenance hazard into a streamlined, hardened pipeline that allows a single developer to manage and orchestrate all 40+ station data feeds seamlessly.',
         imageSrc: case_study_2_impact
       }
     ]
@@ -855,7 +855,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
                 : 'text-terminal/70 hover:text-terminal'
                 }`}
             >
-              📄 CS1_Real-TimeDataPipelineDeployment Engine.zip
+              📄 CS1_Real-TimeDataPipelineDeployment_Engine.zip
             </button>
           </div>
         </div>

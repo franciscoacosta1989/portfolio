@@ -1,21 +1,5 @@
 import { useState } from 'react';
 import { motion, AnimatePresence, type MotionProps } from 'framer-motion';
-
-//============================================// Import imagery, movies & files //============================================//
-import bgImage from './assets/desktopBkg.jpg';
-import case_study_1_impact from './assets/case_studies/DynamicCanvasDeploymentEngine_TheImpact.jpg';
-import case_study_1_innovation from './assets/case_studies/DynamicCanvasDeploymentEngine_TheInnovation.jpg';
-import case_study_1_problem from './assets/case_studies/DynamicCanvasDeploymentEngine_TheProblem.jpg';
-import case_study_2_problem from './assets/case_studies/ADM_Slide_1.jpg';
-import case_study_2_innovation from './assets/case_studies/ADM_Slide_2.jpg';
-import case_study_2_impact from './assets/case_studies/ADM_Slide_3.jpg';
-import case_study_3_problem from './assets/case_studies/Special_Show_Slide_1.jpg';
-import case_study_3_solution from './assets/case_studies/Special_Show_Slide_2.jpg';
-import case_study_3_impact from './assets/case_studies/Special_Show_Slide_3.jpg';
-import case_study_4_problem from './assets/case_studies/NYL_Slide_1.jpg';
-import case_study_4_solution from './assets/case_studies/NYL_Slide_2.jpg';
-import case_study_4_impact from './assets/case_studies/NYL_Slide_3.jpg';
-
 import React from 'react';
 
 //============================================// Navigation Options //============================================//
@@ -92,9 +76,35 @@ function ResumeContent({ animConfig }: SharedViewProps) {
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-3 py-2">
           <div className="flex flex-wrap gap-6 justify-center">
-            <a href="/Resume/Francisco_Acosta_Resume_2026.pdf" download className="px-7 py-1 border border-terminal text-terminal font-bold text-[16px] hover:bg-terminal hover:text-black transition-all duration-200 uppercase tracking-wider rounded-sm text-center">PDF</a>
-            <a href="/Resume/Francisco_Acosta_Resume_2026.docx" download className="px-7 py-1 border border-terminal text-terminal font-bold text-[16px] hover:bg-terminal hover:text-black transition-all duration-200 uppercase tracking-wider rounded-sm text-center">WORD</a>
-            <a href="/Resume/Francisco_Acosta_Resume_2026.txt" download className="px-7 py-1 border border-terminal text-terminal font-bold text-[16px] hover:bg-terminal hover:text-black transition-all duration-200 uppercase tracking-wider rounded-sm text-center">TXT</a>
+            {/* PDF Download Button */}
+            <a
+              href="https://docs.google.com/uc?export=download&id=18tww4X_2CGaYJ6FSpbZlO_kh_AlTAZpz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-7 py-1 border border-terminal text-terminal font-bold text-[16px] hover:bg-terminal hover:text-black transition-all duration-200 uppercase tracking-wider rounded-sm text-center cursor-pointer shadow-[0_0_15px_rgba(0,255,102,0.02)] hover:shadow-[0_0_15px_rgba(0,255,102,0.15)]"
+            >
+              PDF
+            </a>
+
+            {/* WORD (Google Doc) Download Button - Automatically converts & exports as a clean .docx file */}
+            <a
+              href="https://docs.google.com/document/d/1J3h-zB1RD3pP0SfQHuoGWOBMw7aIfxmT/export?format=doc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-7 py-1 border border-terminal text-terminal font-bold text-[16px] hover:bg-terminal hover:text-black transition-all duration-200 uppercase tracking-wider rounded-sm text-center cursor-pointer shadow-[0_0_15px_rgba(0,255,102,0.02)] hover:shadow-[0_0_15px_rgba(0,255,102,0.15)]"
+            >
+              WORD
+            </a>
+
+            {/* TXT Download Button */}
+            <a
+              href="https://docs.google.com/uc?export=download&id=1t3yjl1qVJCgPrZDZPkYuksHku6KHEVOw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-7 py-1 border border-terminal text-terminal font-bold text-[16px] hover:bg-terminal hover:text-black transition-all duration-200 uppercase tracking-wider rounded-sm text-center cursor-pointer shadow-[0_0_15px_rgba(0,255,102,0.02)] hover:shadow-[0_0_15px_rgba(0,255,102,0.15)]"
+            >
+              TXT
+            </a>
           </div>
         </div>
 
@@ -490,17 +500,17 @@ const CASE_STUDIES: CaseStudyItem[] = [
       {
         title: "The Problem",
         description: "The Workflow: \n NBC Universal’s centralized graphics hub (The Arthouse, 20 artists) services 40+ local stations, spanning multiple daily newscasts and special programming across the nation. \n \n The Scaling Issue: \n Graphics must be mapped for unique screens and specific anchor blocking (e.g., standing vs. sitting at the desk). \n \n The Bottleneck: \n This matrix required 350+ custom, non-shareable variations that created an unsustainable workload for a single creative team.",
-        imageSrc: case_study_1_problem
+        imageSrc: "https://drive.google.com/file/d/1-kmlGtvrpVVXbuLSn-Pol_5o-tytxwJT/view?usp=drive_link"
       },
       {
         title: "The Innovation",
         description: 'The Concept: \n Developed a single, unified graphic template capable of adapting to any station’s physical set layout with the associated graphic named "SetU". \n \n The Architecture: \n The template splits assets into independent foreground (text/imagery) and background layers. \n \n The Technology: \n Built a custom data pipeline that dynamically adjusts the scale, positioning, and mapping of these layers in real-time within the live broadcasting environment.',
-        imageSrc: case_study_1_innovation
+        imageSrc: "https://drive.google.com/file/d/1pdxRzJqWc8EzT0pIpcIsLn45Z9-cHiHu/view?usp=drive_link"
       },
       {
         title: "The Impact",
         description: 'Operational Simplicity: \n Producers simply assign the "SetU" asset to a predefined studio variation that automatically matches the monitor and the planned camera shot. \n \n The Result: \n Transformed 350+ custom assets into a single, universal graphic ecosystem. \n \n The Value: \n Content is now 100% shareable across all 40+ stations, drastically reducing artist turnaround times and eliminating repetitive manual resizing.',
-        imageSrc: case_study_1_impact
+        imageSrc: "https://drive.google.com/file/d/1yusLc0tyfPfV8PzWyW6EESrm_s_Mv3V8/view?usp=drive_link"
       }
     ]
   },
@@ -513,17 +523,17 @@ const CASE_STUDIES: CaseStudyItem[] = [
       {
         title: "The Problem",
         description: "The Workflow: \n NBC Universal’s centralized local news departments relied on ingestion of external live data feeds (covering sports, politics, weather, and stocks) that were fed raw and unfiltered directly into live, real-time graphics engines. \n \n The Complexity: \n This fragile pipeline spanned across 40+ independent local stations, each managing localized variations of these specialized data streams with zero shared fallback coverage. \n \n The Reliability Issue: Unpredictable external payloads or missing schemas caused frequent real-time renderer crashes. A single breaking data mutation required manual intervention across individual station nodes, triggering severe on-air downtime. \n \n The Bottleneck: \n Managing this matrix required dedicated, continuous oversight to prevent domino-effect failures. One localized mishap threatened to desynchronize critical news streams.",
-        imageSrc: case_study_2_problem
+        imageSrc: "https://drive.google.com/file/d/10v8zEqo3xuKHQxDh7us6SrKGCjQyYE4t/view?usp=drive_link"
       },
       {
         title: "The Innovation",
         description: 'The Concept: \n  Engineered the "Arthouse Data Manager", a centralized management platform composed of a high-performance Windows GUI application paired with a custom Windows Service. \n \n The Architecture:  \n The system uses a multi-tiered file isolation strategy. The service ingests live data and writes out three distinct staging files: a raw text cache, a deeply sanitized/validated replica that strips null values and enforces range bounds (e.g., discarding anomalous weather data >130°F), and a final optimized file safe for the real-time systems to consume. \n \n The Technology: \n Built using C#, WPF, .NET, and XAML for the interface, which dynamically parses external data models into interactive GUI drop-downs. Users can graphically map headers, custom delimiters, and targeted data points to export saved JSON configurations. The UI directly interfaces with the Windows Service Controller API, providing programmatic Start, Stop, and Restart hooks for any linked system process.',
-        imageSrc: case_study_2_innovation
+        imageSrc: "https://drive.google.com/file/d/1lT4y3eY6Qf920NtN6-tGfMPy9OxZMHZQ/view?usp=drive_link"
       },
       {
         title: "The Impact",
         description: 'Operational Simplicity: \n Users utilize the intuitive interface to instantly map custom streams, define background update intervals, and dynamically pick specific data keys from external URLs without writing a single line of script. \n \n The Result: \n Completely isolated the real-time rendering systems from hazardous data sources, live on-air system crashes and data-induced downtimes down to zero. \n \n The Value: \n Scaled operational efficiency exponentially, transforming a highly sensitive multi-station maintenance hazard into a stream-lined, hardened pipeline that allows a single developer to manage and orchestrate all 40+ station data feeds seamlessly.',
-        imageSrc: case_study_2_impact
+        imageSrc: "https://drive.google.com/file/d/1DHWjgRjMLAb6_hKZk0BcsX23apuunl9t/view?usp=drive_link"
       }
     ]
   },
@@ -536,17 +546,17 @@ const CASE_STUDIES: CaseStudyItem[] = [
       {
         title: "The Problem",
         description: "NBC Philadelphia required a scalable, real-time template framework for its live coverage of the 250th U.S. Anniversary at the Wawa Welcome America festival. The production demanded a highly versatile suite of keyable graphics and lower thirds to overlay live field reporter feeds. However, the legacy workflow relied on production teams manually searching, loading, and configuring independent graphics assets in the real-time engine, introducing severe operational bottlenecks and human-error risks during a fast-paced live broadcast event.",
-        imageSrc: case_study_3_problem
+        imageSrc: "https://drive.google.com/file/d/1TdpvliHlJtFICtxjzvMm-JU6SqO9mbnu/view?usp=drive_link"
       },
       {
         title: "The Solution",
         description: "Implemented a centralized, data-driven template engine that condensed a multitude of graphic variations into a single unified scene architecture. By integrating logic and an optimized data stream, the system exposes a single top-level control interface (dropdown state selector) for the control room. The template acts as a smart state machine, dynamically parsing data binding arrays to instantaneously swap texture maps, keyable visibility fields, and geometric layouts behind the scenes based on the producer's selection.",
-        imageSrc: case_study_3_solution
+        imageSrc: "https://drive.google.com/file/d/1rZIB_drfYvSz7DPoosISifkYjGDL3vHu/view?usp=drive_link"
       },
       {
         title: "The Impact",
         description: 'By decoupling the underlying data logic from the visual assets, this framework completely eliminated search delays and runtime setup friction in the newsroom. Producers were able to orchestrate a complex, rapid-fire programming lineup without operational overhead or configuration downtime. The automated system ensured absolute stability for the live graphics pipeline, delivering a highly valued broadcast experience to millions of viewers across the Philadelphia region.',
-        imageSrc: case_study_3_impact
+        imageSrc: "https://drive.google.com/file/d/1DXq50nGJV0D3ktkHxMrc5-5BRY0HWzOU/view?usp=drive_link"
       }
     ]
   },
@@ -559,17 +569,17 @@ const CASE_STUDIES: CaseStudyItem[] = [
       {
         title: "The Problem",
         description: "New York Live required a robust, efficient suite of graphics templates tailored for a lean production team. Lacking the heavy staffing of a traditional newscast, the show needed a streamlined workflow that allowed a single user to build and manage all on-air graphics quickly and effortlessly.",
-        imageSrc: case_study_4_problem
+        imageSrc: "https://drive.google.com/file/d/12TbQjbdmwVFx5aojA_QBGPQu75A5e6_B/view?usp=drive_link"
       },
       {
         title: "The Solution",
         description: "Developed a minimal yet powerful 'smart template' system to support the entire broadcast. By consolidating multiple manual-entry layouts into adaptive templates, the system now automatically generates the correct formatting based on the user's input.",
-        imageSrc: case_study_4_solution
+        imageSrc: "https://drive.google.com/file/d/1bBCGcDzvJ0E5hGhLixQcmCVFlJ2oPMNu/view?usp=drive_link"
       },
       {
         title: "The Impact",
         description: 'The new workflow empowers a lean production team to deliver high value content without the overhead or budget of a traditional newscast. New York Live successfully brings premium lifestyle programming to the New York metropolitan area with maximum efficiency.',
-        imageSrc: case_study_4_impact
+        imageSrc: "https://drive.google.com/file/d/1dGtL3SrQ_GVUx2fWAZC4fPO49kBpdrrj/view?usp=drive_link"
       }
     ]
   }
@@ -872,8 +882,15 @@ export default function App() {
   return (
     <div className="relative min-h-screen bg-terminal-bg text-gray-200 selection:bg-terminal selection:text-black antialiased font-mono">
 
-      {/* Background */}
-      <div className="fixed inset-0 bg-cover bg-center transition-all duration-1000 ease-out z-0" style={{ backgroundImage: `url(${bgImage})`, filter: view === 'splash' ? 'brightness(0.18) blur(12px)' : 'brightness(0.05) blur(0px)', mixBlendMode: 'luminosity' }} />
+<div 
+  className="fixed inset-0 bg-cover bg-center transition-all duration-1000 ease-out z-0" 
+  style={{ 
+    // This specific structure forces Google's raw CDN edge cache to bypass download-origin blocks
+    backgroundImage: `url("https://lh3.googleusercontent.com/d/1ATkTGqZmzeGfnUoiD0Fszdixl940KtMb")`, 
+    filter: view === 'splash' ? 'brightness(0.18) blur(12px)' : 'brightness(0.05) blur(0px)', 
+    mixBlendMode: 'luminosity' 
+  }} 
+/>
 
       {/* INTERACTIVE CONTAINER FRAMEWORK */}
       <div className="relative z-10 min-h-screen flex flex-col justify-between">
@@ -890,7 +907,7 @@ export default function App() {
             <motion.div key="hr-workspace" className="flex-1 flex flex-col w-full max-w-5xl mx-auto p-4 md:p-8" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
               <header className="border-b border-terminal-dark pb-4 mb-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-black/40 p-4 rounded-sm">
                 <div>
-                  <button onClick={() => setView('splash')} className="text-[10px] border border-terminal-dark/60 px-2 py-0.5 rounded text-gray-400 hover:text-terminal hover:border-terminal transition-colors uppercase tracking-wider mb-2 block cursor-pointer">
+                  <button onClick={() => setView('splash')} className="text-[14px] border border-terminal-dark/60 px-2 py-0.5 rounded text-gray-400 hover:text-terminal hover:border-terminal transition-colors uppercase tracking-wider mb-2 block cursor-pointer">
                     ← Choose Experience
                   </button>
                 </div>
@@ -918,7 +935,7 @@ export default function App() {
             <motion.div key="tech-workspace" className="flex-1 flex flex-col w-full max-w-6xl mx-auto p-4 md:p-8" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
               <header className="pb-4 mb-2 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 bg-black/40 rounded-sm">
                 <div>
-                  <button onClick={() => setView('splash')} className="text-[15px] border border-terminal-dark/60 px-2 py-0.5 rounded text-gray-400 hover:text-terminal hover:border-terminal transition-colors uppercase tracking-wider mb-2 block cursor-pointer">
+                  <button onClick={() => setView('splash')} className="text-[14px] border border-terminal-dark/60 px-2 py-0.5 rounded text-gray-400 hover:text-terminal hover:border-terminal transition-colors uppercase tracking-wider mb-2 block cursor-pointer">
                     ← Choose Experience
                   </button>
                 </div>

@@ -882,15 +882,15 @@ export default function App() {
   return (
     <div className="relative min-h-screen bg-terminal-bg text-gray-200 selection:bg-terminal selection:text-black antialiased font-mono">
 
-<div 
-  className="fixed inset-0 bg-cover bg-center transition-all duration-1000 ease-out z-0" 
-  style={{ 
-    // This specific structure forces Google's raw CDN edge cache to bypass download-origin blocks
-    backgroundImage: `url("https://lh3.googleusercontent.com/d/1ATkTGqZmzeGfnUoiD0Fszdixl940KtMb")`, 
-    filter: view === 'splash' ? 'brightness(0.18) blur(12px)' : 'brightness(0.05) blur(0px)', 
-    mixBlendMode: 'luminosity' 
-  }} 
-/>
+      <div
+        className="fixed inset-0 bg-cover bg-center transition-all duration-1000 ease-out z-0"
+        style={{
+          // This specific structure forces Google's raw CDN edge cache to bypass download-origin blocks
+          backgroundImage: `url("https://lh3.googleusercontent.com/d/1ATkTGqZmzeGfnUoiD0Fszdixl940KtMb")`,
+          filter: view === 'splash' ? 'brightness(0.18) blur(12px)' : 'brightness(0.05) blur(0px)',
+          mixBlendMode: 'luminosity'
+        }}
+      />
 
       {/* INTERACTIVE CONTAINER FRAMEWORK */}
       <div className="relative z-10 min-h-screen flex flex-col justify-between">

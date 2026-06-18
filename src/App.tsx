@@ -630,11 +630,23 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
 
   // Case Study Layout + Style
   return (
-    <motion.div key="tech-studies" {...animConfig} className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
-      {/* Left List Pane - Dynamic fitting on mobile, locks to fixed view height on large viewports */}
-      <div className="lg:col-span-1 bg-black/90 border border-terminal-dark p-4 h-auto lg:h-[640px] overflow-y-auto space-y-2">
+    <motion.div 
+      key="tech-studies" 
+      {...animConfig} 
+      className="flex flex-col lg:flex-row gap-6 items-stretch w-full min-h-0"
+    >
+      {/* Left List Pane - Absolutely NO forced heights on mobile. Pure automatic height wrapper. */}
+      <div className="w-full lg:w-1/3 bg-black/90 border border-terminal-dark p-4 h-auto lg:h-[640px] overflow-y-auto space-y-2 shrink-0">
         {CASE_STUDIES.map((study, i) => (
-          <div key={i} onClick={() => handleStudySelect(i)} className={`p-2 border transition-colors text-[15px] cursor-pointer ${selectedStudyIndex === i ? 'border-terminal bg-terminal/10' : 'border-zinc-900 bg-zinc-950/40 hover:border-terminal/40'}`}>
+          <div 
+            key={i} 
+            onClick={() => handleStudySelect(i)} 
+            className={`p-3 border transition-colors text-[15px] cursor-pointer block ${
+              selectedStudyIndex === i 
+                ? 'border-terminal bg-terminal/10' 
+                : 'border-zinc-900 bg-zinc-950/40 hover:border-terminal/40'
+            }`}
+          >
             <p className="text-white font-semibold truncate">{study.name}</p>
             <span className="text-terminal/60 text-[14px] uppercase tracking-wide">{study.category}</span>
           </div>
@@ -642,45 +654,57 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
       </div>
 
       {/* Right Content Slide Viewer */}
-      <div className="lg:col-span-2 bg-black/80 border border-terminal-dark p-6 flex flex-col justify-between h-auto lg:h-[640px]">
-        {/* Scrollable Content Wrapper - Locks size constraints inside framing */}
-        <div ref={contentWrapperRef} className="flex-1 overflow-y-auto pr-2 space-y-4 scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent">
+      <div className="w-full lg:w-2/3 bg-black/80 border border-terminal-dark p-6 flex flex-col justify-between h-auto lg:h-[640px] min-h-0">
+        
+        {/* Scrollable Content Wrapper */}
+        <div 
+          ref={contentWrapperRef} 
+          className="flex-1 overflow-y-auto pr-2 space-y-4 min-h-0 scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent"
+        >
           <div>
             <span className="text-terminal text-[15px] font-bold block border-b border-terminal-dark pb-2 uppercase tracking-wider">
               {activeStudy.name}
             </span>
 
-            {/* Expanded Slide Container - Responsive auto height on mobile, rigid height clamp on desktop */}
-            <div className="mt-4 h-auto md:h-[300px] bg-zinc-950 border border-zinc-900 rounded-sm flex flex-col items-center justify-center text-[11px] text-gray-500 p-2 md:p-4 text-center overflow-hidden relative">
+            {/* Preview Asset Container - Zero vertical gaps on mobile devices */}
+            <div className="mt-4 w-full h-auto lg:h-[300px] bg-zinc-950 border border-zinc-900 rounded-sm flex flex-col items-center justify-center p-2 relative overflow-hidden">
               {activeSlide.imageSrc ? (
                 <img
                   src={activeSlide.imageSrc} 
                   alt={activeSlide.title}
-                  className="w-full h-auto md:w-auto md:h-full object-contain border border-terminal-dark/40 shadow-xl"
+                  className="w-full h-auto lg:w-auto lg:h-full max-h-[300px] lg:max-h-none object-contain border border-terminal-dark/40 shadow-xl"
                 />
               ) : (
-                <div className="flex flex-col items-center justify-center py-8">
-                  <p className="text-terminal font-bold mb-1">[{activeSlide.title}]</p>
+                <div className="flex flex-col items-center justify-center py-6">
+                  <p className="text-terminal font-bold mb-1 text-[11px]">[{activeSlide.title}]</p>
                   <p className="max-w-md font-sans text-gray-400 text-xs">Static preview asset payload unmapped.</p>
                 </div>
               )}
             </div>
 
             {/* Slide Layout + Info */}
-            <div className="mt-4 space-y-1">
-              <p className="text-[22px] text-terminal leading-relaxed font-sans">{activeSlide.title}</p>
-              <p className="text-[18px] text-gray-300 leading-relaxed font-sans whitespace-pre-line">{activeSlide.description}</p>
+            <div className="mt-4 space-y-2">
+              <p className="text-[22px] text-terminal leading-relaxed font-sans font-medium">{activeSlide.title}</p>
+              <p className="text-[16px] md:text-[18px] text-gray-300 leading-relaxed font-sans whitespace-pre-line">{activeSlide.description}</p>
             </div>
           </div>
         </div>
 
-        {/* Nav Interactive Bar - Pinned outside the scrollable view at the absolute bottom */}
-        <div className="flex items-center justify-between border-t border-zinc-900 pt-4 mt-4 bg-black/10">
-          <button onClick={handlePrevSlide} disabled={currentSlideIndex === 0} className="px-3 py-1 bg-zinc-950 border border-zinc-800 text-[12px] text-terminal hover:text-terminal hover:border-terminal/50 disabled:opacity-30 disabled:hover:text-gray-400 disabled:hover:border-zinc-800 disabled:cursor-not-allowed transition-all font-mono">
+        {/* Nav Interactive Bar - Stays pinned tightly at the bottom */}
+        <div className="flex items-center justify-between border-t border-zinc-900 pt-4 mt-4 bg-transparent shrink-0">
+          <button 
+            onClick={handlePrevSlide} 
+            disabled={currentSlideIndex === 0} 
+            className="px-3 py-1.5 bg-zinc-950 border border-zinc-800 text-[12px] text-terminal hover:text-terminal hover:border-terminal/50 disabled:opacity-30 disabled:hover:text-gray-400 disabled:hover:border-zinc-800 disabled:cursor-not-allowed transition-all font-mono"
+          >
             &lt; PREV SECTION
           </button>
 
-          <button onClick={handleNextSlide} disabled={currentSlideIndex === activeStudy.slides.length - 1} className="px-3 py-1 bg-zinc-950 border border-zinc-800 text-[12px] text-terminal hover:text-terminal hover:border-terminal/50 disabled:opacity-30 disabled:hover:text-gray-400 disabled:hover:border-zinc-800 disabled:cursor-not-allowed transition-all font-mono">
+          <button 
+            onClick={handleNextSlide} 
+            disabled={currentSlideIndex === activeStudy.slides.length - 1} 
+            className="px-3 py-1.5 bg-zinc-950 border border-zinc-800 text-[12px] text-terminal hover:text-terminal hover:border-terminal/50 disabled:opacity-30 disabled:hover:text-gray-400 disabled:hover:border-zinc-800 disabled:cursor-not-allowed transition-all font-mono"
+          >
             NEXT SECTION &gt;
           </button>
         </div>

@@ -665,7 +665,7 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
             </span>
 
             {/* Preview Asset Container */}
-            <div className="mt-4 w-full h-auto lg:h-[300px] bg-zinc-950 border border-zinc-900 rounded-sm flex flex-col items-center justify-center p-2 relative overflow-hidden">
+            <div className="mt-4 w-full h-auto bg-zinc-950 border border-zinc-900 rounded-sm flex flex-col items-center justify-center p-2 relative overflow-hidden">
               {activeSlide.imageSrc ? (
                 <img
                   src={activeSlide.imageSrc}

@@ -1140,15 +1140,25 @@ export default function App() {
         </AnimatePresence>
 
         {/* FOOTER */}
-        <div className="w-full max-w-6xl mx-auto px-4 md:px-8">
+        <div className="w-full max-w-6xl mx-auto px-4 md:px-8 mt-auto">
           <div className="w-full h-[1px] bg-terminal-dark/60 mb-4" />
 
-          <footer className="pb-8 flex flex-col sm:flex-row justify-between items-center text-[13px] text-gray-500 gap-2 w-full z-10 font-mono">
-            <p className="w-full text-left">
+          <footer className="pt-2 pb-6 flex flex-col md:flex-row justify-between items-center text-[13px] text-gray-500 gap-4 font-mono">
+            <p className="text-center md:text-left order-1">
               © {new Date().getFullYear()} Francisco Acosta
             </p>
-            <div className="flex gap-4 w-full justify-end">
-              <a href="https://www.linkedin.com/in/francisco-acosta-tx/" target="_blank" rel="noreferrer" className="text-terminal/70 hover:text-terminal text-[13px] transition-colors uppercase tracking-wider text-right" >
+
+            <p className="text-center text-gray-400 dark:text-slate-500 text-[11px] md:text-[12px] tracking-tight order-2 max-md:max-w-[280px] leading-relaxed">
+              Built with <span className="text-terminal/80 font-semibold">React</span> • Styled via <span className="text-terminal/80 font-semibold">Tailwind</span> • Bundled with <span className="text-terminal/80 font-semibold">Vite</span> • Deployed on <span className="text-terminal/80 font-semibold">Azure</span>
+            </p>
+
+            <div className="flex justify-center md:justify-end order-3">
+              <a
+                href="https://www.linkedin.com/in/francisco-acosta-tx/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-terminal/70 hover:text-terminal text-[13px] transition-colors uppercase tracking-wider"
+              >
                 LinkedIn
               </a>
             </div>

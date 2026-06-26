@@ -1072,7 +1072,7 @@ export default function App() {
             <motion.div key="hr-workspace" className="flex-1 flex flex-col w-full max-w-5xl mx-auto p-4 md:p-8" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
               <header className="border-b border-terminal-dark pb-4 mb-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-black/40 p-4 rounded-sm">
                 <div>
-                  <button onClick={() => setView('splash')} className="text-[10px] border border-terminal-dark/60 px-2 py-0.5 rounded text-gray-400 hover:text-terminal hover:border-terminal transition-colors uppercase tracking-wider mb-2 block cursor-pointer">
+                  <button onClick={() => setView('splash')} className="text-[15px] border border-terminal-dark/60 px-2 py-0.5 rounded text-gray-400 hover:text-terminal hover:border-terminal transition-colors uppercase tracking-wider mb-2 block cursor-pointer">
                     ← Choose Experience
                   </button>
                 </div>

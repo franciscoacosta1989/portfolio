@@ -1149,7 +1149,7 @@ export default function App() {
             </p>
 
             <p className="text-center text-gray-400 dark:text-slate-500 text-[11px] md:text-[12px] tracking-tight order-2 max-md:max-w-[280px] leading-relaxed">
-              Built with <span className="text-terminal/80 font-semibold">React</span> • Styled via <span className="text-terminal/80 font-semibold">Tailwind</span> • Bundled with <span className="text-terminal/80 font-semibold">Vite</span> • Deployed on <span className="text-terminal/80 font-semibold">Azure</span>
+              Built with <span className="text-terminal/80 font-semibold">React</span> • Styled via <span className="text-terminal/80 font-semibold">Tailwind</span> • Bundled with <span className="text-terminal/80 font-semibold">Vite</span> • Deployed on <span className="text-terminal/80 font-semibold">Vercel</span>
             </p>
 
             <div className="flex justify-center md:justify-end order-3">

@@ -12,7 +12,7 @@ DeVry University | B.S. in Computer Information Systems (Software Engineering) |
 Skills Summary:
     • Technical Skills: Solutions Architect, Application Engineering, Real-Time High-Performance Graphics, Object-Oriented Design and Programming, Distributed Systems,  
     Data Pipeline Optimization, CI/CD and Software Development Lifecycle (SDLC).
-    • Languages: C++, C#, Python, Java, SQL, Bash, PowerShell, HTML, CSS, JavaScript, and TypeScript.
+    • Languages: C++, C#, Python, Java, SQL, MongoDB, Bash, PowerShell, HTML, CSS, JavaScript, and TypeScript.
     • Transferable Skills: Technical Leadership leading cross-functional teams, Requirement Gathering, Standard Operating Procedures (SOPs), Crisis Management, Mentorship.
 
 Work Experience:

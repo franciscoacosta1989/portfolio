@@ -124,7 +124,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
               <span>Languages</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li>C++, C#, Python, Java, SQL, Bash, PowerShell, HTML, CSS, JavaScript, and TypeScript.</li>
+              <li>C++, C#, Python, Java, SQL, MongoDB, Bash, PowerShell, HTML, CSS, JavaScript, and TypeScript.</li>
             </ul>
           </div>
 

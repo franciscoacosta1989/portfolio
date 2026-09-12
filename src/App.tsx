@@ -926,7 +926,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           )}
 
           {selectedFile === 'LAB_PREVIEW: ELECTRONIC HEALTH RECORD' && (
-            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+            <div className="w-full h-[600px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
                 data={`${academic_lab_2}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"
@@ -956,7 +956,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           )}
 
           {selectedFile === 'LAB_PREVIEW: RELATIONAL DATABASE' && (
-            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+            <div className="w-full h-[575px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
                 data={`${academic_lab_5}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"
@@ -976,7 +976,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           )}
 
           {selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 2' && (
-            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+            <div className="w-full h-[575px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
                 data={`${academic_lab_6_2}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"

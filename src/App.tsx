@@ -50,19 +50,16 @@ function AboutContent({ animConfig }: SharedViewProps) {
       </div>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        Systems Integration and Solutions Engineer specializing in software integration, automation, data pipelines, and system configuration for high-availability, real-time environments. My recent engineering experience at NBCUniversal includes designing and integrating systems supporting 40+ national locations.
+        Systems Integration and Solutions Engineer specializing in software integration, automation, data pipelines, and system configuration for high-availability, real-time environments.
+        My strength lies in stepping back to analyze systemic bottlenecks and deploying the right solution, whether that means designing modular configuration frameworks, writing automation scripts, creating documentation or building custom tooling. For example, to eliminate persistent live-data failures across 40+ national stations, I engineered a custom C#/.NET Windows Service and WPF management application that safely ingests, sanitizes, and routes external data feeds.
       </p>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        My strength lies in stepping back to analyze systemic bottlenecks and deploying the right solution, whether that means designing modular configuration frameworks, writing automation scripts, or building custom tooling. For example, to eliminate persistent live-data failures across 40+ national stations, I engineered a custom C#/.NET Windows Service and WPF management application that safely ingests, sanitizes, and routes external data feeds.
+        My career at NBCUniversal began in creative production before progressing into real-time systems development, automation, software engineering, and systems integration. That progression gives me a practical understanding of both the operational problems needed to be solved and the technology required to solve them.
       </p>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        My career at NBCUniversal began in digital and creative production before progressing into real-time systems development, automation, software engineering, and systems integration. That progression gives me a practical understanding of both the operational problems needed to be solved and the technology required to solve them.
-      </p>
-
-      <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        Backed by a B.S. in Computer Information Systems, alongside Associate degrees in IT/Networking and Web Graphic Design, I bring a broad technical foundation spanning software development, automation, networking, databases, system architecture, and hardware/software integration.
+        Backed by a Bachelor’s degree in Computer Information Systems, alongside Associate degrees in IT/Networking and Web Graphic Design, I bring a broad technical foundation spanning software development, automation, networking, databases, system architecture, and hardware/software integration.
       </p>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
@@ -124,19 +121,10 @@ function ResumeContent({ animConfig }: SharedViewProps) {
               <span>Technical Skills</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li>Architecture & Integration: Systems Integration, Solutions Architecture, Enterprise Data Pipelines, Middleware Ingestion, Distributed Systems, High-Availability Systems, Data Sanitization & Validation, Zero-Downtime Migration.</li>
-              <li>Languages & Frameworks: C#, .NET, Python, SQL, C++, Java, WPF / XAML, Bash, PowerShell, HTML/CSS, JavaScript, TypeScript.</li>
-              <li>Databases & Data Formats: Relational Databases (SQL), Non-Relational Databases (MongoDB), JSON, KML, XML.</li>
-              <li>Infrastructure & Security: Cloud Infrastructure (Azure), Network Protocols (TLS, VPN), Role-Based Access Control (RBAC), System Diagnostics, SOP Development.</li>
-            </ul>
-          </div>
-
-          <div className="space-y-3">
-            <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
-              <span>Languages</span>
-            </div>
-            <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li>C++, C#, Python, Java, SQL, MongoDB, Bash, PowerShell, HTML, CSS, JavaScript, and TypeScript.</li>
+              <li><span className="text-terminal">Architecture & Integration: </span>Systems Integration, Solutions Architecture, Enterprise Data Pipelines, Middleware Ingestion, Distributed Systems, High-Availability Systems, Data Sanitization & Validation, Zero-Downtime Migration.</li>
+              <li><span className="text-terminal">Languages & Frameworks: </span>C#, .NET, Python, SQL, C++, Java, WPF / XAML, Bash, PowerShell, HTML/CSS, JavaScript, TypeScript.</li>
+              <li><span className="text-terminal">Databases & Data Formats: </span>Relational Databases (SQL), Non-Relational Databases (MongoDB), JSON, KML, XML.</li>
+              <li><span className="text-terminal">Infrastructure & Security: </span>Cloud Infrastructure (Azure), Network Protocols, RBAC, Penetration Testing & Vulnerability Assessment, Ethical Hacking, Data Privacy & Compliance, System Diagnostics, SOP Development.</li>
             </ul>
           </div>
 
@@ -145,21 +133,23 @@ function ResumeContent({ animConfig }: SharedViewProps) {
               <span>Transferable Skills</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li>Technical Leadership of cross-functional teams, Requirement Gathering, Standard Operating Procedures (SOPs), Crisis Management and Mentorship.</li>
+              <li>Technical Leadership of cross-functional teams, Requirement Gathering, Standard Operating Procedures, Crisis Management and Mentorship.</li>
             </ul>
           </div>
 
           {/* Work Experience */}
-          <p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider">Experience: NBCUniversal</p>
+          <br />
+          <br />
+          <p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider ">Experience: NBCUniversal</p>
           <div className="space-y-3">
             <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
               <span>Senior Real-Time Systems Developer</span>
               <span className="text-white sm:text-[16px]">April 2018 - Present</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li>Centralized Configuration Pipelines: Engineered a unified, data-driven template engine to automate configuration management across 400+ system variations and 40+ national locations, eliminating manual setup friction and operational bottlenecks.</li>
-              <li>Middleware & Data Ingestion: Architected a custom C#/.NET Windows Service and WPF management application to ingest, validate, and sanitize live external data streams before consumption by real-time downstream engines.</li>
-              <li>System Availability & Reliability: Maintained high uptime across 24/7 mission critical operations by managing cross-layer application workflows, software integrations, and distributed node configurations.</li>
+              <li><span className="text-terminal">Centralized Configuration Pipelines: </span>Engineered a unified, data-driven template engine to automate configuration management across 400+ system variations and 40+ national locations, eliminating manual setup friction and operational bottlenecks.</li>
+              <li><span className="text-terminal">Middleware & Data Ingestion: </span>Architected a custom C#/.NET Windows Service and WPF management application to ingest, validate, and sanitize live external data streams before consumption by real-time downstream engines.</li>
+              <li><span className="text-terminal">System Availability & Reliability: </span>Maintained high uptime across 24/7 mission critical operations by managing cross-layer application workflows, software integrations, and distributed node configurations.</li>
             </ul>
           </div>
 
@@ -169,8 +159,8 @@ function ResumeContent({ animConfig }: SharedViewProps) {
               <span className="text-white sm:text-[16px]">July 2011 - April 2018</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li>Automated Data Binding: Integrated real-time scripting to dynamically connect external data feeds with live execution engines, improving data accuracy and delivery speed.</li>
-              <li>Cross-Functional System Rollouts: Collaborated with technical and operational stakeholders to configure and deploy fault-tolerant software packages under tight live-production deadlines.</li>
+              <li><span className="text-terminal">Automated Data Binding: </span>Integrated real-time scripting to dynamically connect external data feeds with live execution engines, improving data accuracy and delivery speed.</li>
+              <li><span className="text-terminal">Cross-Functional System Rollouts: </span>Collaborated with technical and operational stakeholders to configure and deploy fault-tolerant software packages under tight live-production deadlines.</li>
             </ul>
           </div>
 
@@ -180,13 +170,15 @@ function ResumeContent({ animConfig }: SharedViewProps) {
               <span className="text-white sm:text-[16px]">February 2010 - July 2011</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li>Technical Specification & Compliance: Developed technical delivery specifications for digital assets to ensure seamless ingestion and compliance across automated publishing workflows.</li>
-              <li>High-Volume Asset Processing: Managed fast-turnaround production schedules, optimizing digital media assets for live execution in high-pressure environments.</li>
+              <li><span className="text-terminal">Technical Specification & Compliance: </span>Developed technical delivery specifications for digital assets to ensure seamless ingestion and compliance across automated publishing workflows.</li>
+              <li><span className="text-terminal">High-Volume Asset Processing: </span>Managed fast-turnaround production schedules, optimizing digital media assets for live execution in high-pressure environments.</li>
             </ul>
           </div>
         </div>
 
         {/* Education */}
+        <br />
+        <br />
         <p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider">Education: DeVry University</p>
         <div className="space-y-4 mt-3">
           <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
@@ -196,28 +188,28 @@ function ResumeContent({ animConfig }: SharedViewProps) {
 
           <div className="space-y-3">
             <div>
-              <h4 className="text-terminal font-medium text-[16px]">Systems Integration & Infrastructure Architecture</h4>
+              <h4 className="text-white font-medium text-[16px]">Systems Integration & Infrastructure Architecture</h4>
               <ul className="list-disc pl-5 space-y-1 mt-1 text-gray-400 text-[16px] leading-relaxed">
-                <li>Systems Integration & Web Programming: Architecting end-to-end software integrations, consuming RESTful web services, and routing data between application layers.</li>
-                <li>Cloud Computing Security & Infrastructure: Provisioning cloud resources, managing security boundaries, and configuring deployment infrastructure.</li>
-                <li>Operating Systems Basics: Core OS concepts including multi-threading, process execution, memory management, and system-level operations.</li>
+                <li><span className="text-terminal">Systems Integration: </span>Architecting end-to-end software integrations and routing data between application layers.</li>
+                <li><span className="text-terminal">Cloud Computing Security & Infrastructure: </span>Provisioning cloud resources, managing security boundaries, and configuring deployment infrastructure.</li>
+                <li><span className="text-terminal">Operating Systems Basics: </span>Core OS concepts such as system-level operations.</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-terminal font-medium text-[16px]">Software & Engineering</h4>
+              <h4 className="text-white font-medium text-[16px]">Software & Engineering</h4>
               <ul className="list-disc pl-5 space-y-1 mt-1 text-gray-400 text-[16px] leading-relaxed">
-                <li>Software Engineering I & II: SDLC execution, requirements gathering, object-oriented software design, dynamic UI components, and modular application development.</li>
-                <li>Data Structures & Algorithms: Computational complexity, memory-efficient data structures, array manipulation, and algorithmic optimization.</li>
-                <li>Senior Engineering Capstone Project: Designing and deploying an enterprise-grade software solution from requirements through implementation.</li>
+                <li><span className="text-terminal">Software Engineering I & II: </span>SDLC execution, requirements gathering, object-oriented software design, dynamic UI components, and modular application development.</li>
+                <li><span className="text-terminal">Data Structures & Algorithms:</span> Computational complexity, memory-efficient data structures, array manipulation, and algorithmic optimization.</li>
+                <li><span className="text-terminal">Senior Engineering Capstone Project: </span>Designing an enterprise-grade software solution from requirements through implementation.</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-terminal font-medium text-[16px]">Data Management & Security Engineering</h4>
+              <h4 className="text-white font-medium text-[16px]">Data Management & Security Engineering</h4>
               <ul className="list-disc pl-5 space-y-1 mt-1 text-gray-400 text-[16px] leading-relaxed">
-                <li>Relational & Non-Relational Databases: Designing structured SQL schemas alongside document-oriented NoSQL (MongoDB) data stores for high-availability ingestion.</li>
-                <li>Ethical Hacking, Pen Testing & Cyber Defense: Threat modeling, vulnerability scanning, penetration testing techniques, input sanitization, and secure access boundaries across application pipelines.</li>
+                <li><span className="text-terminal">Relational & Non-Relational Databases: </span>Designing structured SQL schemas alongside document-oriented NoSQL (MongoDB) data stores for high-availability ingestion.</li>
+                <li><span className="text-terminal">Ethical Hacking, Pen Testing & Cyber Defense: </span>Threat modeling, vulnerability scanning, penetration testing techniques, and input sanitization.</li>
               </ul>
             </div>
           </div>

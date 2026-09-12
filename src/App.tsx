@@ -50,15 +50,24 @@ function AboutContent({ animConfig }: SharedViewProps) {
       </div>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        I build scalable, modular systems designed for high-stakes, real-time environments. Over a 16-year tenure at NBCUniversal, I transitioned from a creative lead into a systems architect, pioneering one of the first centralized news graphics departments focused on high-availability automation for our national broadcast footprint. My career has been defined by identifying systemic bottlenecks and engineering solutions before they impact production. I thrive at the intersection of high-stakes media and mission-critical engineering, bringing a "zero-downtime" discipline to every codebase I touch.
-        I formalized this technical journey with a B.S. in Software Engineering, bridging nearly two decades of media domain expertise with backend orchestration and full-stack development.
+        Systems Integration and Solutions Engineer specializing in software integration, automation, data pipelines, and system configuration for high-availability, real-time environments. My recent engineering experience at NBCUniversal includes designing and integrating systems supporting 40+ national locations.
       </p>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        Most recently, I architected a C#/.NET system to automate real-time data ingestion for 40+ national stations, replacing manual workflows with a robust, scalable middleware layer. I specialize in designing modular frameworks that ensure precision and high-fidelity output under live-air pressure, utilizing real-time visualization tools.
-        Whether I am architecting highly scalable live data pipelines or designing high-reliability software for enterprise systems, my focus is always on creating efficient, sustainable architecture that scales. I am eager to apply my background in distributed systems and live-data automation to new, complex engineering challenges.
+        My strength lies in stepping back to analyze systemic bottlenecks and deploying the right solution, whether that means designing modular configuration frameworks, writing automation scripts, or building custom tooling. For example, to eliminate persistent live-data failures across 40+ national stations, I engineered a custom C#/.NET Windows Service and WPF management application that safely ingests, sanitizes, and routes external data feeds.
       </p>
 
+      <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
+        My career at NBCUniversal began in digital and creative production before progressing into real-time systems development, automation, software engineering, and systems integration. That progression gives me a practical understanding of both the operational problems needed to be solved and the technology required to solve them.
+      </p>
+
+      <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
+        Backed by a B.S. in Computer Information Systems, alongside Associate degrees in IT/Networking and Web Graphic Design, I bring a broad technical foundation spanning software development, automation, networking, databases, system architecture, and hardware/software integration.
+      </p>
+
+      <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
+        I am targeting Systems Integration Engineering, Solutions Engineering, and Systems Architecture opportunities in the Fort Worth area where I can apply my cross-layer technical foundation to complex enterprise environments.
+      </p>
     </motion.div>
   );
 }
@@ -141,24 +150,24 @@ function ResumeContent({ animConfig }: SharedViewProps) {
           <p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider">Experience: NBCUniversal</p>
           <div className="space-y-3">
             <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
-              <span>Senior Real-Time Systems Developer / Designer</span>
+              <span>Senior Real-Time Systems Developer / Lead</span>
               <span className="text-white sm:text-[16px]">April 2018 - Present</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li>Architected a centralized software suite using .NET and C# that streamlined configuration management for mission-critical broadcast infrastructure.</li>
-              <li>Automates 400+ system combinations across 40+ national locations by engineering a unified, data-driven template pipeline.</li>
-              <li>Maintain a high-percentage system uptime for 24/7 live operations through proactive management of distributed hardware and software integration.</li>
+              <li>Centralized Configuration Pipelines: Engineered a unified, data-driven template engine to automate configuration management across 400+ system variations and 40+ national locations, eliminating manual setup friction and operational bottlenecks.</li>
+              <li>Middleware & Data Ingestion: Architected a custom C#/.NET Windows Service and WPF management application to ingest, validate, and sanitize live external data streams before consumption by real-time downstream engines.</li>
+              <li>System Availability & Reliability: Maintained high uptime across 24/7 mission critical operations by managing cross-layer application workflows, software integrations, and distributed node configurations.</li>
             </ul>
           </div>
 
           <div className="space-y-3">
             <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
-              <span>Real-Time Systems Developer / Designer</span>
+              <span>Real-Time Systems Developer</span>
               <span className="text-white sm:text-[16px]">July 2011 - April 2018</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li>Increased data accuracy by integrating real-time scripting to automate the link between external data sources and live visual engines.</li>
-              <li>Delivered high-priority digital packages under strict deadlines through effective collaboration with technical and creative stakeholders.</li>
+              <li>Automated Data Binding: Integrated real-time scripting to dynamically connect external data feeds with live execution engines, improving data accuracy and delivery speed.</li>
+              <li>Cross-Functional System Rollouts: Collaborated with technical and operational stakeholders to configure and deploy fault-tolerant software packages under tight live-production deadlines.</li>
             </ul>
           </div>
 
@@ -168,8 +177,8 @@ function ResumeContent({ animConfig }: SharedViewProps) {
               <span className="text-white sm:text-[16px]">February 2010 - July 2011</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li>Ensured compliance with digital delivery protocols by developing rigorous technical specifications for web-based advertising assets.</li>
-              <li>Successfully managed high-volume production schedules, delivering optimized assets for live broadcast in a high-pressure environment.</li>
+              <li>Technical Specification & Compliance: Developed technical delivery specifications for digital assets to ensure seamless ingestion and compliance across automated publishing workflows.</li>
+              <li>High-Volume Asset Processing: Managed fast-turnaround production schedules, optimizing digital media assets for live execution in high-pressure environments.</li>
             </ul>
           </div>
         </div>
@@ -218,7 +227,7 @@ function SplashView({ onNavigate }: SplashViewProps) {
     <motion.div key="splash-gateway" className="flex-1 flex flex-col items-center justify-center p-4 text-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, scale: 0.99 }} transition={{ duration: 0.3 }}>
       <div className="border border-terminal-dark bg-black/60 backdrop-blur-xl p-8 md:p-12 rounded-sm max-w-xl w-full shadow-[0_0_50px_rgba(0,0,0,0.8)]">
         <h1 className="text-3xl md:text-4xl font-bold text-terminal mb-1 tracking-tight">Francisco Acosta</h1>
-        <h2 className="text-m text-gray-400 mb-6 uppercase tracking-widest font-bold">Software Engineer</h2>
+        <h2 className="text-m text-gray-400 mb-6 uppercase tracking-widest font-bold">Systems Integration & Solutions Engineer</h2>
         <div className="w-7/8 h-[1px] bg-terminal-dark my-3 mx-auto" />
 
         <div className="text-s text-gray-400">

@@ -196,7 +196,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
 
           <div className="space-y-3">
             <div>
-              <h4 className="text-gray-300 font-medium text-[16px]">Systems Integration & Infrastructure Architecture</h4>
+              <h4 className="text-terminal font-medium text-[16px]">Systems Integration & Infrastructure Architecture</h4>
               <ul className="list-disc pl-5 space-y-1 mt-1 text-gray-400 text-[16px] leading-relaxed">
                 <li>Systems Integration & Web Programming: Architecting end-to-end software integrations, consuming RESTful web services, and routing data between application layers.</li>
                 <li>Cloud Computing Security & Infrastructure: Provisioning cloud resources, managing security boundaries, and configuring deployment infrastructure.</li>
@@ -205,7 +205,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
             </div>
 
             <div>
-              <h4 className="text-gray-300 font-medium text-[16px]">Software & Engineering</h4>
+              <h4 className="text-terminal font-medium text-[16px]">Software & Engineering</h4>
               <ul className="list-disc pl-5 space-y-1 mt-1 text-gray-400 text-[16px] leading-relaxed">
                 <li>Software Engineering I & II: SDLC execution, requirements gathering, object-oriented software design, dynamic UI components, and modular application development.</li>
                 <li>Data Structures & Algorithms: Computational complexity, memory-efficient data structures, array manipulation, and algorithmic optimization.</li>
@@ -214,7 +214,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
             </div>
 
             <div>
-              <h4 className="text-gray-300 font-medium text-[16px]">Data Management & Security Engineering</h4>
+              <h4 className="text-terminal font-medium text-[16px]">Data Management & Security Engineering</h4>
               <ul className="list-disc pl-5 space-y-1 mt-1 text-gray-400 text-[16px] leading-relaxed">
                 <li>Relational & Non-Relational Databases: Designing structured SQL schemas alongside document-oriented NoSQL (MongoDB) data stores for high-availability ingestion.</li>
                 <li>Ethical Hacking, Pen Testing & Cyber Defense: Threat modeling, vulnerability scanning, penetration testing techniques, input sanitization, and secure access boundaries across application pipelines.</li>

@@ -124,7 +124,10 @@ function ResumeContent({ animConfig }: SharedViewProps) {
               <span>Technical Skills</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li>Solutions Architect, Application Engineering, Real-Time High-Performance Graphics, Object-Oriented Design and Programming, Distributed Systems, Data Pipeline Optimization, CI/CD and Software Development Lifecycle (SDLC).</li>
+              <li>Architecture & Integration: Systems Integration, Solutions Architecture, Enterprise Data Pipelines, Middleware Ingestion, Distributed Systems, High-Availability Systems, Data Sanitization & Validation, Zero-Downtime Migration.</li>
+              <li>Languages & Frameworks: C#, .NET / .NET, Python, SQL, C++, Java, WPF / XAML, Bash, PowerShell, HTML/CSS, JavaScript, TypeScript.</li>
+              <li>Databases & Data Formats: Relational Databases (SQL), Non-Relational Databases (MongoDB), JSON, KML, XML.</li>
+              <li>Infrastructure & Security: Cloud Infrastructure (Azure), Network Protocols (TLS, VPN), Role-Based Access Control (RBAC), System Diagnostics, SOP Development.</li>
             </ul>
           </div>
 
@@ -150,7 +153,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
           <p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider">Experience: NBCUniversal</p>
           <div className="space-y-3">
             <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
-              <span>Senior Real-Time Systems Developer / Lead</span>
+              <span>Senior Real-Time Systems Developer</span>
               <span className="text-white sm:text-[16px]">April 2018 - Present</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">

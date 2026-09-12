@@ -186,24 +186,33 @@ function ResumeContent({ animConfig }: SharedViewProps) {
           </div>
         </div>
 
-        {/* Education */}
-        <p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider">Education: DeVry University</p>
-        <div className="space-y-3">
-          <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
-            <span>B.S. in Computer Information Systems</span>
-            <span className="text-white sm:text-[16px]">July 2023 - October 2026</span>
-          </div>
-          <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-            <li>Object-Oriented Programming</li>
-            <li>Software Engineering & Application Programming</li>
-            <li>Algorithms & Data Structures</li>
-            <li>Cybersecurity, Secure Cyber Coding & Data Privacy</li>
-            <li>Cloud Computing Security & Infrastructure</li>
-            <li>Relational & Non-Relational Databases</li>
-            <li>Systems Integration & Web Programming</li>
-            <li>Operating Systems Basics</li>
-          </ul>
-        </div>
+{/* Education */}
+<p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider">Education: DeVry University</p>
+<div className="space-y-3">
+  <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
+    <span>Bachelor of Science in Computer Information Systems</span>
+    <span className="text-white sm:text-[16px]">July 2023 - October 2026</span>
+  </div>
+  <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
+    <li>Systems Integration & Infrastructure Architecture</li>
+      <ul className="list-circle pl-6 space-y-1 mt-1">
+        <li>Systems Integration & Web Programming (SIS 330): Architecting end-to-end software integrations, consuming RESTful web services, and routing data between application layers.</li>
+        <li>Cloud Computing Security & Infrastructure: Provisioning cloud resources, managing security boundaries, and configuring deployment infrastructure.</li>
+        <li>Operating Systems Basics: Core OS concepts including multi-threading, process execution, memory management, and system-level operations.</li>
+      </ul>
+    <li>Software & Engineering Capstone</li>
+      <ul className="list-circle pl-6 space-y-1 mt-1">
+        <li>Software Engineering I & II: SDLC execution, requirements gathering, object-oriented software design, dynamic UI components, and modular application development.</li>
+        <li>Data Structures & Algorithms: Computational complexity, memory-efficient data structures, array manipulation, and algorithmic optimization.</li>
+        <li>Senior Engineering Capstone Project (TECH 460): Designing and deploying an enterprise-grade software solution from requirements through implementation.</li>
+      </ul>
+    <li>Data Management & Security Engineering</li>
+      <ul className="list-circle pl-6 space-y-1 mt-1">
+        <li>Relational & Non-Relational Databases: Designing structured SQL schemas alongside document-oriented NoSQL (MongoDB) data stores for high-availability ingestion.</li>
+        <li>Ethical Hacking, Pen Testing & Cyber Defense (SEC 310 / SEC 321): Threat modeling, vulnerability scanning, penetration testing techniques, input sanitization, and secure access boundaries across application pipelines.</li>
+      </ul>
+  </ul>
+</div>
 
         <div className="space-y-3">
           <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">

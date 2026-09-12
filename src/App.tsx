@@ -186,33 +186,42 @@ function ResumeContent({ animConfig }: SharedViewProps) {
           </div>
         </div>
 
-{/* Education */}
-<p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider">Education: DeVry University</p>
-<div className="space-y-3">
-  <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
-    <span>Bachelor of Science in Computer Information Systems</span>
-    <span className="text-white sm:text-[16px]">July 2023 - October 2026</span>
-  </div>
-  <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-    <li>Systems Integration & Infrastructure Architecture</li>
-      <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-        <li>Systems Integration & Web Programming: Architecting end-to-end software integrations, consuming RESTful web services, and routing data between application layers.</li>
-        <li>Cloud Computing Security & Infrastructure: Provisioning cloud resources, managing security boundaries, and configuring deployment infrastructure.</li>
-        <li>Operating Systems Basics: Core OS concepts including multi-threading, process execution, memory management, and system-level operations.</li>
-      </ul>
-    <li>Software & Engineering Capstone</li>
-      <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-        <li>Software Engineering I & II: SDLC execution, requirements gathering, object-oriented software design, dynamic UI components, and modular application development.</li>
-        <li>Data Structures & Algorithms: Computational complexity, memory-efficient data structures, array manipulation, and algorithmic optimization.</li>
-        <li>Senior Engineering Capstone Project (TECH 460): Designing and deploying an enterprise-grade software solution from requirements through implementation.</li>
-      </ul>
-    <li>Data Management & Security Engineering</li>
-      <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-        <li>Relational & Non-Relational Databases: Designing structured SQL schemas alongside document-oriented NoSQL (MongoDB) data stores for high-availability ingestion.</li>
-        <li>Ethical Hacking, Pen Testing & Cyber Defense (SEC 310 / SEC 321): Threat modeling, vulnerability scanning, penetration testing techniques, input sanitization, and secure access boundaries across application pipelines.</li>
-      </ul>
-  </ul>
-</div>
+        {/* Education */}
+        <p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider">Education: DeVry University</p>
+        <div className="space-y-4 mt-3">
+          <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
+            <span>Bachelor of Science in Computer Information Systems</span>
+            <span className="text-white sm:text-[16px]">July 2023 - October 2026</span>
+          </div>
+
+          <div className="space-y-3">
+            <div>
+              <h4 className="text-gray-300 font-medium text-[16px]">Systems Integration & Infrastructure Architecture</h4>
+              <ul className="list-disc pl-5 space-y-1 mt-1 text-gray-400 text-[16px] leading-relaxed">
+                <li>Systems Integration & Web Programming: Architecting end-to-end software integrations, consuming RESTful web services, and routing data between application layers.</li>
+                <li>Cloud Computing Security & Infrastructure: Provisioning cloud resources, managing security boundaries, and configuring deployment infrastructure.</li>
+                <li>Operating Systems Basics: Core OS concepts including multi-threading, process execution, memory management, and system-level operations.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-gray-300 font-medium text-[16px]">Software & Engineering</h4>
+              <ul className="list-disc pl-5 space-y-1 mt-1 text-gray-400 text-[16px] leading-relaxed">
+                <li>Software Engineering I & II: SDLC execution, requirements gathering, object-oriented software design, dynamic UI components, and modular application development.</li>
+                <li>Data Structures & Algorithms: Computational complexity, memory-efficient data structures, array manipulation, and algorithmic optimization.</li>
+                <li>Senior Engineering Capstone Project: Designing and deploying an enterprise-grade software solution from requirements through implementation.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-gray-300 font-medium text-[16px]">Data Management & Security Engineering</h4>
+              <ul className="list-disc pl-5 space-y-1 mt-1 text-gray-400 text-[16px] leading-relaxed">
+                <li>Relational & Non-Relational Databases: Designing structured SQL schemas alongside document-oriented NoSQL (MongoDB) data stores for high-availability ingestion.</li>
+                <li>Ethical Hacking, Pen Testing & Cyber Defense: Threat modeling, vulnerability scanning, penetration testing techniques, input sanitization, and secure access boundaries across application pipelines.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
         <div className="space-y-3">
           <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
@@ -898,7 +907,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
             <div className="w-full min-h-[250px] flex flex-col justify-between bg-zinc-900/40 rounded-sm border border-terminal-dark/30 p-6 font-mono animate-fadeIn">
               <div className="space-y-3">
                 <div className="flex items-center gap-2 text-terminal font-bold">
-                    <h3 className="text-sm uppercase tracking-wider">{archiveFile.fileName}</h3>
+                  <h3 className="text-sm uppercase tracking-wider">{archiveFile.fileName}</h3>
                 </div>
                 <p className="text-gray-400 font-sans text-[14px] leading-relaxed">
                   This system file contains compiled production assets, complex business logic processing calculations, or data pipeline orchestration manifests that must be read locally.

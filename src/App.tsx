@@ -125,7 +125,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
               <li>Architecture & Integration: Systems Integration, Solutions Architecture, Enterprise Data Pipelines, Middleware Ingestion, Distributed Systems, High-Availability Systems, Data Sanitization & Validation, Zero-Downtime Migration.</li>
-              <li>Languages & Frameworks: C#, .NET / .NET, Python, SQL, C++, Java, WPF / XAML, Bash, PowerShell, HTML/CSS, JavaScript, TypeScript.</li>
+              <li>Languages & Frameworks: C#, .NET, Python, SQL, C++, Java, WPF / XAML, Bash, PowerShell, HTML/CSS, JavaScript, TypeScript.</li>
               <li>Databases & Data Formats: Relational Databases (SQL), Non-Relational Databases (MongoDB), JSON, KML, XML.</li>
               <li>Infrastructure & Security: Cloud Infrastructure (Azure), Network Protocols (TLS, VPN), Role-Based Access Control (RBAC), System Diagnostics, SOP Development.</li>
             </ul>

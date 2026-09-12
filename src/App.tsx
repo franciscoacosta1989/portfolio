@@ -194,19 +194,19 @@ function ResumeContent({ animConfig }: SharedViewProps) {
     <span className="text-white sm:text-[16px]">July 2023 - October 2026</span>
   </div>
   <ul className="space-y-1 text-gray-400 text-[16px] leading-relaxed">
-    <li className='text-gray-100'>Systems Integration & Infrastructure Architecture</li>
+    <li className='text-gray-250'>Systems Integration & Infrastructure Architecture</li>
       <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
         <li>Systems Integration & Web Programming: Architecting end-to-end software integrations, consuming RESTful web services, and routing data between application layers.</li>
         <li>Cloud Computing Security & Infrastructure: Provisioning cloud resources, managing security boundaries, and configuring deployment infrastructure.</li>
         <li>Operating Systems Basics: Core OS concepts including multi-threading, process execution, memory management, and system-level operations.</li>
       </ul>
-    <li className='text-gray-100'>Software & Engineering</li>
+    <li className='text-gray-250'>Software & Engineering</li>
       <ul className="space-y-1 text-gray-400 text-[16px] leading-relaxed">
         <li>Software Engineering I & II: SDLC execution, requirements gathering, object-oriented software design, dynamic UI components, and modular application development.</li>
         <li>Data Structures & Algorithms: Computational complexity, memory-efficient data structures, array manipulation, and algorithmic optimization.</li>
         <li>Senior Engineering Capstone Project (TECH 460): Designing and deploying an enterprise-grade software solution from requirements through implementation.</li>
       </ul>
-    <li className='text-gray-100'>Data Management & Security Engineering</li>
+    <li className='text-gray-250'>Data Management & Security Engineering</li>
       <ul className="space-y-1 text-gray-400 text-[16px] leading-relaxed">
         <li>Relational & Non-Relational Databases: Designing structured SQL schemas alongside document-oriented NoSQL (MongoDB) data stores for high-availability ingestion.</li>
         <li>Ethical Hacking, Pen Testing & Cyber Defense (SEC 310 / SEC 321): Threat modeling, vulnerability scanning, penetration testing techniques, input sanitization, and secure access boundaries across application pipelines.</li>

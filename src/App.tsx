@@ -226,7 +226,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
         <div className="space-y-3">
           <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
             <span>Additional Credentials</span>
-            <span className="text-white sm:text-[16px]">July 2023 - October 2026</span>
+            <span className="text-white sm:text-[16px]">February 2010, July 2023</span>
           </div>
           <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
             <li>A.A. in Information Technology (2025)</li>

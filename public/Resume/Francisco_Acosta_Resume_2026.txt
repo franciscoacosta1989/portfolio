@@ -5,19 +5,19 @@ Professional Summary
 Systems Integration and Solutions Engineer with a 16-year background optimizing high-availability platform workflows, dynamic data ingestions, and system configurations across 40+ national locations. Specializes in connecting software platforms, real-time data feeds, and enterprise infrastructure under strict zero-downtime conditions. Combines a B.S. in Computer Information Systems with dual associate degrees in IT/Networking and Web Graphic Design to bridge software applications, database schemas, and operational hardware nodes.
 
 Education
-DeVry University | B.S. in Computer Information Systems (Software Engineering) | Anticipated Oct 2026
-* Focus Areas: Linux Operating System, Object-Oriented Programming, Data Structures, Algorithms, Application Security and Systems Integration.
+DeVry University | B.S. in Computer Information Systems (Software Engineering) | Oct 2026
+* Focus Areas: Linux Operating System, Object-Oriented Programming, Systems Architecture & Integration, Ethical Hacking & Penetration Testing, Software Engineering, SDLC, Data Structures & Algorithms, Cloud Infrastructure, and Relational/NoSQL Databases.
 * Additional Credentials: A.A. in Information Technology (2025), A.A. in Web Graphic Design (2010)
 
 Skills Summary
 * Architecture & Integration: Systems Integration, Solutions Architecture, Enterprise Data Pipelines, Middleware Ingestion, Distributed Systems, High-Availability Systems, Data Sanitization & Validation, Zero-Downtime Migration.
-* Languages & Frameworks: C#, .NET / .NET Core, Python, SQL, C++, Java, WPF / XAML, Bash, PowerShell, HTML/CSS, JavaScript, TypeScript.
-* Databases & Data Formats: Relational Databases (SQL), Non-Relational Databases (MongoDB), REST APIs, JSON, KML, XML.
+* Languages & Frameworks: C#, .NET, Python, SQL, C++, Java, WPF / XAML, Bash, PowerShell, HTML/CSS, JavaScript, TypeScript.
+* Databases & Data Formats: Relational Databases (SQL), Non-Relational Databases (MongoDB), JSON, KML, XML.
 * Infrastructure & Security: Cloud Infrastructure (Azure), Network Protocols (TLS, VPN), Role-Based Access Control (RBAC), System Diagnostics, SOP Development.
 
 Work Experience
 NBCUniversal
-Senior Real-Time Systems & Software Developer   |   April 2018 - Present
+Senior Real-Time Systems Developer   |   April 2018 - Present
 * Engineered a centralized software suite using .NET and C# that streamlined configuration management and validated mission-critical broadcast infrastructure.
 * Automates 400+ system combinations across 40+ national locations by engineering a unified, data-driven template pipeline.
 * Maintain a high-percentage system uptime for 24/7 live operations through proactive management of distributed hardware and software integration through Python based automation.
@@ -26,4 +26,4 @@ Real-Time Systems Developer   |   July 2011 - April 2018
 * Cross-Functional System Rollouts: Collaborated with technical and operational stakeholders to configure and deploy fault-tolerant software packages under tight live-production deadlines.
 Independent Contractor   |   February 2010 - July 2011
 * Technical Specification & Compliance: Developed technical delivery specifications for digital assets to ensure seamless ingestion and compliance across automated publishing workflows.
-* High-Volume Asset Processing: Managed fast-turnaround production schedules, optimizing digital media assets for live execution in high-pressure environments.
+* High-Volume Asset Processing: Managed fast turnaround production schedules, optimizing digital media assets for live execution in high-pressure environments.

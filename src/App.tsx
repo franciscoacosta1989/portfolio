@@ -9,25 +9,34 @@ import case_study_1_problem from './assets/case_studies/DynamicCanvasDeploymentE
 import case_study_2_problem from './assets/case_studies/ADM_Slide_1.jpg';
 import case_study_2_innovation from './assets/case_studies/ADM_Slide_2.jpg';
 import case_study_2_impact from './assets/case_studies/ADM_Slide_3.jpg';
-import case_study_3_problem from './assets/case_studies/Special_Show_Slide_1.jpg';
-import case_study_3_solution from './assets/case_studies/Special_Show_Slide_2.jpg';
-import case_study_3_impact from './assets/case_studies/Special_Show_Slide_3.jpg';
-import case_study_4_problem from './assets/case_studies/NYL_Slide_1.jpg';
-import case_study_4_solution from './assets/case_studies/NYL_Slide_2.jpg';
-import case_study_4_impact from './assets/case_studies/NYL_Slide_3.jpg';
-import academic_lab_1 from './assets/academic_labs/AL1_Equipment_checkout_system.pdf';
-import academic_lab_2 from './assets/academic_labs/AL2_electronic_health_record_protection_resilience_recovery.pdf';
-import academic_lab_3 from './assets/academic_labs/AL3_java_based_application_landscape.pdf';
-import academic_lab_4 from './assets/academic_labs/AL4_fundamentals_of_infrastructure_security.pdf';
-import academic_lab_5 from './assets/academic_labs/AL5_relational_database.pdf';
-import academic_lab_6_1 from './assets/academic_labs/AL6_payroll_system_1.pdf';
-import academic_lab_6_2 from './assets/academic_labs/AL6_payroll_system_2.pdf';
-import academic_lab_7 from './assets/academic_labs/AL7_fundamentals_of_cloud_computing.pdf';
-import academic_lab_8 from './assets/academic_labs/AL8_fundamentals_of_information_security.pdf';
-import academic_lab_9 from './assets/academic_labs/AL9_Linux Networking Fundamentals.pdf';
-import academic_lab_10 from './assets/academic_labs/AL10_Remote_Control_Traffic_Light_Controller.pdf';
-import academic_lab_11 from './assets/academic_labs/AL11_fundamentals_of_networking.pdf';
-import academic_lab_12 from './assets/academic_labs/AL12_iot_home_security.pdf';
+import case_study_2_LineFlow_1 from './assets/case_studies/LineFlow_1.jpg';
+import case_study_2_LineFlow_2 from './assets/case_studies/LineFlow_2.jpg';
+import case_study_2_LineFlow_3 from './assets/case_studies/LineFlow_3.jpg';
+import case_study_2_LineFlow_4 from './assets/case_studies/LineFlow_4.jpg';
+import case_study_2_LineFlow_5 from './assets/case_studies/LineFlow_5.jpg';
+import case_study_2_LineFlow_6 from './assets/case_studies/LineFlow_6.jpg';
+import case_study_2_LineFlow_7 from './assets/case_studies/LineFlow_7.jpg';
+import case_study_4_problem from './assets/case_studies/Special_Show_Slide_1.jpg';
+import case_study_4_solution from './assets/case_studies/Special_Show_Slide_2.jpg';
+import case_study_4_impact from './assets/case_studies/Special_Show_Slide_3.jpg';
+import case_study_5_problem from './assets/case_studies/NYL_Slide_1.jpg';
+import case_study_5_solution from './assets/case_studies/NYL_Slide_2.jpg';
+import case_study_5_impact from './assets/case_studies/NYL_Slide_3.jpg';
+import academic_lab_1 from './assets/academic_labs/AL1_Real-Time_Medical_Asset_Tracking_System.pdf';
+const academic_lab_1_download = '/academic_labs/AL1_Real-Time_Medical_Asset_Tracking_System.pptx';
+import academic_lab_2 from './assets/academic_labs/AL2_Equipment_checkout_system.pdf';
+import academic_lab_3 from './assets/academic_labs/AL3_electronic_health_record_protection_resilience_recovery.pdf';
+import academic_lab_4 from './assets/academic_labs/AL4_java_based_application_landscape.pdf';
+import academic_lab_5 from './assets/academic_labs/AL5_fundamentals_of_infrastructure_security.pdf';
+import academic_lab_6 from './assets/academic_labs/AL6_relational_database.pdf';
+import academic_lab_7_1 from './assets/academic_labs/AL7_payroll_system_1.pdf';
+import academic_lab_7_2 from './assets/academic_labs/AL7_payroll_system_2.pdf';
+import academic_lab_8 from './assets/academic_labs/AL8_fundamentals_of_cloud_computing.pdf';
+import academic_lab_9 from './assets/academic_labs/AL9_fundamentals_of_information_security.pdf';
+import academic_lab_10 from './assets/academic_labs/AL10_Linux Networking Fundamentals.pdf';
+import academic_lab_11 from './assets/academic_labs/AL11_Remote_Control_Traffic_Light_Controller.pdf';
+import academic_lab_12 from './assets/academic_labs/AL12_fundamentals_of_networking.pdf';
+import academic_lab_13 from './assets/academic_labs/AL13_iot_home_security.pdf';
 import React from 'react';
 
 //============================================// Navigation Options //============================================//
@@ -270,7 +279,22 @@ function SplashView({ onNavigate }: SplashViewProps) {
 //============================================// Academic Labs Information //============================================//
 const ACADEMIC_LABS: AcademicLabItem[] = [
 
-  //============================================// Academic Lab 1 //============================================//
+    //============================================// Academic Lab 1 //============================================//
+  {
+    name: "Real-Time Medical Asset Tracking System",
+    category: "Systems Architecture",
+    slides: [
+      {
+        title1: "Problem",
+        description1: 'Nurses spend significant amounts of time manually tracking medical equipment, which is an operational inefficiency that disrupts clinical workflows, reduces direct patient care time, and can contribute to unnecessary spendings.',
+        title2: "Solution",
+        description2: 'Implement an automated, real-time Ultra-Wideband (UWB) IoT asset tracking ecosystem that eliminates manual equipment searches, seamlessly returning clinical hours back to bedside patient care while optimizing equipment utilization and reducing unnecessary capital expenditures.',
+        documentSrc: academic_lab_1_download
+      }
+    ]
+  },
+
+  //============================================// Academic Lab 2 //============================================//
   {
     name: "Equipment Checkout System",
     category: "GUI Application",
@@ -280,12 +304,12 @@ const ACADEMIC_LABS: AcademicLabItem[] = [
         description1: 'Manual check-out and check-in processes that are insecure, inefficient, error-prone, and lack accountability, resulting in lost or stolen tools, inventory mismanagement, and the absence of a clear historical audit trail.',
         title2: "Solution",
         description2: 'A secure, web-based digital Equipment Checkout System (ECS) powered by a centralized AWS database and Microsoft Authenticator MFA. It provides role-based access control (RBAC), real-time transaction tracking, strict input validation, and a clear digital audit trail to optimize tracking and significantly minimize tool loss.',
-        documentSrc: academic_lab_1
+        documentSrc: academic_lab_2
       }
     ]
   },
 
-  //============================================// Academic Lab 2 //============================================//
+  //============================================// Academic Lab 3 //============================================//
   {
     name: "EHR Contingency Plan",
     category: "Architecture & Security",
@@ -295,12 +319,12 @@ const ACADEMIC_LABS: AcademicLabItem[] = [
         description1: 'Electronic Health Record (EHR) systems are increasingly targeted by sophisticated cyberattacks, creating severe risks of electronic Protected Health Information (ePHI) breaches, prolonged service outages, legal penalties, and widespread operational disruptions that compromise patient care and organizational integrity.',
         title2: "Solution",
         description2: 'A comprehensive response contingency plan implementing a defense-in-depth framework that ensures high availability and resilience. It integrates strict HIPAA compliance, technical safeguards like Role-Based Access Control (RBAC), end-to-end encryption, regular staff training, structured data backup, and disaster recovery strategies to guarantee seamless business continuity and data integrity.',
-        documentSrc: academic_lab_2
+        documentSrc: academic_lab_3
       }
     ]
   },
 
-  //============================================// Academic Lab 3 //============================================//
+  //============================================// Academic Lab 4 //============================================//
   {
     name: "Landscape Business Customer Database",
     category: "GUI Application",
@@ -310,12 +334,12 @@ const ACADEMIC_LABS: AcademicLabItem[] = [
         description1: 'Landscaping organizations face operational inefficiencies when relying on manual or disjointed tracking methods, leading to difficulties in securely managing client personal data, calculating project costs, and maintaining accurate records without centralized, persistent data storage.',
         title2: "Solution",
         description2: 'A Java-based desktop GUI business application built using a three-tier architecture (presentation, business rules, and data storage) integrated with a SQL database. It provides an efficient, user-friendly, and visually cohesive interface to securely manage customer information, streamline cost tracking, and ensure data persistence with robust exception handling.',
-        documentSrc: academic_lab_3
+        documentSrc: academic_lab_4
       }
     ]
   },
 
-  //============================================// Academic Lab 4 //============================================//
+  //============================================// Academic Lab 5 //============================================//
   {
     name: "Infrastructure Security",
     category: "Analytics",
@@ -325,12 +349,12 @@ const ACADEMIC_LABS: AcademicLabItem[] = [
         description1: 'Modern organizational IT environments face severe risks from undetected security vulnerabilities, lacking proper visibility into network traffic anomalies, unmonitored communication channels, and insufficient defensive barriers to intercept malicious network intrusions or perform critical post-incident memory forensics.',
         title2: "Solution",
         description2: 'A multi-layered infrastructure security framework that implements proactive threat detection and active defense mechanisms. It integrates network visibility through packet-level analysis, intrusion detection and prevention systems (Snort rules), stringent host-based and network firewall policies, robust OpenSSL data encryption protocols, and live memory forensics to effectively mitigate, intercept, and analyze network threats.',
-        documentSrc: academic_lab_4
+        documentSrc: academic_lab_5
       }
     ]
   },
 
-  //============================================// Academic Lab 5 //============================================//
+  //============================================// Academic Lab 6 //============================================//
   {
     name: "Relational Database Management",
     category: "Database",
@@ -340,12 +364,12 @@ const ACADEMIC_LABS: AcademicLabItem[] = [
         description1: 'The objective was to design and implement a relational database schema from an Entity-Relationship Diagram (ERD) to manage regional enterprise entities, including customers, employees, and their professional skill matrices. The system needed to enforce data integrity constraints and handle complex relational queries, such as calculating billing aggregates and joining multi-table datasets.',
         title2: "Solution",
         description2: 'Developed a structured SQL schema with normalized tables, complete with primary and foreign key constraints to track region-specific employee and customer profiles. Optimized data retrieval by constructing complex relational joins, subqueries for pricing threshold filters, and a reusable virtual view component to dynamically audit employee core competencies.',
-        documentSrc: academic_lab_5
+        documentSrc: academic_lab_6
       }
     ]
   },
 
-  //============================================// Academic Lab 6 //============================================//
+  //============================================// Academic Lab 7 //============================================//
   {
     name: "Payroll System",
     category: "GUI Application",
@@ -355,12 +379,12 @@ const ACADEMIC_LABS: AcademicLabItem[] = [
         description1: 'Organizations face security risks and operational errors when managing employee data manually or using disjointed methods, leaving sensitive personal information (such as SSNs and compensation rates) vulnerable to unauthorized exposure and making it difficult to calculate diverse hourly and salary structures accurately.',
         title2: "Solution",
         description2: 'A secure C# desktop GUI application built within Microsoft Visual Studio that centralizes employee data tracking and automates paycheck processing. It implements robust object-oriented programming principles, specifically utilizing data hiding (encapsulation) to protect sensitive data fields, while providing a clean, user-friendly interface to easily add, remove, and display personnel records.',
-        documentSrc: academic_lab_6_1
+        documentSrc: academic_lab_7_1
       }
     ]
   },
 
-  //============================================// Academic Lab 7 //============================================//
+  //============================================// Academic Lab 8 //============================================//
   {
     name: "VM Deployment, Storage & Security",
     category: "Cloud",
@@ -370,12 +394,12 @@ const ACADEMIC_LABS: AcademicLabItem[] = [
         description1: 'Traditional on-premises infrastructure limits organizational agility due to time-consuming hardware procurement, complex manual networking setups, a lack of scalable cloud storage, and minimal proactive monitoring to detect system abnormalities or security threats.',
         title2: "Solution",
         description2: 'A scalable cloud infrastructure deployed within Microsoft Azure that automates virtual machine (VM) provisioning and optimizes network administration. It establishes a secure Virtual Network (VNet) with isolated subnets and Network Security Groups (NSGs), integrates resilient Blob storage solutions, and implements proactive monitoring via automated cloud alert rules to ensure high availability and robust system oversight.',
-        documentSrc: academic_lab_7
+        documentSrc: academic_lab_8
       }
     ]
   },
 
-  //============================================// Academic Lab 8 //============================================//
+  //============================================// Academic Lab 9 //============================================//
   {
     name: "Information Security",
     category: "Security",
@@ -385,12 +409,12 @@ const ACADEMIC_LABS: AcademicLabItem[] = [
         description1: 'Dynamic modern business environments face escalating security risks from unencrypted data transmissions, unprotected mobile devices (BYOD policy gaps), outdated software vulnerabilities, and static network perimeters that leave critical corporate assets exposed to unauthorized access and sophisticated cyberattacks.',
         title2: "Solution",
         description2: 'A defense-in-depth security framework built inside a virtualized Hyper-V environment to eliminate vulnerabilities and mitigate risk. It deploys robust technical and administrative safeguards, including Asymmetric Key Encryption, strict Bring Your Own Device (BYOD) and Mobile Device Management (MDM) security policies, multifactor authentication (MFA), automated vulnerability assessments, and stateful iptables firewall rules to secure corporate assets and ensure regulatory readiness.',
-        documentSrc: academic_lab_8
+        documentSrc: academic_lab_9
       }
     ]
   },
 
-  //============================================// Academic Lab 9 //============================================//
+  //============================================// Academic Lab 10 //============================================//
   {
     name: "Linux Fundamentals",
     category: "Operating Systems",
@@ -400,12 +424,12 @@ const ACADEMIC_LABS: AcademicLabItem[] = [
         description1: 'Transitioning to and managing a complex Linux command-line environment presents a steep learning curve, making it difficult to properly navigate hierarchical file structures, monitor real-time system activity, execute administrative tasks, and safely isolate security risks without specialized training.',
         title2: "Solution",
         description2: 'A virtualized Ubuntu Linux administration framework deployed via Hyper-V for secure IoT and network testing. It leverages core CLI competencies to automate processes through shell scripting, establish structured network configurations, manage groups and user authentication, and efficiently monitor system diagnostics to ensure resilient and secure platform operations.',
-        documentSrc: academic_lab_9
+        documentSrc: academic_lab_10
       }
     ]
   },
 
-  //============================================// Academic Lab 10 //============================================//
+  //============================================// Academic Lab 11 //============================================//
   {
     name: "Remote Traffic Light Controller",
     category: "IoT",
@@ -415,12 +439,12 @@ const ACADEMIC_LABS: AcademicLabItem[] = [
         description1: 'Managing complex physical traffic intersections and emergency response overrides using isolated, manual infrastructure lacks real-time scalability, data feedback, and safe remote operational control.',
         title2: "Solution",
         description2: 'A fully integrated, intelligent IoT traffic light controller system built on an ESP32 microcontroller utilizing the Arduino IDE. It connects hardware components like a crosswalk button, an active buzzer, and emergency LEDs to an LCD status unit, while leveraging a mini-router and an MQTT client to enable seamless, real-time remote monitoring and network control.',
-        documentSrc: academic_lab_10
+        documentSrc: academic_lab_11
       }
     ]
   },
 
-  //============================================// Academic Lab 11 //============================================//
+  //============================================// Academic Lab 12 //============================================//
   {
     name: "Networking Fundamentals",
     category: "IT",
@@ -430,12 +454,12 @@ const ACADEMIC_LABS: AcademicLabItem[] = [
         description1: 'Small Office/Home Office (SOHO) networks face critical vulnerabilities and operational risks when deploying default device configurations, lacking proper IP subnetting architecture, and omitting strict access control mechanisms like MAC filtering to prevent unauthorized connections.',
         title2: "Solution",
         description2: 'A secure network infrastructure designed and validated within a virtualized Hyper-V environment using Microsoft Visio architectural blueprints. It implements custom IPv4 addressing schemes, optimized subnetting for efficient data routing, connectivity testing, and robust wireless security strategies to establish a resilient, authenticated network perimeter.',
-        documentSrc: academic_lab_11
+        documentSrc: academic_lab_12
       }
     ]
   },
 
-  //============================================// Academic Lab 12 //============================================//
+  //============================================// Academic Lab 13 //============================================//
   {
     name: "Home Security System",
     category: "IoT",
@@ -445,7 +469,7 @@ const ACADEMIC_LABS: AcademicLabItem[] = [
         description1: 'Residential properties lack accessible, customizable, and automated monitoring systems to detect unauthorized physical presence or motion, leaving homes vulnerable to security breaches without real-time local feedback.',
         title2: "Solution",
         description2: 'A physical IoT Home Security System prototyped in Tinkercad and built using an Arduino Mega 2560 microcontroller programmed in C/C++. The system integrates hardware components that include a PIR motion sensor, a breadboard circuit matrix, active buzzers, and LED indicators to deliver automated, responsive local threat detection and physical device interaction.',
-        documentSrc: academic_lab_12
+        documentSrc: academic_lab_13
       }
     ]
   }
@@ -499,7 +523,7 @@ function AcademicLabsContent({ animConfig }: SharedViewProps) {
               <p className="text-[18px] text-gray-300 leading-relaxed font-sans whitespace-pre-line">{activeSlide.description2}</p>
             </div>
             <p>{"\u00a0"}</p>
-            <a href={activeSlide.documentSrc} download className="px-7 py-1 border border-terminal text-terminal font-bold text-[16px] hover:bg-terminal hover:text-black transition-all duration-200 uppercase tracking-wider rounded-sm text-center">DOWNLOAD PROJECT OVERVIEW</a>
+            <a href={activeSlide.documentSrc} download className="px-7 py-1 border border-terminal text-terminal font-bold text-[16px] hover:bg-terminal hover:text-black transition-all duration-200 uppercase tracking-wider rounded-sm text-center">DOWNLOAD PROJECT</a>
             <p>{"\u00a0"}</p>
           </div>
         </div>
@@ -556,8 +580,50 @@ const CASE_STUDIES: CaseStudyItem[] = [
       }
     ]
   },
-
   //============================================// Case Study 3 //============================================//
+  {
+    name: "Locomotive Fleet Tracking & Analytics Platform",
+    category: "Systems Architecture",
+    slides: [
+      {
+        title: "Fleet Overview & Active Routes",
+        description: "Provides dispatchers with high-level operational metrics across active rail corridors, detailing total fleet counts, live movement statuses, and origin-to-destination yard manifests.",
+        imageSrc: case_study_2_LineFlow_1
+      },
+      {
+        title: "Real-Time Fleet Data Mapping",
+        description: "Renders real-time locomotive positions across national rail networks using an interactive GIS layer, visually differentiating asset status via dynamic map markers.",
+        imageSrc: case_study_2_LineFlow_2
+      },
+            {
+        title: "Real-Time Fleet Analytics",
+        description: "Monitors critical locomotive health indicators to optimize fuel stops and cargo efficiency.",
+        imageSrc: case_study_2_LineFlow_3
+      },
+            {
+        title: "Locomotive Lifecycle & Yard Status Monitor",
+        description: "Tracks individual train operational states with granular origin/destination yard mapping for precise yard logistics and time-of-arrival forecasting.",
+        imageSrc: case_study_2_LineFlow_4
+      },
+            {
+        title: "Automated Thermal & Geofence Anomaly Detection",
+        description: "Ingests live data streams to flag safety hazards, such as temperature warnings and prioritized departures.",
+        imageSrc: case_study_2_LineFlow_5
+      },
+            {
+        title: "High Clearance Audit",
+        description: "Displays detailed cargo manifests and heavy tonnage figures for dispatchers holding Level 3 NOC Authorization, enabling real-time route clearance and load balancing.",
+        imageSrc: case_study_2_LineFlow_6
+      },
+      {
+        title: "Dynamic RBAC & Compliance View",
+        description: "Demonstrates Level 1 Compliance Security Gateway enforcement, dynamically altering UI navigation and restricting administrative controls based on auditor clearance levels.",
+        imageSrc: case_study_2_LineFlow_7
+      }
+    ]
+  },
+
+  //============================================// Case Study 4 //============================================//
   {
     name: "Data-Driven Broadcast Deployment",
     category: "Real-Time Broadcast Template",
@@ -565,22 +631,22 @@ const CASE_STUDIES: CaseStudyItem[] = [
       {
         title: "Problem",
         description: "NBC Philadelphia required a scalable, real-time template framework for its live coverage of the 250th U.S. Anniversary at the Wawa Welcome America festival. The production demanded a highly versatile suite of keyable graphics and lower thirds to overlay live field reporter feeds. However, the legacy workflow relied on production teams manually searching, loading, and configuring independent graphics assets in the real-time engine, introducing severe operational bottlenecks and human-error risks during a fast-paced live broadcast event.",
-        imageSrc: case_study_3_problem
+        imageSrc: case_study_4_problem
       },
       {
         title: "Solution",
         description: "Implemented a centralized, data-driven template engine that condensed a multitude of graphic variations into a single unified scene architecture. By integrating logic and an optimized data stream, the system exposes a single top-level control interface (dropdown state selector) for the control room. The template acts as a smart state machine, dynamically parsing data binding arrays to instantaneously swap texture maps, keyable visibility fields, and geometric layouts behind the scenes based on the producer's selection.",
-        imageSrc: case_study_3_solution
+        imageSrc: case_study_4_solution
       },
       {
         title: "Impact",
         description: 'By decoupling the underlying data logic from the visual assets, this framework completely eliminated search delays and runtime setup friction in the newsroom. Producers were able to orchestrate a complex, rapid-fire programming lineup without operational overhead or configuration downtime. The automated system ensured absolute stability for the live graphics pipeline, delivering a highly valued broadcast experience to millions of viewers across the Philadelphia region.',
-        imageSrc: case_study_3_impact
+        imageSrc: case_study_4_impact
       }
     ]
   },
 
-  //============================================// Case Study 4 //============================================//
+  //============================================// Case Study 5 //============================================//
   {
     name: "Real-Time Broadcast Smart Template",
     category: "Real-Time Broadcast Template",
@@ -588,17 +654,17 @@ const CASE_STUDIES: CaseStudyItem[] = [
       {
         title: "Problem",
         description: "New York Live required a robust, efficient suite of graphics templates tailored for a lean production team. Lacking the heavy staffing of a traditional newscast, the show needed a streamlined workflow that allowed a single user to build and manage all on-air graphics quickly and effortlessly.",
-        imageSrc: case_study_4_problem
+        imageSrc: case_study_5_problem
       },
       {
         title: "Solution",
         description: "Developed a minimal yet powerful 'smart template' system to support the entire broadcast. By consolidating multiple manual-entry layouts into adaptive templates, the system now automatically generates the correct formatting based on the user's input.",
-        imageSrc: case_study_4_solution
+        imageSrc: case_study_5_solution
       },
       {
         title: "Impact",
         description: 'The new workflow empowers a lean production team to deliver high-value content without the overhead or budget of a traditional newscast. New York Live successfully brings premium lifestyle programming to the New York metropolitan area with maximum efficiency.',
-        imageSrc: case_study_4_impact
+        imageSrc: case_study_5_impact
       }
     ]
   }
@@ -775,9 +841,19 @@ const repoArchives = [
     src: "https://docs.google.com/uc?export=download&id=1q4ZY4hgomN0kojF4GRloIJsrOlSrdDlD"
   },
   {
+    fileName: "CS2_Locomotive_Fleet_Tracking_AnalyticsPlatform.zip",
+    labelToken: "CASE_STUDY_PREVIEW: LOCOMOTIVE_FLEET",
+    src: "https://docs.google.com/uc?export=download&id=1q4ZY4hgomN0kojF4GRloIJsrOlSrdDlD"
+  },
+  {
     fileName: "AL6_payroll_3.zip",
     labelToken: "LAB_PREVIEW: PAYROLL SYSTEM 3",
     src: "https://docs.google.com/uc?export=download&id=1H88Gsy_uCMvteV0H2e1FAgSJcxVTy6SO"
+  },
+  {
+    fileName: "AL1_Real-Time_Medical_Asset_Tracking_System.pptx",
+    labelToken: "LAB_PREVIEW: REAL-TIME MEDICAL ASSET TRACKING SYSTEM",
+    src: academic_lab_1_download
   }
 ];
 
@@ -795,72 +871,78 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           <div className="pl-4 space-y-1">
 
             {/* Lab 1 */}
-            <button onClick={() => onSelectFile('LAB_PREVIEW: EQUIPMENT CHECKOUT SYSTEM')}
-              className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: EQUIPMENT CHECKOUT SYSTEM' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`}>
-              📄 AL1_Equipment_checkout_system.pdf
+            <button onClick={() => onSelectFile('LAB_PREVIEW: REAL-TIME MEDICAL ASSET TRACKING SYSTEM')}
+              className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: REAL-TIME MEDICAL ASSET TRACKING SYSTEM' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`}>
+              📄 AL1_Real-Time_Medical_Asset_Tracking_System.pptx
             </button>
 
             {/* Lab 2 */}
-            <button onClick={() => onSelectFile('LAB_PREVIEW: ELECTRONIC HEALTH RECORD')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: ELECTRONIC HEALTH RECORD' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`}>
-              📄 AL2_electronic_health_record_protection_resilience_recovery.pdf
+            <button onClick={() => onSelectFile('LAB_PREVIEW: EQUIPMENT CHECKOUT SYSTEM')}
+              className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: EQUIPMENT CHECKOUT SYSTEM' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`}>
+              📄 AL2_Equipment_checkout_system.pdf
             </button>
 
             {/* Lab 3 */}
-            <button onClick={() => onSelectFile('LAB_PREVIEW: JAVA APPLICATION LANDSCAPE')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: JAVA APPLICATION LANDSCAPE' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`}>
-              📄 AL3_java_based_application_landscape.pdf
+            <button onClick={() => onSelectFile('LAB_PREVIEW: ELECTRONIC HEALTH RECORD')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: ELECTRONIC HEALTH RECORD' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`}>
+              📄 AL3_electronic_health_record_protection_resilience_recovery.pdf
             </button>
 
             {/* Lab 4 */}
-            <button onClick={() => onSelectFile('LAB_PREVIEW: INFRASTRUCTURE SECURITY')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: INFRASTRUCTURE SECURITY' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
-              📄 AL4_fundamentals_of_infrastructure_security.pdf
+            <button onClick={() => onSelectFile('LAB_PREVIEW: JAVA APPLICATION LANDSCAPE')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: JAVA APPLICATION LANDSCAPE' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`}>
+              📄 AL4_java_based_application_landscape.pdf
             </button>
 
             {/* Lab 5 */}
-            <button onClick={() => onSelectFile('LAB_PREVIEW: RELATIONAL DATABASE')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: RELATIONAL DATABASE' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`}>
-              📄 AL5_relational_database.pdf
+            <button onClick={() => onSelectFile('LAB_PREVIEW: INFRASTRUCTURE SECURITY')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: INFRASTRUCTURE SECURITY' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
+              📄 AL5_fundamentals_of_infrastructure_security.pdf
             </button>
 
             {/* Lab 6 */}
-            <button onClick={() => onSelectFile('LAB_PREVIEW: PAYROLL SYSTEM 1')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 1' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
-              📄 AL6_payroll_system_1.pdf
-            </button>
-
-            <button onClick={() => onSelectFile('LAB_PREVIEW: PAYROLL SYSTEM 2')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 2' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
-              📄 AL6_payroll_system_2.pdf
-            </button>
-
-            <button onClick={() => onSelectFile('LAB_PREVIEW: PAYROLL SYSTEM 3')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 3' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
-              📄 AL6_payroll_system_3.zip
+            <button onClick={() => onSelectFile('LAB_PREVIEW: RELATIONAL DATABASE')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: RELATIONAL DATABASE' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`}>
+              📄 AL6_relational_database.pdf
             </button>
 
             {/* Lab 7 */}
-            <button onClick={() => onSelectFile('LAB_PREVIEW: CLOUD COMPUTING')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: CLOUD COMPUTING' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
-              📄 AL7_fundamentals_of_cloud_computing.pdf
+            <button onClick={() => onSelectFile('LAB_PREVIEW: PAYROLL SYSTEM 1')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 1' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
+              📄 AL7_payroll_system_1.pdf
+            </button>
+
+            <button onClick={() => onSelectFile('LAB_PREVIEW: PAYROLL SYSTEM 2')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 2' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
+              📄 AL7_payroll_system_2.pdf
+            </button>
+
+            <button onClick={() => onSelectFile('LAB_PREVIEW: PAYROLL SYSTEM 3')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 3' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
+              📄 AL8_payroll_system_3.zip
             </button>
 
             {/* Lab 8 */}
-            <button onClick={() => onSelectFile('LAB_PREVIEW: INFORMATION SECURITY')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: INFORMATION SECURITY' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
-              📄 AL8_fundamentals_of_information_security.pdf
+            <button onClick={() => onSelectFile('LAB_PREVIEW: CLOUD COMPUTING')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: CLOUD COMPUTING' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
+              📄 AL8_fundamentals_of_cloud_computing.pdf
             </button>
 
             {/* Lab 9 */}
-            <button onClick={() => onSelectFile('LAB_PREVIEW: LINUX NETWORKING')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: LINUX NETWORKING' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
-              📄 AL9_Linux_Networking_Fundamentals.pdf
+            <button onClick={() => onSelectFile('LAB_PREVIEW: INFORMATION SECURITY')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: INFORMATION SECURITY' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
+              📄 AL9_fundamentals_of_information_security.pdf
             </button>
 
             {/* Lab 10 */}
-            <button onClick={() => onSelectFile('LAB_PREVIEW: TRAFFIC LIGHT CONTROLLER')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: TRAFFIC LIGHT CONTROLLER' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
-              📄 AL10_Remote_Control_Traffic_Light_Controller.pdf
+            <button onClick={() => onSelectFile('LAB_PREVIEW: LINUX NETWORKING')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: LINUX NETWORKING' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
+              📄 AL10_Linux_Networking_Fundamentals.pdf
             </button>
 
             {/* Lab 11 */}
-            <button onClick={() => onSelectFile('LAB_PREVIEW: NETWORKING FUNDAMENTALS')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: NETWORKING FUNDAMENTALS' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
-              📄 AL11_fundamentals_of_networking.pdf
+            <button onClick={() => onSelectFile('LAB_PREVIEW: TRAFFIC LIGHT CONTROLLER')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: TRAFFIC LIGHT CONTROLLER' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
+              📄 AL11_Remote_Control_Traffic_Light_Controller.pdf
             </button>
 
             {/* Lab 12 */}
+            <button onClick={() => onSelectFile('LAB_PREVIEW: NETWORKING FUNDAMENTALS')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: NETWORKING FUNDAMENTALS' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
+              📄 AL12_fundamentals_of_networking.pdf
+            </button>
+
+            {/* Lab 13 */}
             <button onClick={() => onSelectFile('LAB_PREVIEW: IOT HOME SECURITY')} className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'LAB_PREVIEW: IOT HOME SECURITY' ? 'text-terminal font-bold' : 'text-terminal/70 hover:text-terminal'}`} >
-              📄 AL12_iot_home_security.pdf
+              📄 AL13_iot_home_security.pdf
             </button>
 
           </div>
@@ -879,6 +961,16 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
             >
               📄 CS1_Real-TimeDataPipelineDeployment_Engine.zip
             </button>
+                        {/* Case Study 1 */}
+            <button
+              onClick={() => onSelectFile('CASE_STUDY_PREVIEW: LOCOMOTIVE_FLEET')}
+              className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'CASE_STUDY_PREVIEW: REAL-TIME DATA PIPELINE DEPLOYMENT ENGINE'
+                ? 'text-terminal font-bold'
+                : 'text-terminal/70 hover:text-terminal'
+                }`}
+            >
+              📄 CS2_Locomotive_Fleet_Tracking_AnalyticsPlatform.zip
+            </button>
           </div>
         </div>
       </div>
@@ -896,26 +988,23 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
 
           {/* DYNAMIC DOWNLOAD */}
           {archiveFile && (
-            <div className="w-full min-h-[250px] flex flex-col justify-between bg-zinc-900/40 rounded-sm border border-terminal-dark/30 p-6 font-mono animate-fadeIn">
+            <div className="w-full min-h-[25px] flex flex-col justify-between bg-zinc-900/40 rounded-sm border border-terminal-dark/30 p-6 font-mono animate-fadeIn">
               <div className="space-y-3">
                 <div className="flex items-center gap-2 text-terminal font-bold">
                   <h3 className="text-sm uppercase tracking-wider">{archiveFile.fileName}</h3>
                 </div>
-                <p className="text-gray-400 font-sans text-[14px] leading-relaxed">
-                  This system file contains compiled production assets, complex business logic processing calculations, or data pipeline orchestration manifests that must be read locally.
-                </p>
               </div>
               <div className="pt-6 border-t border-zinc-800/60 mt-4">
                 <a href={archiveFile.src}
                   className="inline-block px-6 py-2.5 border border-terminal text-terminal text-xs font-bold hover:bg-terminal hover:text-black transition-all tracking-widest rounded-sm uppercase"
                 >
-                  Download Project Files
+                  Download
                 </a>
               </div>
             </div>
           )}
 
-          {selectedFile === 'LAB_PREVIEW: EQUIPMENT CHECKOUT SYSTEM' && (
+          {selectedFile === 'LAB_PREVIEW: REAL-TIME MEDICAL ASSET TRACKING SYSTEM' && (
             <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
                 data={`${academic_lab_1}#toolbar=1&navpanes=0&scrollbar=1`}
@@ -925,10 +1014,20 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
             </div>
           )}
 
+          {selectedFile === 'LAB_PREVIEW: EQUIPMENT CHECKOUT SYSTEM' && (
+            <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
+              <object
+                data={`${academic_lab_2}#toolbar=1&navpanes=0&scrollbar=1`}
+                type="application/pdf"
+                className="w-full h-full border-none bg-zinc-950"
+              />
+            </div>
+          )}
+
           {selectedFile === 'LAB_PREVIEW: ELECTRONIC HEALTH RECORD' && (
             <div className="w-full h-[600px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
-                data={`${academic_lab_2}#toolbar=1&navpanes=0&scrollbar=1`}
+                data={`${academic_lab_3}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"
                 className="w-full h-full border-none bg-zinc-950"
               />
@@ -938,7 +1037,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           {selectedFile === 'LAB_PREVIEW: JAVA APPLICATION LANDSCAPE' && (
             <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
-                data={`${academic_lab_3}#toolbar=1&navpanes=0&scrollbar=1`}
+                data={`${academic_lab_4}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"
                 className="w-full h-full border-none bg-zinc-950"
               />
@@ -948,7 +1047,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           {selectedFile === 'LAB_PREVIEW: INFRASTRUCTURE SECURITY' && (
             <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
-                data={`${academic_lab_4}#toolbar=1&navpanes=0&scrollbar=1`}
+                data={`${academic_lab_5}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"
                 className="w-full h-full border-none bg-zinc-950"
               />
@@ -958,7 +1057,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           {selectedFile === 'LAB_PREVIEW: RELATIONAL DATABASE' && (
             <div className="w-full h-[575px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
-                data={`${academic_lab_5}#toolbar=1&navpanes=0&scrollbar=1`}
+                data={`${academic_lab_6}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"
                 className="w-full h-full border-none bg-zinc-950"
               />
@@ -968,7 +1067,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           {selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 1' && (
             <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
-                data={`${academic_lab_6_1}#toolbar=1&navpanes=0&scrollbar=1`}
+                data={`${academic_lab_7_1}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"
                 className="w-full h-full border-none bg-zinc-950"
               />
@@ -978,7 +1077,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           {selectedFile === 'LAB_PREVIEW: PAYROLL SYSTEM 2' && (
             <div className="w-full h-[575px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
-                data={`${academic_lab_6_2}#toolbar=1&navpanes=0&scrollbar=1`}
+                data={`${academic_lab_7_2}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"
                 className="w-full h-full border-none bg-zinc-950"
               />
@@ -990,7 +1089,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           {selectedFile === 'LAB_PREVIEW: CLOUD COMPUTING' && (
             <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
-                data={`${academic_lab_7}#toolbar=1&navpanes=0&scrollbar=1`}
+                data={`${academic_lab_8}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"
                 className="w-full h-full border-none bg-zinc-950"
               />
@@ -1000,7 +1099,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           {selectedFile === 'LAB_PREVIEW: INFORMATION SECURITY' && (
             <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
-                data={`${academic_lab_8}#toolbar=1&navpanes=0&scrollbar=1`}
+                data={`${academic_lab_9}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"
                 className="w-full h-full border-none bg-zinc-950"
               />
@@ -1010,7 +1109,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           {selectedFile === 'LAB_PREVIEW: LINUX NETWORKING' && (
             <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
-                data={`${academic_lab_9}#toolbar=1&navpanes=0&scrollbar=1`}
+                data={`${academic_lab_10}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"
                 className="w-full h-full border-none bg-zinc-950"
               />
@@ -1020,7 +1119,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           {selectedFile === 'LAB_PREVIEW: TRAFFIC LIGHT CONTROLLER' && (
             <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
-                data={`${academic_lab_10}#toolbar=1&navpanes=0&scrollbar=1`}
+                data={`${academic_lab_11}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"
                 className="w-full h-full border-none bg-zinc-950"
               />
@@ -1030,7 +1129,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           {selectedFile === 'LAB_PREVIEW: NETWORKING FUNDAMENTALS' && (
             <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
-                data={`${academic_lab_11}#toolbar=1&navpanes=0&scrollbar=1`}
+                data={`${academic_lab_12}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"
                 className="w-full h-full border-none bg-zinc-950"
               />
@@ -1040,7 +1139,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
           {selectedFile === 'LAB_PREVIEW: IOT HOME SECURITY' && (
             <div className="w-full h-[375px] flex flex-col justify-between bg-zinc-950 rounded-sm border border-zinc-900 overflow-hidden">
               <object
-                data={`${academic_lab_12}#toolbar=1&navpanes=0&scrollbar=1`}
+                data={`${academic_lab_13}#toolbar=1&navpanes=0&scrollbar=1`}
                 type="application/pdf"
                 className="w-full h-full border-none bg-zinc-950"
               />

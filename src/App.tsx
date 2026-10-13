@@ -723,7 +723,7 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
       className="flex flex-col lg:flex-row gap-6 items-stretch w-full min-h-0"
     >
       {/* Left List Pane */}
-      <div className="w-full lg:w-1/3 bg-black/90 border border-terminal-dark p-4 h-auto lg:h-[640px] overflow-y-auto space-y-2 shrink-0">
+      <div className="w-full lg:w-1/3 bg-black/90 border border-terminal-dark p-4 h-auto space-y-2 shrink-0">
         {CASE_STUDIES.map((study, i) => (
           <div
             key={i}
@@ -740,7 +740,7 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
       </div>
 
       {/* Right Content Slide Viewer */}
-      <div className="w-full lg:w-2/3 bg-black/80 border border-terminal-dark p-6 flex flex-col justify-between h-auto lg:h-[640px] min-h-0">
+      <div className="w-full lg:w-2/3 bg-black/80 border border-terminal-dark p-6 flex flex-col justify-between min-h-0">
 
         {/* Scrollable Content Wrapper */}
         <div

@@ -55,7 +55,7 @@ function AboutContent({ animConfig }: SharedViewProps) {
     <motion.div {...animConfig} className="bg-black/50 border border-terminal-dark p-6 md:p-8 space-y-6 shadow-2xl">
 
       <div className="border-b border-terminal-dark pb-3">
-        <span className="text-terminal font-bold">Francisco Acosta</span>
+        <span className="text-terminal text-[20px] font-bold">Francisco Acosta</span>
       </div>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
@@ -730,7 +730,7 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
             onClick={() => handleStudySelect(i)}
             className={`p-3 border transition-colors text-[15px] cursor-pointer block ${selectedStudyIndex === i
               ? 'border-terminal bg-terminal/10'
-              : 'border-zinc-900 bg-zinc-950/40 hover:border-terminal/40'
+              : 'border-zinc-900 bg-zinc-950/40 hover:border-terminal'
               }`}
           >
             <p className="text-white font-semibold truncate">{study.name}</p>
@@ -781,7 +781,7 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
           <button
             onClick={handlePrevSlide}
             disabled={currentSlideIndex === 0}
-            className="px-3 py-1.5 bg-zinc-950 border border-zinc-800 text-[12px] text-terminal hover:text-terminal hover:border-terminal/50 disabled:opacity-30 disabled:hover:text-gray-400 disabled:hover:border-zinc-800 disabled:cursor-not-allowed transition-all font-mono"
+            className="px-3 py-1.5 bg-zinc-950 border border-zinc-800 text-[12px] text-terminal hover:text-black hover:bg-terminal font-mono"
           >
             &lt; PREV SECTION
           </button>
@@ -789,7 +789,7 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
           <button
             onClick={handleNextSlide}
             disabled={currentSlideIndex === activeStudy.slides.length - 1}
-            className="px-3 py-1.5 bg-zinc-950 border border-zinc-800 text-[12px] text-terminal hover:text-terminal hover:border-terminal/50 disabled:opacity-30 disabled:hover:text-gray-400 disabled:hover:border-zinc-800 disabled:cursor-not-allowed transition-all font-mono"
+            className="px-3 py-1.5 bg-zinc-950 border border-zinc-800 text-[12px] text-terminal hover:text-black hover:bg-terminal font-mono"
           >
             NEXT SECTION &gt;
           </button>
@@ -1199,10 +1199,10 @@ export default function App() {
                   </button>
                 </div>
                 <nav className="flex gap-2">
-                  <button onClick={() => setHrTab('about')} className={`px-4 py-1.5 text-xs uppercase tracking-wider border transition-all cursor-pointer ${hrTab === 'about' ? 'border-terminal text-terminal bg-terminal/10' : 'border-transparent text-gray-400 hover:text-white'}`}>
+                  <button onClick={() => setHrTab('about')} className={`px-4 py-1.5 text-xs uppercase tracking-wider border transition-all cursor-pointer ${hrTab === 'about' ? 'border-terminal text-terminal bg-terminal/10' : 'border-transparent text-gray-400 hover:text-terminal hover:border-terminal'}`}>  
                     About
                   </button>
-                  <button onClick={() => setHrTab('resume')} className={`px-4 py-1.5 text-xs uppercase tracking-wider border transition-all cursor-pointer ${hrTab === 'resume' ? 'border-terminal text-terminal bg-terminal/10' : 'border-transparent text-gray-400 hover:text-white'}`}>
+                  <button onClick={() => setHrTab('resume')} className={`px-4 py-1.5 text-xs uppercase tracking-wider border transition-all cursor-pointer ${hrTab === 'resume' ? 'border-terminal text-terminal bg-terminal/10' : 'border-transparent text-gray-400 hover:text-terminal hover:border-terminal'}`}>
                     Resume
                   </button>
                 </nav>
@@ -1231,7 +1231,7 @@ export default function App() {
                     <button
                       key={tab}
                       onClick={() => setTechTab(tab)}
-                      className={`px-3 py-1.5 text-xs uppercase tracking-wider border transition-all cursor-pointer ${techTab === tab ? 'border-terminal text-terminal bg-terminal/10' : 'border-transparent text-gray-400 hover:text-white'}`}
+                      className={`px-3 py-1.5 text-xs uppercase tracking-wider border transition-all cursor-pointer ${techTab === tab ? 'border-terminal text-terminal bg-terminal/10' : 'border-transparent text-gray-400 hover:text-terminal hover:border-terminal'}`}
                     >
                       {tab === 'labs' ? 'Academic Labs' : tab === 'studies' ? 'Case Studies' : tab}
                     </button>

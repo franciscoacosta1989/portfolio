@@ -106,7 +106,7 @@ function VideoReelContent({ animConfig }: SharedViewProps) {
 function ResumeContent({ animConfig }: SharedViewProps) {
   return (
     <motion.div {...animConfig} className="space-y-5">
-      <div className="bg-black/95 border border-terminal-dark p-6 text-xs text-gray-300 space-y-4 font-mono max-h-[640px] overflow-y-auto shadow-inner scrollbar-thin scrollbar-thumb-terminal-dark">
+      <div className="bg-black/95 border border-terminal-dark p-6 text-xs text-gray-300 space-y-4 font-mono overflow-y-auto shadow-inner scrollbar-thin scrollbar-thumb-terminal-dark">
 
         <div className="text-center">
           <h4 className="text-base font-bold text-terminal text-[28px] tracking-wider">FRANCISCO ACOSTA</h4>
@@ -497,7 +497,7 @@ function AcademicLabsContent({ animConfig }: SharedViewProps) {
   return (
     <motion.div key="tech-labs" {...animConfig} className="grid grid-cols-1 lg:grid-cols-3 gap-6">
       {/* Left List Pane */}
-      <div className="lg:col-span-1 bg-black/90 border border-terminal-dark p-4 h-[640px] overflow-y-auto space-y-2">
+      <div className="lg:col-span-1 bg-black/90 border border-terminal-dark p-4 space-y-2">
         {ACADEMIC_LABS.map((lab, i) => (
           <div key={i} onClick={() => handleLabSelect(i)} className={`p-2 border transition-colors text-[15px] cursor-pointer ${selectedLabIndex === i ? 'border-terminal bg-terminal/10' : 'border-zinc-900 bg-zinc-950/40 hover:border-terminal/40'}`}>
             <p className="text-white font-semibold truncate">{lab.name}</p>
@@ -857,10 +857,11 @@ const repoArchives = [
   }
 ];
 
+// Repository
 function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: RepositoryExplorerProps) {
   const archiveFile = repoArchives.find(a => a.labelToken === selectedFile);
   return (
-    <motion.div key="tech-repo" {...animConfig} className="border border-terminal-dark bg-black/90 rounded-sm flex flex-col md:flex-row h-[640px] overflow-hidden">
+    <motion.div key="tech-repo" {...animConfig} className="border border-terminal-dark bg-black/90 rounded-sm flex flex-col md:flex-row">
 
       {/* Left Directory Panel */}
       <div className="w-full md:w-5/12 border-b md:border-b-0 md:border-r border-terminal-dark p-4 space-y-3 overflow-y-auto bg-black/40">

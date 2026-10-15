@@ -781,7 +781,7 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
           <button
             onClick={handlePrevSlide}
             disabled={currentSlideIndex === 0}
-            className="px-3 py-1.5 bg-zinc-950 border border-zinc-800 text-[12px] text-terminal hover:text-black hover:bg-terminal font-mono"
+            className="px-3 py-1.5 bg-zinc-950 border border-zinc-800 text-[12px] text-terminal hover:text-black hover:bg-terminal disabled:opacity-0 disabled:hover:text-gray-400 disabled:hover:border-zinc-800 transition-all font-mono"
           >
             &lt; PREV SECTION
           </button>
@@ -789,7 +789,7 @@ function CaseStudiesContent({ animConfig }: SharedViewProps) {
           <button
             onClick={handleNextSlide}
             disabled={currentSlideIndex === activeStudy.slides.length - 1}
-            className="px-3 py-1.5 bg-zinc-950 border border-zinc-800 text-[12px] text-terminal hover:text-black hover:bg-terminal font-mono"
+            className="px-3 py-1.5 bg-zinc-950 border border-zinc-800 text-[12px] text-terminal hover:text-black hover:bg-terminal disabled:opacity-0 disabled:hover:text-gray-400 disabled:hover:border-zinc-800 transition-all font-mono"
           >
             NEXT SECTION &gt;
           </button>

@@ -843,7 +843,7 @@ const repoArchives = [
   {
     fileName: "CS2_Locomotive_Fleet_Tracking_AnalyticsPlatform.zip",
     labelToken: "CASE_STUDY_PREVIEW: LOCOMOTIVE_FLEET",
-    src: "https://github.com/franciscoacosta1989/portfolio/releases/download/v1.1.0/CS1_Real-TimeDataPipelineDeployment.Engine.zip"
+    src: "https://github.com/franciscoacosta1989/portfolio/releases/download/v1.1.0/CS2_Locomotive_Fleet_Tracking_AnalyticsPlatform.zip"
   },
   {
     fileName: "AL6_payroll_3.zip",

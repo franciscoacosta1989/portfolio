@@ -89,15 +89,15 @@ function VideoReelContent({ animConfig }: SharedViewProps) {
       </div>
 
       {/* Video Framing Window */}
-      <div className="w-full bg-zinc-950 border border-zinc-900 rounded-sm overflow-hidden relative group shadow-inner aspect-video">
-        <iframe
-          src="https://drive.google.com/file/d/1dUt4OFpOr7bwlXh3r82P6rVtqUZURTDt/preview"
-          className="absolute top-0 left-0 w-full h-full border-none opacity-95 group-hover:opacity-100 transition-opacity duration-300"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-          title="Design Reel"
-        />
-      </div>
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover opacity-95 group-hover:opacity-100 transition-opacity duration-300"
+        controls
+        playsInline
+        preload="metadata"
+      >
+        <source src="https://github.com/franciscoacosta1989/portfolio/releases/download/v1.1.2/Francisco_Acosta_2021_Reel.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </motion.div>
   );
 }
@@ -279,7 +279,7 @@ function SplashView({ onNavigate }: SplashViewProps) {
 //============================================// Academic Labs Information //============================================//
 const ACADEMIC_LABS: AcademicLabItem[] = [
 
-    //============================================// Academic Lab 1 //============================================//
+  //============================================// Academic Lab 1 //============================================//
   {
     name: "Real-Time Medical Asset Tracking System",
     category: "Systems Architecture",
@@ -595,22 +595,22 @@ const CASE_STUDIES: CaseStudyItem[] = [
         description: "Renders real-time locomotive positions across national rail networks using an interactive GIS layer, visually differentiating asset status via dynamic map markers.",
         imageSrc: case_study_2_LineFlow_2
       },
-            {
+      {
         title: "Real-Time Fleet Analytics",
         description: "Monitors critical locomotive health indicators to optimize fuel stops and cargo efficiency.",
         imageSrc: case_study_2_LineFlow_3
       },
-            {
+      {
         title: "Locomotive Lifecycle & Yard Status Monitor",
         description: "Tracks individual train operational states with granular origin/destination yard mapping for precise yard logistics and time-of-arrival forecasting.",
         imageSrc: case_study_2_LineFlow_4
       },
-            {
+      {
         title: "Automated Thermal & Geofence Anomaly Detection",
         description: "Ingests live data streams to flag safety hazards, such as temperature warnings and prioritized departures.",
         imageSrc: case_study_2_LineFlow_5
       },
-            {
+      {
         title: "High Clearance Audit",
         description: "Displays detailed cargo manifests and heavy tonnage figures for dispatchers holding Level 3 NOC Authorization, enabling real-time route clearance and load balancing.",
         imageSrc: case_study_2_LineFlow_6
@@ -838,17 +838,17 @@ const repoArchives = [
   {
     fileName: "CS1_Real-TimeDataPipelineDeployment_Engine.zip",
     labelToken: "CASE_STUDY_PREVIEW: REAL-TIME DATA PIPELINE DEPLOYMENT ENGINE",
-    src: "https://docs.google.com/uc?export=download&id=1q4ZY4hgomN0kojF4GRloIJsrOlSrdDlD"
+    src: "https://github.com/franciscoacosta1989/portfolio/releases/download/v1.1.0/CS1_Real-TimeDataPipelineDeployment.Engine.zip"
   },
   {
     fileName: "CS2_Locomotive_Fleet_Tracking_AnalyticsPlatform.zip",
     labelToken: "CASE_STUDY_PREVIEW: LOCOMOTIVE_FLEET",
-    src: "https://docs.google.com/uc?export=download&id=1q4ZY4hgomN0kojF4GRloIJsrOlSrdDlD"
+    src: "https://github.com/franciscoacosta1989/portfolio/releases/download/v1.1.0/CS1_Real-TimeDataPipelineDeployment.Engine.zip"
   },
   {
     fileName: "AL6_payroll_3.zip",
     labelToken: "LAB_PREVIEW: PAYROLL SYSTEM 3",
-    src: "https://docs.google.com/uc?export=download&id=1H88Gsy_uCMvteV0H2e1FAgSJcxVTy6SO"
+    src: "https://github.com/franciscoacosta1989/portfolio/releases/download/v1.1.0/AL6_payroll_system_3.zip"
   },
   {
     fileName: "AL1_Real-Time_Medical_Asset_Tracking_System.pptx",
@@ -962,7 +962,7 @@ function RepositoryExplorerContent({ animConfig, selectedFile, onSelectFile }: R
             >
               📄 CS1_Real-TimeDataPipelineDeployment_Engine.zip
             </button>
-                        {/* Case Study 1 */}
+            {/* Case Study 1 */}
             <button
               onClick={() => onSelectFile('CASE_STUDY_PREVIEW: LOCOMOTIVE_FLEET')}
               className={`block w-full text-left pl-3 text-[15px] hover:underline truncate cursor-pointer transition-colors ${selectedFile === 'CASE_STUDY_PREVIEW: REAL-TIME DATA PIPELINE DEPLOYMENT ENGINE'
@@ -1199,7 +1199,7 @@ export default function App() {
                   </button>
                 </div>
                 <nav className="flex gap-2">
-                  <button onClick={() => setHrTab('about')} className={`px-4 py-1.5 text-xs uppercase tracking-wider border transition-all cursor-pointer ${hrTab === 'about' ? 'border-terminal text-terminal bg-terminal/10' : 'border-transparent text-gray-400 hover:text-terminal hover:border-terminal'}`}>  
+                  <button onClick={() => setHrTab('about')} className={`px-4 py-1.5 text-xs uppercase tracking-wider border transition-all cursor-pointer ${hrTab === 'about' ? 'border-terminal text-terminal bg-terminal/10' : 'border-transparent text-gray-400 hover:text-terminal hover:border-terminal'}`}>
                     About
                   </button>
                   <button onClick={() => setHrTab('resume')} className={`px-4 py-1.5 text-xs uppercase tracking-wider border transition-all cursor-pointer ${hrTab === 'resume' ? 'border-terminal text-terminal bg-terminal/10' : 'border-transparent text-gray-400 hover:text-terminal hover:border-terminal'}`}>

@@ -249,7 +249,7 @@ function SplashView({ onNavigate }: SplashViewProps) {
     <motion.div key="splash-gateway" className="flex-1 flex flex-col items-center justify-center p-4 text-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, scale: 0.99 }} transition={{ duration: 0.3 }}>
       <div className="border border-terminal-dark bg-black/60 backdrop-blur-xl p-8 md:p-12 rounded-sm max-w-xl w-full shadow-[0_0_50px_rgba(0,0,0,0.8)]">
         <h1 className="text-3xl md:text-4xl font-bold text-terminal mb-1 tracking-tight">Francisco Acosta</h1>
-        <h2 className="text-m text-gray-400 mb-6 uppercase tracking-widest font-bold">Systems Integration & Solutions Engineer</h2>
+        <h2 className="text-m text-gray-400 mb-6 uppercase tracking-widest font-bold">Software Engineer</h2>
         <div className="w-7/8 h-[1px] bg-terminal-dark my-3 mx-auto" />
 
         <div className="text-s text-gray-400">

@@ -59,20 +59,19 @@ function AboutContent({ animConfig }: SharedViewProps) {
       </div>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        Systems Integration and Solutions Engineer specializing in software integration, automation, data pipelines, and system configuration for high-availability, real-time environments.
-        My strength lies in stepping back to analyze systemic bottlenecks and deploying the right solution, whether that means designing modular configuration frameworks, writing automation scripts, creating documentation or building custom tooling. For example, to eliminate persistent live-data failures across 40+ national stations, I engineered a custom C#/.NET Windows Service and WPF management application that safely ingests, sanitizes, and routes external data feeds.
+        Systems Integration and Solutions Engineer specializing in software integration, automation, data pipelines, and system configuration for high-availability, real-time environments. My strength lies in stepping back to analyze systemic bottlenecks and deploying the right solution, whether that means designing modular configuration frameworks, writing automation scripts, creating documentation, or building custom tooling. For example, to eliminate persistent live-data failures across 30+ national stations, I engineered a custom C#/.NET Windows Service and WPF management application that safely ingests, sanitizes, and routes external data feeds.
       </p>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        My career at NBCUniversal began in creative production before progressing into real-time systems development, automation, software engineering, and systems integration. That progression gives me a practical understanding of both the operational problems needed to be solved and the technology required to solve them.
+        My career at NBCUniversal began in creative production before progressing into real-time systems development, automation, and systems integration. That progression gives me a practical understanding of both the operational problems that need solving and the technology required to solve them.
       </p>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        Backed by a Bachelor’s degree in Computer Information Systems, alongside Associate degrees in IT/Networking and Web Graphic Design, I bring a broad technical foundation spanning software development, automation, networking, databases, system architecture, and hardware/software integration.
+        Backed by a recent Bachelor’s degree in Computer Information Systems, alongside Associate degrees in IT/Networking and Web Graphic Design, I pair my 16 years of live high-availability experience with academic foundations in software engineering (SDLC/OOP), cybersecurity, database management, networking, and system architecture.
       </p>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        I am targeting Systems Integration Engineering, Solutions Engineering, and Systems Architecture opportunities in the Fort Worth area where I can apply my cross-layer technical foundation to complex enterprise environments.
+        I am targeting engineering opportunities in the Fort Worth area where I can apply my cross-layer technical foundation to complex enterprise environments.
       </p>
     </motion.div>
   );
@@ -127,22 +126,38 @@ function ResumeContent({ animConfig }: SharedViewProps) {
           <p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider">Skills</p>
           <div className="space-y-3">
             <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
-              <span>Technical Skills</span>
+              <span>Production & Operational Experience (NBCUniversal)</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li><span className="text-terminal">Architecture & Integration: </span>Systems Integration, Solutions Architecture, Enterprise Data Pipelines, Middleware Ingestion, Distributed Systems, High-Availability Systems, Data Sanitization & Validation, Zero-Downtime Migration.</li>
-              <li><span className="text-terminal">Languages & Frameworks: </span>C#, .NET, Python, SQL, C++, Java, WPF / XAML, Bash, PowerShell, HTML/CSS, JavaScript, TypeScript.</li>
-              <li><span className="text-terminal">Databases & Data Formats: </span>Relational Databases (SQL), Non-Relational Databases (MongoDB), JSON, KML, XML.</li>
-              <li><span className="text-terminal">Infrastructure & Security: </span>Cloud Infrastructure (Azure), Network Protocols, RBAC, Penetration Testing & Vulnerability Assessment, Ethical Hacking, Data Privacy & Compliance, System Diagnostics, SOP Development.</li>
+              <li>
+                <span className="text-terminal">Real-Time Event Systems & Logic: </span>
+                Node-Based Visual Logic, Multi-Level Event Scripting (Project, Scene, Object, & Timeline Scope), State Management, Real-Time Data Binding.
+              </li>
+              <li>
+                <span className="text-terminal">Core Production Scripting: </span>
+                Embedded VBScript, Event-Driven Execution Engines, Data Parsing & Routing.
+              </li>
+              <li>
+                <span className="text-terminal">Standalone Applications & Tooling: </span>
+                C#, .NET Framework, WPF / XAML, PowerShell (Custom Windows Service & Data Ingestion App).
+              </li>
+              <li>
+                <span className="text-terminal">Architecture & Integration: </span>
+                Systems Integration, Enterprise Data Ingestion, Middleware Pipelines, High-Availability Systems, Data Validation & Sanitization, System Diagnostics.
+              </li>
+              <li>
+                <span className="text-terminal">Leadership & Operations: </span>
+                Cross-Functional Team Leadership, Requirements Gathering, Standard Operating Procedures, Live-Production Crisis Management, Technical Mentorship.
+              </li>
             </ul>
           </div>
 
           <div className="space-y-3">
             <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
-              <span>Transferable Skills</span>
+              <span>Academic & Technical Core (B.S. CIS, DeVry University)</span>
             </div>
-            <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li>Technical Leadership of cross-functional teams, Requirement Gathering, Standard Operating Procedures, Crisis Management and Mentorship.</li>
+            <ul className="list-disc space-y-1 text-gray-400 text-[16px] leading-relaxed">
+              <p>Software Engineering (SDLC, OOP), Cloud Computing (Azure), Relational Databases (SQL), Non-Relational Databases (MongoDB), Cybersecurity Fundamentals, C++, C#, Java, Python.</p>
             </ul>
           </div>
 
@@ -156,7 +171,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
               <span className="text-white sm:text-[16px]">April 2018 - Present</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li><span className="text-terminal">Centralized Configuration Pipelines: </span>Engineered a unified, data-driven template engine to automate configuration management across 400+ system variations and 40+ national locations, eliminating manual setup friction and operational bottlenecks.</li>
+              <li><span className="text-terminal">Centralized Configuration Pipelines: </span>Engineered a unified, data-driven template engine to automate configuration management across 400+ system variations and 30+ national locations, eliminating manual setup friction and operational bottlenecks.</li>
               <li><span className="text-terminal">Middleware & Data Ingestion: </span>Architected a custom C#/.NET Windows Service and WPF management application to ingest, validate, and sanitize live external data streams before consumption by real-time downstream engines.</li>
               <li><span className="text-terminal">System Availability & Reliability: </span>Maintained high uptime across 24/7 mission critical operations by managing cross-layer application workflows, software integrations, and distributed node configurations.</li>
             </ul>
@@ -249,7 +264,7 @@ function SplashView({ onNavigate }: SplashViewProps) {
     <motion.div key="splash-gateway" className="flex-1 flex flex-col items-center justify-center p-4 text-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, scale: 0.99 }} transition={{ duration: 0.3 }}>
       <div className="border border-terminal-dark bg-black/60 backdrop-blur-xl p-8 md:p-12 rounded-sm max-w-xl w-full shadow-[0_0_50px_rgba(0,0,0,0.8)]">
         <h1 className="text-3xl md:text-4xl font-bold text-terminal mb-1 tracking-tight">Francisco Acosta</h1>
-        <h2 className="text-m text-gray-400 mb-6 uppercase tracking-widest font-bold">Software Engineer</h2>
+        <h2 className="text-m text-gray-400 mb-6 uppercase tracking-widest font-bold">Systems Integration Engineer</h2>
         <div className="w-7/8 h-[1px] bg-terminal-dark my-3 mx-auto" />
 
         <div className="text-s text-gray-400">
@@ -542,7 +557,7 @@ const CASE_STUDIES: CaseStudyItem[] = [
     slides: [
       {
         title: "Problem",
-        description: "The Workflow: \n NBC Universal’s centralized graphics hub (The Arthouse, 20 artists) services 40+ local stations, spanning multiple daily newscasts and special programming across the nation. \n \n The Scaling Issue: \n Graphics must be mapped for unique screens and specific anchor blocking (e.g., standing vs. sitting at the desk). \n \n The Bottleneck: \n This matrix required 350+ custom, non-shareable variations that created an unsustainable workload for a single creative team.",
+        description: "The Workflow: \n NBC Universal’s centralized graphics hub (The Arthouse, 20 artists) services 30+ local stations, spanning multiple daily newscasts and special programming across the nation. \n \n The Scaling Issue: \n Graphics must be mapped for unique screens and specific anchor blocking (e.g., standing vs. sitting at the desk). \n \n The Bottleneck: \n This matrix required 350+ custom, non-shareable variations that created an unsustainable workload for a single creative team.",
         imageSrc: case_study_1_problem
       },
       {
@@ -552,7 +567,7 @@ const CASE_STUDIES: CaseStudyItem[] = [
       },
       {
         title: "Impact",
-        description: 'Operational Simplicity: \n Producers simply assign the "SetU" asset to a predefined studio variation that automatically matches the monitor and the planned camera shot. \n \n The Result: \n Transformed 350+ custom assets into a single, universal graphic ecosystem. \n \n The Value: \n Content is now 100% shareable across all 40+ stations, drastically reducing artist turnaround times and eliminating repetitive manual resizing.',
+        description: 'Operational Simplicity: \n Producers simply assign the "SetU" asset to a predefined studio variation that automatically matches the monitor and the planned camera shot. \n \n The Result: \n Transformed 350+ custom assets into a single, universal graphic ecosystem. \n \n The Value: \n Content is now 100% shareable across all 30+ stations, drastically reducing artist turnaround times and eliminating repetitive manual resizing.',
         imageSrc: case_study_1_impact
       }
     ]
@@ -565,7 +580,7 @@ const CASE_STUDIES: CaseStudyItem[] = [
     slides: [
       {
         title: "Problem",
-        description: "The Workflow: \n NBC Universal’s centralized local news departments relied on ingestion of external live data feeds (covering sports, politics, weather, and stocks) that were fed raw and unfiltered directly into live, real-time graphics engines. \n \n The Complexity: \n This fragile pipeline spanned across 40+ independent local stations, each managing localized variations of these specialized data streams with zero shared fallback coverage. \n \n The Reliability Issue: Unpredictable external payloads or missing schemas caused frequent real-time renderer crashes. A single breaking data mutation required manual intervention across individual station nodes, triggering severe on-air downtime. \n \n The Bottleneck: \n Managing this matrix required dedicated, continuous oversight to prevent domino-effect failures. One localized mishap threatened to desynchronize critical news streams.",
+        description: "The Workflow: \n NBC Universal’s centralized local news departments relied on ingestion of external live data feeds (covering sports, politics, weather, and stocks) that were fed raw and unfiltered directly into live, real-time graphics engines. \n \n The Complexity: \n This fragile pipeline spanned across 30+ independent local stations, each managing localized variations of these specialized data streams with zero shared fallback coverage. \n \n The Reliability Issue: Unpredictable external payloads or missing schemas caused frequent real-time renderer crashes. A single breaking data mutation required manual intervention across individual station nodes, triggering severe on-air downtime. \n \n The Bottleneck: \n Managing this matrix required dedicated, continuous oversight to prevent domino-effect failures. One localized mishap threatened to desynchronize critical news streams.",
         imageSrc: case_study_2_problem
       },
       {
@@ -575,7 +590,7 @@ const CASE_STUDIES: CaseStudyItem[] = [
       },
       {
         title: "Impact",
-        description: 'Operational Simplicity: \n Users utilize the intuitive interface to instantly map custom streams, define background update intervals, and dynamically pick specific data keys from external URLs without writing a single line of script. \n \n The Result: \n Completely isolated the real-time rendering systems from hazardous data sources, live on-air system crashes and data-induced downtimes down to zero. \n \n The Value: \n Scaled operational efficiency exponentially, transforming a highly sensitive multi-station maintenance hazard into a streamlined, hardened pipeline that allows a single developer to manage and orchestrate all 40+ station data feeds seamlessly.',
+        description: 'Operational Simplicity: \n Users utilize the intuitive interface to instantly map custom streams, define background update intervals, and dynamically pick specific data keys from external URLs without writing a single line of script. \n \n The Result: \n Completely isolated the real-time rendering systems from hazardous data sources, live on-air system crashes and data-induced downtimes down to zero. \n \n The Value: \n Scaled operational efficiency exponentially, transforming a highly sensitive multi-station maintenance hazard into a streamlined, hardened pipeline that allows a single developer to manage and orchestrate all 30+ station data feeds seamlessly.',
         imageSrc: case_study_2_impact
       }
     ]

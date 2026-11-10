@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence, type MotionProps } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 
 //============================================// Import imagery, movies & files //============================================//
 import bgImage from './assets/desktopBkg.jpg';
@@ -1189,7 +1190,9 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen bg-terminal-bg text-gray-200 selection:bg-terminal selection:text-black antialiased font-mono">
+    <>
+      <Analytics />
+      <div className="relative min-h-screen bg-terminal-bg text-gray-200 selection:bg-terminal selection:text-black antialiased font-mono">
 
       {/* Background */}
       <div className="fixed inset-0 bg-cover bg-center transition-all duration-1000 ease-out z-0" style={{ backgroundImage: `url(${bgImage})`, filter: view === 'splash' ? 'brightness(0.18) blur(12px)' : 'brightness(0.05) blur(0px)', mixBlendMode: 'luminosity' }} />
@@ -1304,5 +1307,6 @@ export default function App() {
 
       </div>
     </div>
+    </>
   );
 }

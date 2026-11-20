@@ -1,37 +1,28 @@
 Francisco Acosta
 Fort Worth, TX   |   682-313-6403   |   franciscoacosta1989@gmail.com   |   https://franciscoacosta.vercel.app/
-
 Professional Summary
-Systems Integration Engineer with a 16-year background optimizing high-availability platform workflows, dynamic data ingestion pipelines, and system configurations across 30+ national locations. Specializes in real-time event logic, data validation, and connecting software platforms under strict zero-downtime operational constraints. Combines 16+ years of hands-on production scripting and real-time execution with a B.S. in Computer Information Systems to bridge software applications, database schemas, and operational hardware nodes.
-
+Software Engineer with a B.S. in Computer Information Systems and hands-on experience developing applications, automating data workflows, and supporting real-time production systems. Independently developed a C#/.NET desktop application and Windows Service to ingest, process, validate, and distribute external data feeds through configurable workflows. Brings 16+ years of experience in technical production environments, including event-driven scripting, real-time data integration, and operational problem-solving at NBCUniversal. 
 Education
 DeVry University | B.S. in Computer Information Systems (Software Engineering) | Oct 2026
-• Focus Areas: Linux Operating System, Object-Oriented Programming, Systems Architecture & Integration, Ethical Hacking & Penetration Testing, Software Engineering, SDLC, Data Structures & Algorithms, Cloud Infrastructure, and Relational/NoSQL Databases.
-• Additional Credentials: A.A. in Information Technology (2025), A.A. in Web Graphic Design (2010)
-
+* Focus Areas: Linux Operating System, Object-Oriented Programming, Systems Architecture & Integration, Ethical Hacking & Penetration Testing, Software Engineering, SDLC, Data Structures & Algorithms, Cloud Infrastructure, and Relational/NoSQL Databases.
+* Additional Credentials: A.A. in Information Technology (2025), A.A. in Web Graphic Design (2010)
 Production & Operational Experience (NBCUniversal)
-• Real-Time Event Systems & Logic: Node-Based Visual Logic, Multi-Level Event Scripting (Project, Scene, Object, & Timeline Scope), State Management, Real-Time Data Binding.
-• Core Production Scripting: Embedded VBScript, Event-Driven Execution Engines, Data Parsing & Routing.
-• Standalone Applications & Tooling: C#, .NET Framework, WPF / XAML, PowerShell (Custom Windows Service & Data Ingestion App).
-• Architecture & Integration: Systems Integration, Enterprise Data Ingestion, Middleware Pipelines, High-Availability Systems, Data Validation & Sanitization, System Diagnostics.
-• Leadership & Operations: Cross-Functional Team Leadership, Requirements Gathering, Standard Operating Procedures (SOPs), Live-Production Crisis Management, Technical Mentorship.
-
+* Real-Time Event Systems & Logic: Node-Based Visual Logic, Multi-Level Event Scripting (Project, Scene, Object, & Timeline Scope), State Management, Real-Time Data Binding.
+* Core Production Scripting: VBScript, Event-Driven Execution Engines, Data Parsing & Routing.
+* Standalone Applications & Tooling: C#, .NET Framework, WPF / XAML, PowerShell (Custom Windows Service & Data Ingestion App).
+* Architecture & Integration: Systems Integration, Enterprise Data Ingestion, Middleware Pipelines, High-Availability Systems, Data Validation & Sanitization, System Diagnostics.
+* Leadership & Operations: Cross-Functional Team Leadership, Requirements Gathering, Standard Operating Procedures (SOPs), Live-Production Crisis Management, Technical Mentorship.
 Academic & Technical Core (B.S. CIS, DeVry University)
 Software Engineering (SDLC, OOP), Cloud Computing (Azure), Relational Databases (SQL), Non-Relational Databases (MongoDB), Cybersecurity Fundamentals, Introductory C++, Java, Python.
-
 Work Experience
-
 NBCUniversal
-
-Senior Real-Time Systems Developer   |   April 2018 - Present
-• Engineered a centralized software suite using .NET and C# that streamlined configuration management and validated mission-critical broadcast infrastructure.
-• Automated 400+ system combinations across 30+ national locations by engineering a unified, data-driven template pipeline.
-• Maintained a high-percentage system uptime for 24/7 live operations through proactive management of distributed hardware and software integration through automation.
-
-Real-Time Systems Developer   |   July 2011 - April 2018
-• Automated Data Binding: Integrated real-time scripting to dynamically connect external data feeds with live execution engines, improving data accuracy and delivery speed.
-• Cross-Functional System Rollouts: Collaborated with technical and operational stakeholders to configure and deploy fault-tolerant software packages under tight live-production deadlines.
-
+Senior Motion Graphics Designer / Real-Time Graphics Developer   |   April 2018 - Present
+* C#/.NET Application Development: Independently developed a C#/.NET desktop application and Windows Service to centralize configuration, processing, and management of external data feeds.
+* Data Pipeline & Workflow Automation: Implemented configurable JSON ingestion, data mapping, caching, validation, sanitization, and structured output generation for downstream graphics applications.
+* Scalable Graphics Deployment: Consolidated 400+ station-specific graphic variations into reusable, data-driven templates supporting 30+ television stations.
+Motion Graphics Designer / Real-Time Graphics Developer   |   July 2011 - April 2018
+* Real-Time Data Integration: Developed event-driven scripting to connect external data feeds with live graphics applications, enabling dynamic content updates during broadcasts.
+* Production Systems Development: Built reusable functions, object-level logic, and timeline-based event triggers using VBScript / Visual Logic and collaborated with technical and operational teams.
 Independent Contractor   |   February 2010 - July 2011
-• Technical Specification & Compliance: Developed technical delivery specifications for digital assets to ensure seamless ingestion and compliance across automated publishing workflows.
-• High-Volume Asset Processing: Managed fast turnaround production schedules, optimizing digital media assets for live execution in high-pressure environments.
+* Technical Specification & Compliance: Developed technical delivery specifications for digital assets to support consistent ingestion into automated publishing workflows.
+* High-Volume Asset Processing: Managed fast-turnaround production schedules and optimized digital media assets for time-sensitive delivery.

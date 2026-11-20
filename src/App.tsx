@@ -59,19 +59,19 @@ function AboutContent({ animConfig }: SharedViewProps) {
       </div>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        Systems Integration and Solutions Engineer specializing in software integration, automation, data pipelines, and system configuration for high-availability, real-time environments. My strength lies in stepping back to analyze systemic bottlenecks and deploying the right solution, whether that means designing modular configuration frameworks, writing automation scripts, creating documentation, or building custom tooling. For example, to eliminate persistent live-data failures across 30+ national stations, I engineered a custom C#/.NET Windows Service and WPF management application that safely ingests, sanitizes, and routes external data feeds.
+        Software Engineer with a B.S. in Computer Information Systems and 16+ years of experience developing and supporting real-time production workflows and technical systems at NBCUniversal. My application development experience includes independently building a C#/.NET application and Windows Service platform for ingesting, processing, validating, and distributing external data feeds across 30+ television stations.
       </p>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        My career at NBCUniversal began in creative production before progressing into real-time systems development, automation, and systems integration. That progression gives me a practical understanding of both the operational problems that need solving and the technology required to solve them.
+        My technical background spans application development, object-oriented programming, automation, data integration, and production scripting. I enjoy analyzing complex problems, understanding how systems interact, and building practical software solutions that improve operational workflows.
       </p>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        Backed by a recent Bachelor’s degree in Computer Information Systems, alongside Associate degrees in IT/Networking and Web Graphic Design, I pair my 16 years of live high-availability experience with academic foundations in software engineering (SDLC/OOP), cybersecurity, database management, networking, and system architecture.
+        My professional background combines broadcast production, real-time graphics systems, and application development. At NBCUniversal, I have spent 16+ years working with systems that support live production, developing event-driven logic, dynamic templates, and automated workflows using Ross XPression, VBScript, and Visual Logic. Alongside this work, I independently developed a C#/.NET desktop application and Windows Service to ingest, validate, and distribute external data feeds.
       </p>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        I am targeting engineering opportunities in the Fort Worth area where I can apply my cross-layer technical foundation to complex enterprise environments.
+        I hold a Bachelor of Science in Computer Information Systems, along with Associate degrees in Information Technology/Networking and Web Graphic Design. My academic foundation includes software engineering, data structures and algorithms, databases, Linux, networking, cloud computing, and cybersecurity. I am interested in software engineering opportunities involving application development, enterprise systems, and data-driven solutions.
       </p>
     </motion.div>
   );
@@ -110,6 +110,15 @@ function ResumeContent({ animConfig }: SharedViewProps) {
         <div className="text-center">
           <h4 className="text-base font-bold text-terminal text-[28px] tracking-wider">FRANCISCO ACOSTA</h4>
           <p className="text-white text-[16px] mt-1">franciscoacosta1989@gmail.com {"\u00A0"}| {"\u00A0"}682-313-6403 {"\u00A0"}|{"\u00A0"} Fort Worth, TX</p>
+        </div>
+
+        <div className="text-center border-b border-terminal-dark/40 pb-3">
+          <p className="text-white text-[18px] font-bold tracking-wide">
+            SOFTWARE ENGINEER
+          </p>
+          <p className="text-gray-400 text-[14px] mt-1">
+            C#/.NET | Application Development | Data Integration
+          </p>
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-3 py-2">
@@ -156,9 +165,9 @@ function ResumeContent({ animConfig }: SharedViewProps) {
             <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
               <span>Academic & Technical Core (B.S. CIS, DeVry University)</span>
             </div>
-            <ul className="list-disc space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <p>Software Engineering (SDLC, OOP), Cloud Computing (Azure), Relational Databases (SQL), Non-Relational Databases (MongoDB), Cybersecurity Fundamentals, C++, C#, Java, Python.</p>
-            </ul>
+            <p className="list-disc space-y-1 text-gray-400 text-[16px] leading-relaxed">
+              Software Engineering (SDLC, OOP), Cloud Computing (Azure), Relational Databases (SQL), Non-Relational Databases (MongoDB), Cybersecurity Fundamentals, C++, C#, Java, Python.</p>
+            
           </div>
 
           {/* Work Experience */}
@@ -167,19 +176,35 @@ function ResumeContent({ animConfig }: SharedViewProps) {
           <p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider ">Experience: NBCUniversal</p>
           <div className="space-y-3">
             <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
-              <span>Senior Real-Time Systems Developer</span>
+              <span>Senior Motion Graphics Designer / Real-Time Systems Specialist</span>
               <span className="text-white sm:text-[16px]">April 2018 - Present</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li><span className="text-terminal">Centralized Configuration Pipelines: </span>Engineered a unified, data-driven template engine to automate configuration management across 400+ system variations and 30+ national locations, eliminating manual setup friction and operational bottlenecks.</li>
-              <li><span className="text-terminal">Middleware & Data Ingestion: </span>Architected a custom C#/.NET Windows Service and WPF management application to ingest, validate, and sanitize live external data streams before consumption by real-time downstream engines.</li>
-              <li><span className="text-terminal">System Availability & Reliability: </span>Maintained high uptime across 24/7 mission critical operations by managing cross-layer application workflows, software integrations, and distributed node configurations.</li>
+            <li>
+              <span className="text-terminal">C#/.NET Application Development: </span>
+              Independently developed a Windows desktop management application and custom Windows Service to ingest, process, validate, and distribute external JSON data feeds supporting real-time graphics workflows across 30+ television stations.
+            </li>
+
+            <li>
+              <span className="text-terminal">Data Integration & Automation: </span>
+              Implemented a staged data-processing workflow using local caching, data sanitization, validation, and final output generation to protect downstream real-time systems from malformed or incomplete external data.
+            </li>
+
+            <li>
+              <span className="text-terminal">Real-Time Graphics Development: </span>
+              Developed and maintained event-driven logic, dynamic templates, and automated production workflows using Ross XPression, VBScript, and Visual Logic while supporting high-volume broadcast operations.
+            </li>
+
+            <li>
+              <span className="text-terminal">Scalable Workflow Development: </span>
+              Helped consolidate hundreds of station-specific graphic variations into reusable, data-driven template systems, reducing repetitive configuration and production work across 30+ stations.
+            </li>
             </ul>
           </div>
 
           <div className="space-y-3">
             <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
-              <span>Real-Time Systems Developer</span>
+              <span>Motion Graphics Designer / Real-Time Graphics Developer</span>
               <span className="text-white sm:text-[16px]">July 2011 - April 2018</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
@@ -264,7 +289,7 @@ function SplashView({ onNavigate }: SplashViewProps) {
     <motion.div key="splash-gateway" className="flex-1 flex flex-col items-center justify-center p-4 text-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, scale: 0.99 }} transition={{ duration: 0.3 }}>
       <div className="border border-terminal-dark bg-black/60 backdrop-blur-xl p-8 md:p-12 rounded-sm max-w-xl w-full shadow-[0_0_50px_rgba(0,0,0,0.8)]">
         <h1 className="text-3xl md:text-4xl font-bold text-terminal mb-1 tracking-tight">Francisco Acosta</h1>
-        <h2 className="text-m text-gray-400 mb-6 uppercase tracking-widest font-bold">Systems Integration Engineer</h2>
+        <h2 className="text-m text-gray-400 mb-6 uppercase tracking-widest font-bold">Software Engineer</h2>
         <div className="w-7/8 h-[1px] bg-terminal-dark my-3 mx-auto" />
 
         <div className="text-s text-gray-400">

@@ -140,34 +140,53 @@ function ResumeContent({ animConfig }: SharedViewProps) {
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
               <li>
                 <span className="text-terminal">Real-Time Event Systems & Logic: </span>
-                Node-Based Visual Logic, Multi-Level Event Scripting (Project, Scene, Object, & Timeline Scope), State Management, Real-Time Data Binding.
+                Ross XPression Visual Logic, project/scene/object/timeline scripting, state management, real-time data binding.
               </li>
               <li>
                 <span className="text-terminal">Core Production Scripting: </span>
-                Embedded VBScript, Event-Driven Execution Engines, Data Parsing & Routing.
+                VBScript, reusable functions, event-driven logic, data parsing and routing.
               </li>
               <li>
                 <span className="text-terminal">Standalone Applications & Tooling: </span>
-                C#, .NET Framework, WPF / XAML, PowerShell (Custom Windows Service & Data Ingestion App).
+                C#, .NET Framework, WPF/XAML, PowerShell, Windows Services.
               </li>
               <li>
-                <span className="text-terminal">Architecture & Integration: </span>
-                Systems Integration, Enterprise Data Ingestion, Middleware Pipelines, High-Availability Systems, Data Validation & Sanitization, System Diagnostics.
+                <span className="text-terminal">Data Processing & Integration: </span>
+                External JSON ingestion, data mapping, validation, sanitization, caching, structured file generation.
               </li>
               <li>
                 <span className="text-terminal">Leadership & Operations: </span>
-                Cross-Functional Team Leadership, Requirements Gathering, Standard Operating Procedures, Live-Production Crisis Management, Technical Mentorship.
+                Requirements gathering, cross-functional collaboration, standard operating procedures, live-production troubleshooting, technical mentorship.
               </li>
             </ul>
           </div>
 
           <div className="space-y-3">
             <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
-              <span>Academic & Technical Core (B.S. CIS, DeVry University)</span>
+              <span>Academic & Technical Core (B.S. Computer Information Systems)</span>
             </div>
-            <p className="list-disc space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              Software Engineering (SDLC, OOP), Cloud Computing (Azure), Relational Databases (SQL), Non-Relational Databases (MongoDB), Cybersecurity Fundamentals, C++, C#, Java, Python.</p>
-
+            <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
+              <li>
+                <span className="text-terminal">Software Engineering: </span>
+                SDLC, object-oriented programming, software design, modular application development.
+              </li>
+              <li>
+                <span className="text-terminal">Cloud & Infrastructure: </span>
+                Microsoft Azure, Linux, networking, cloud infrastructure fundamentals.
+              </li>
+              <li>
+                <span className="text-terminal">Data Management: </span>
+                SQL, relational databases, MongoDB, NoSQL fundamentals.
+              </li>
+              <li>
+                <span className="text-terminal">Programming Languages: </span>
+                Python, Java, introductory C++.
+              </li>
+              <li>
+                <span className="text-terminal">Cybersecurity: </span>
+                Application security, ethical hacking, penetration testing fundamentals.
+              </li>
+            </ul>
           </div>
 
           {/* Work Experience */}
@@ -176,7 +195,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
           <p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider ">Experience: NBCUniversal</p>
           <div className="space-y-3">
             <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
-              <span>Senior Motion Graphics Designer / Real-Time Systems Specialist</span>
+              <span>Senior Motion Graphics Designer / Real-Time Graphics Developer</span>
               <span className="text-white sm:text-[16px]">April 2018 - Present</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
@@ -184,14 +203,15 @@ function ResumeContent({ animConfig }: SharedViewProps) {
                 <span className="text-terminal">C#/.NET Application Development: </span>
                 Independently developed a Windows desktop application and custom Windows Service to ingest, cache, validate, sanitize, and distribute external JSON data feeds through configurable workflows supporting real-time graphics systems across 30+ television stations.
               </li>
-              <li>
-                <span className="text-terminal">Real-Time Graphics Development: </span>
-                Developed and maintained event-driven logic, dynamic templates, and automated production workflows using Ross XPression, VBScript, and Visual Logic while supporting high-volume broadcast operations.
-              </li>
 
               <li>
                 <span className="text-terminal">Dynamic Graphics Workflow Development: </span>
                 Standardized 350+ station-specific graphic variations into a single configurable graphic using a 4K background and three keyable titles, with data-driven positioning and formatting to support custom studio monitor outputs across 30 stations.
+              </li>
+
+              <li>
+                <span className="text-terminal">Broadcast Graphics Production: </span>
+                Designed and produced 2D/3D motion graphics and developed real-time graphics workflows for daily news broadcasts across multiple television stations.
               </li>
             </ul>
           </div>
@@ -202,8 +222,12 @@ function ResumeContent({ animConfig }: SharedViewProps) {
               <span className="text-white sm:text-[16px]">July 2011 - April 2018</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li><span className="text-terminal">Real-Time Graphics Development: </span>Created daily news graphics and developed reusable templates using Ross XPression and Chyron Lyric.</li>
-              <li><span className="text-terminal">Production Scripting & Data Integration: </span>Used VBScript and Visual Logic to automate graphics behavior, connect external data feeds, and support live broadcast workflows.</li>
+              <li><span className="text-terminal">Real-Time Graphics Development: </span>
+                Created daily news graphics and developed reusable templates using Ross XPression and Chyron Lyric.
+              </li>
+              <li><span className="text-terminal">Production Scripting & Data Integration: </span>
+              Developed reusable VBScript functions and event-driven Visual Logic to automate graphics behavior, connect external data feeds, and support live broadcast workflows.
+              </li>
             </ul>
           </div>
 
@@ -213,8 +237,12 @@ function ResumeContent({ animConfig }: SharedViewProps) {
               <span className="text-white sm:text-[16px]">February 2010 - July 2011</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li><span className="text-terminal">Web Template Development: </span>Created reusable HTML/CSS email templates for digital publishing and communications.</li>
-              <li><span className="text-terminal">Digital Media Production: </span>Produced and optimized daily news graphics and digital assets for high-volume, deadline-driven production workflows.</li>
+              <li><span className="text-terminal">Web Template Development: </span>
+              Created reusable HTML/CSS email templates for digital publishing and communications.
+              </li>
+              <li><span className="text-terminal">Digital Media Production: </span>
+              Produced and optimized digital media assets for deadline-driven publishing workflows.
+              </li>
             </ul>
           </div>
         </div>
@@ -226,7 +254,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
         <div className="space-y-4 mt-3">
           <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
             <span>Bachelor of Science in Computer Information Systems</span>
-            <span className="text-white sm:text-[16px]">July 2023 - October 2026</span>
+            <span className="text-white sm:text-[16px]">October 2026</span>
           </div>
 
           <div className="space-y-3">

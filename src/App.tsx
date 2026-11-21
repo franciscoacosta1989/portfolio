@@ -59,11 +59,11 @@ function AboutContent({ animConfig }: SharedViewProps) {
       </div>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        Software Engineer with a B.S. in Computer Information Systems and 16+ years of experience developing and supporting real-time production workflows and technical systems at NBCUniversal. My application development experience includes independently building a C#/.NET application and Windows Service platform for ingesting, processing, validating, and distributing external data feeds across 30+ television stations.
+        Software Engineer with a B.S. in Computer Information Systems and 16+ years of experience supporting real-time production systems at NBCUniversal. Independently developed a C#/.NET desktop application and Windows Service for ingesting, processing, validating, and distributing external data feeds across 30+ television stations.
       </p>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        My technical background spans application development, object-oriented programming, automation, data integration, and production scripting. I enjoy analyzing complex problems, understanding how systems interact, and building practical software solutions that improve operational workflows.
+        My technical background combines application development, object-oriented programming, automation, data integration, and real-time scripting using VBScript and Visual Logic. My academic foundation includes software engineering, databases, Linux, networking, cloud computing, and cybersecurity. I am interested in developing practical software solutions for application development, enterprise systems, and data-driven workflows.
       </p>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
@@ -182,22 +182,16 @@ function ResumeContent({ animConfig }: SharedViewProps) {
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
             <li>
               <span className="text-terminal">C#/.NET Application Development: </span>
-              Independently developed a Windows desktop management application and custom Windows Service to ingest, process, validate, and distribute external JSON data feeds supporting real-time graphics workflows across 30+ television stations.
+              Independently developed a Windows desktop application and custom Windows Service to ingest, cache, validate, sanitize, and distribute external JSON data feeds through configurable workflows supporting real-time graphics systems across 30+ television stations.
             </li>
-
-            <li>
-              <span className="text-terminal">Data Integration & Automation: </span>
-              Implemented a staged data-processing workflow using local caching, data sanitization, validation, and final output generation to protect downstream real-time systems from malformed or incomplete external data.
-            </li>
-
             <li>
               <span className="text-terminal">Real-Time Graphics Development: </span>
               Developed and maintained event-driven logic, dynamic templates, and automated production workflows using Ross XPression, VBScript, and Visual Logic while supporting high-volume broadcast operations.
             </li>
 
             <li>
-              <span className="text-terminal">Scalable Workflow Development: </span>
-              Helped consolidate hundreds of station-specific graphic variations into reusable, data-driven template systems, reducing repetitive configuration and production work across 30+ stations.
+              <span className="text-terminal">Dynamic Graphics Workflow Development: </span>
+              Standardized 350+ station-specific graphic variations into a single configurable graphic using a 4K background and three keyable titles, with data-driven positioning and formatting to support custom studio monitor outputs across 30 stations.
             </li>
             </ul>
           </div>
@@ -208,8 +202,8 @@ function ResumeContent({ animConfig }: SharedViewProps) {
               <span className="text-white sm:text-[16px]">July 2011 - April 2018</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li><span className="text-terminal">Automated Data Binding: </span>Integrated real-time scripting to dynamically connect external data feeds with live execution engines, improving data accuracy and delivery speed.</li>
-              <li><span className="text-terminal">Cross-Functional System Rollouts: </span>Collaborated with technical and operational stakeholders to configure and deploy fault-tolerant software packages under tight live-production deadlines.</li>
+              <li><span className="text-terminal">Real-Time Graphics Development: </span>Created daily news graphics and developed reusable templates using Ross XPression and Chyron Lyric.</li>
+              <li><span className="text-terminal">Production Scripting & Data Integration: </span>Used VBScript and Visual Logic to automate graphics behavior, connect external data feeds, and support live broadcast workflows.</li>
             </ul>
           </div>
 
@@ -219,8 +213,8 @@ function ResumeContent({ animConfig }: SharedViewProps) {
               <span className="text-white sm:text-[16px]">February 2010 - July 2011</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-              <li><span className="text-terminal">Technical Specification & Compliance: </span>Developed technical delivery specifications for digital assets to ensure seamless ingestion and compliance across automated publishing workflows.</li>
-              <li><span className="text-terminal">High-Volume Asset Processing: </span>Managed fast-turnaround production schedules, optimizing digital media assets for live execution in high-pressure environments.</li>
+              <li><span className="text-terminal">Web Template Development: </span>Created reusable HTML/CSS email templates for digital publishing and communications.</li>
+              <li><span className="text-terminal">Digital Media Production: </span>Produced and optimized daily news graphics and digital assets for high-volume, deadline-driven production workflows.</li>
             </ul>
           </div>
         </div>

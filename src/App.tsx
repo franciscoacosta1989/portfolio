@@ -65,14 +65,6 @@ function AboutContent({ animConfig }: SharedViewProps) {
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
         My technical background combines application development, object-oriented programming, automation, data integration, and real-time scripting using VBScript and Visual Logic. My academic foundation includes software engineering, databases, Linux, networking, cloud computing, and cybersecurity. I am interested in developing practical software solutions for application development, enterprise systems, and data-driven workflows.
       </p>
-
-      <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        My professional background combines broadcast production, real-time graphics systems, and application development. At NBCUniversal, I have spent 16+ years working with systems that support live production, developing event-driven logic, dynamic templates, and automated workflows using Ross XPression, VBScript, and Visual Logic. Alongside this work, I independently developed a C#/.NET desktop application and Windows Service to ingest, validate, and distribute external data feeds.
-      </p>
-
-      <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        I hold a Bachelor of Science in Computer Information Systems, along with Associate degrees in Information Technology/Networking and Web Graphic Design. My academic foundation includes software engineering, data structures and algorithms, databases, Linux, networking, cloud computing, and cybersecurity. I am interested in software engineering opportunities involving application development, enterprise systems, and data-driven solutions.
-      </p>
     </motion.div>
   );
 }

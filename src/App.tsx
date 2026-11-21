@@ -253,34 +253,34 @@ function ResumeContent({ animConfig }: SharedViewProps) {
         <p className="text-terminal font-bold border-b border-terminal-dark/40 text-[18px] uppercase tracking-wider">Education: DeVry University</p>
         <div className="space-y-4 mt-3">
           <div className="flex flex-col sm:flex-row sm:justify-between font-bold text-white text-[16px]">
-            <span>Bachelor of Science in Computer Information Systems</span>
+            <span>Bachelor of Science in Computer Information Systems (GPA: 3.88)</span>
             <span className="text-white sm:text-[16px]">October 2026</span>
           </div>
 
           <div className="space-y-3">
             <div>
-              <h4 className="text-white font-medium text-[16px]">Systems Integration & Infrastructure Architecture</h4>
+              <h4 className="text-white font-medium text-[16px]">Systems Integration & Infrastructure</h4>
               <ul className="list-disc pl-5 space-y-1 mt-1 text-gray-400 text-[16px] leading-relaxed">
-                <li><span className="text-terminal">Systems Integration: </span>Architecting end-to-end software integrations and routing data between application layers.</li>
-                <li><span className="text-terminal">Cloud Computing Security & Infrastructure: </span>Provisioning cloud resources, managing security boundaries, and configuring deployment infrastructure.</li>
-                <li><span className="text-terminal">Operating Systems Basics: </span>Core OS concepts such as system-level operations.</li>
+                <li><span className="text-terminal">Systems Integration: </span>Application-layer integration, data exchange, system workflows, and integration design.</li>
+                <li><span className="text-terminal">Cloud Computing & Security: </span>Cloud infrastructure fundamentals, resource provisioning, security boundaries, and deployment concepts.</li>
+                <li><span className="text-terminal">Operating Systems & Linux: </span>Operating system architecture, command-line operations, system administration fundamentals, and Linux environments.</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-white font-medium text-[16px]">Software & Engineering</h4>
+              <h4 className="text-white font-medium text-[16px]">Software Engineering</h4>
               <ul className="list-disc pl-5 space-y-1 mt-1 text-gray-400 text-[16px] leading-relaxed">
-                <li><span className="text-terminal">Software Engineering I & II: </span>SDLC execution, requirements gathering, object-oriented software design, dynamic UI components, and modular application development.</li>
-                <li><span className="text-terminal">Data Structures & Algorithms:</span> Computational complexity, memory-efficient data structures, array manipulation, and algorithmic optimization.</li>
-                <li><span className="text-terminal">Senior Engineering Capstone Project: </span>Designing an enterprise-grade software solution from requirements through implementation.</li>
+                <li><span className="text-terminal">Software Engineering I & II: </span>Software development lifecycle, requirements analysis, object-oriented design, modular application development, and dynamic user interfaces.</li>
+                <li><span className="text-terminal">Data Structures & Algorithms:</span>Algorithm design, computational complexity, data structures, and problem-solving techniques.</li>
+                <li><span className="text-terminal">Senior Engineering Capstone: </span>Requirements analysis, solution design, and software implementation through a culminating engineering project.</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-white font-medium text-[16px]">Data Management & Security Engineering</h4>
+              <h4 className="text-white font-medium text-[16px]">Data Management & Cybersecurity</h4>
               <ul className="list-disc pl-5 space-y-1 mt-1 text-gray-400 text-[16px] leading-relaxed">
-                <li><span className="text-terminal">Relational & Non-Relational Databases: </span>Designing structured SQL schemas alongside document-oriented NoSQL (MongoDB) data stores for high-availability ingestion.</li>
-                <li><span className="text-terminal">Ethical Hacking, Pen Testing & Cyber Defense: </span>Threat modeling, vulnerability scanning, penetration testing techniques, and input sanitization.</li>
+                <li><span className="text-terminal">Database Systems: </span>Relational database design, SQL, NoSQL concepts, and MongoDB.</li>
+                <li><span className="text-terminal">Application Security & Ethical Hacking: </span>Threat modeling, vulnerability assessment, penetration testing fundamentals, and secure input validation.</li>
               </ul>
             </div>
           </div>

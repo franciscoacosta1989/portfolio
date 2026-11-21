@@ -59,11 +59,19 @@ function AboutContent({ animConfig }: SharedViewProps) {
       </div>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        Software Engineer with a B.S. in Computer Information Systems and 16+ years of experience supporting real-time production systems at NBCUniversal. Independently developed a C#/.NET desktop application and Windows Service for ingesting, processing, validating, and distributing external data feeds across 30+ television stations.
+        I'm a Software Engineer with a B.S. in Computer Information Systems and more than 16 years of experience at NBCUniversal, where I've worked at the intersection of technology, software-driven production systems, and creative operations.
       </p>
 
       <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
-        My technical background combines application development, object-oriented programming, automation, data integration, and real-time scripting using VBScript and Visual Logic. My academic foundation includes software engineering, databases, Linux, networking, cloud computing, and cybersecurity. I am interested in developing practical software solutions for application development, enterprise systems, and data-driven workflows.
+        My professional background includes developing real-time graphics workflows, automating production processes, integrating external data feeds, and supporting broadcast systems used across more than 30 television stations. More recently, I independently developed a C#/.NET desktop application and custom Windows Service to ingest, process, validate, and distribute external JSON data. The application introduced configurable data workflows, scheduled and on-demand processing, and structured output generation for downstream systems.
+      </p>
+
+      <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
+        My technical interests extend beyond application development. I enjoy understanding how different components work together, from application logic and data processing to databases, operating systems, networking, and cloud infrastructure. My academic foundation includes software engineering, object-oriented programming, data structures and algorithms, systems integration, cybersecurity, and database technologies.
+      </p>
+
+      <p className="text-gray-300 font-sans leading-relaxed text-sm md:text-base">
+        I approach engineering from a solutions-oriented perspective: understanding operational challenges, identifying opportunities for improvement, and building practical software that makes complex workflows more efficient and manageable. I'm particularly interested in application development, enterprise systems, software integration, and data-driven solutions.
       </p>
     </motion.div>
   );
@@ -159,7 +167,7 @@ function ResumeContent({ animConfig }: SharedViewProps) {
             </div>
             <p className="list-disc space-y-1 text-gray-400 text-[16px] leading-relaxed">
               Software Engineering (SDLC, OOP), Cloud Computing (Azure), Relational Databases (SQL), Non-Relational Databases (MongoDB), Cybersecurity Fundamentals, C++, C#, Java, Python.</p>
-            
+
           </div>
 
           {/* Work Experience */}
@@ -172,19 +180,19 @@ function ResumeContent({ animConfig }: SharedViewProps) {
               <span className="text-white sm:text-[16px]">April 2018 - Present</span>
             </div>
             <ul className="list-disc pl-4 space-y-1 text-gray-400 text-[16px] leading-relaxed">
-            <li>
-              <span className="text-terminal">C#/.NET Application Development: </span>
-              Independently developed a Windows desktop application and custom Windows Service to ingest, cache, validate, sanitize, and distribute external JSON data feeds through configurable workflows supporting real-time graphics systems across 30+ television stations.
-            </li>
-            <li>
-              <span className="text-terminal">Real-Time Graphics Development: </span>
-              Developed and maintained event-driven logic, dynamic templates, and automated production workflows using Ross XPression, VBScript, and Visual Logic while supporting high-volume broadcast operations.
-            </li>
+              <li>
+                <span className="text-terminal">C#/.NET Application Development: </span>
+                Independently developed a Windows desktop application and custom Windows Service to ingest, cache, validate, sanitize, and distribute external JSON data feeds through configurable workflows supporting real-time graphics systems across 30+ television stations.
+              </li>
+              <li>
+                <span className="text-terminal">Real-Time Graphics Development: </span>
+                Developed and maintained event-driven logic, dynamic templates, and automated production workflows using Ross XPression, VBScript, and Visual Logic while supporting high-volume broadcast operations.
+              </li>
 
-            <li>
-              <span className="text-terminal">Dynamic Graphics Workflow Development: </span>
-              Standardized 350+ station-specific graphic variations into a single configurable graphic using a 4K background and three keyable titles, with data-driven positioning and formatting to support custom studio monitor outputs across 30 stations.
-            </li>
+              <li>
+                <span className="text-terminal">Dynamic Graphics Workflow Development: </span>
+                Standardized 350+ station-specific graphic variations into a single configurable graphic using a 4K background and three keyable titles, with data-driven positioning and formatting to support custom studio monitor outputs across 30 stations.
+              </li>
             </ul>
           </div>
 
